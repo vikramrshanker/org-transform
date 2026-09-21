@@ -1,0 +1,57 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "Traditional search-result click rate with and without an AI summary",
+      "kind": "observed",
+      "unit": "Percent of Google search visits",
+      "rows": [
+        {
+          "label": "No AI summary",
+          "value": 15,
+          "display": "15%"
+        },
+        {
+          "label": "AI summary present",
+          "value": 8,
+          "display": "8%"
+        }
+      ],
+      "scale_max": 20,
+      "source_ids": [
+        1
+      ],
+      "notes": "Pew: 900 US adults, 68,879 unique March 2025 searches. Results reconstructed April 7–17. The 7-percentage-point gap is an association; query mix and reconstruction limit causal interpretation. This is not a retail conversion chart.",
+      "assumptions": null
+    },
+    {
+      "title": "AI channel contribution illustration",
+      "kind": "illustrative",
+      "assumptions": {
+        "monthly_visits": 1000,
+        "conversion": 0.04,
+        "average_order": 100,
+        "contribution_before_acquisition": 30,
+        "monthly_service_cost": 600
+      },
+      "cases": [
+        {
+          "incrementality": 1,
+          "contribution_per_order": 30,
+          "net": 600
+        },
+        {
+          "incrementality": 0.5,
+          "contribution_per_order": 30,
+          "net": 0
+        },
+        {
+          "incrementality": 1,
+          "contribution_per_order": 20,
+          "net": 200
+        }
+      ],
+      "source_ids": []
+    }
+  ]
+}

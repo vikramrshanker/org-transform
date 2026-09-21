@@ -1,0 +1,51 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "Most projected electrician openings replace workers, not expand employment",
+      "kind": "projection-derived",
+      "unit": "Openings per year, approximate",
+      "rows": [
+        {
+          "label": "Annual net growth equivalent",
+          "value": 7590,
+          "display": "7,590"
+        },
+        {
+          "label": "Transfers and exits, residual",
+          "value": 65110,
+          "display": "65,110"
+        }
+      ],
+      "scale_max": 72700,
+      "source_ids": [
+        3
+      ],
+      "notes": "Calculated from BLS: 75,900 net additional jobs over ten years / 10 = 7,590 annually; 72,700 average annual openings − 7,590 = 65,110. Approximately 89.6% are therefore replacement openings. Rounded inputs; this is not a retirement count.",
+      "assumptions": null
+    },
+    {
+      "title": "Technician capacity illustration",
+      "kind": "illustrative",
+      "unit": "hours and USD",
+      "assumptions": {
+        "technicians": 20,
+        "weekly_admin_hours": 5,
+        "weeks": 48,
+        "reduction": 0.4,
+        "usable_fraction": 0.6,
+        "contribution_per_hour": 80,
+        "annual_cost": 45000,
+        "implementation": 60000
+      },
+      "results": {
+        "hours_released": 1920,
+        "hours_usable": 1152,
+        "gross_contribution": 92160,
+        "net_benefit": 47160,
+        "payback_months": 15.267175572519085
+      },
+      "source_ids": []
+    }
+  ]
+}

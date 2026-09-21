@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "NFIB: August 2026 jobs report",
+    "url": "https://www.nfib.com/news/monthly_report/jobs-report/",
+    "published_or_version": "August 2026 survey; September release",
+    "method": "Survey of NFIB members; seasonally adjusted indicators.",
+    "limitations": "Membership-based sample. The 5,000-member sampling frame is not a completed-response count; difficulty is not a vacancy total.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "ManpowerGroup: 2026 talent shortage survey",
+    "url": "https://www.manpowergroup.com/news-releases/news/global-talent-shortage-reaches-turning-point-as-ai-skills-claim-top-spot",
+    "published_or_version": "February 26, 2026",
+    "method": "Employer survey: over 39,000 employers in 41 countries.",
+    "limitations": "Reported hiring difficulty across different labor markets; not an objective global skills deficit or US vacancy rate.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "BLS: electricians",
+    "url": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
+    "published_or_version": "August 27, 2026; 2025–35 projections; May 2025 wages",
+    "method": "Official occupation statistics and projections.",
+    "limitations": "Openings include growth, occupational transfers and labor-force exits. Projections are not observed vacancies; wages exclude the self-employed.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "BLS: accountants and auditors",
+    "url": "https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm",
+    "published_or_version": "August 27, 2026; 2025–35 projections; May 2025 wages",
+    "method": "Official occupation statistics and projections.",
+    "limitations": "Broad occupation, not CPAs alone; projected openings are not a measured shortage.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "BLS: home health and personal care aides",
+    "url": "https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm",
+    "published_or_version": "August 27, 2026; 2025–35 projections; May 2025 wages",
+    "method": "Official occupation statistics and projections.",
+    "limitations": "Large occupation with substantial turnover and demand growth. National averages hide local conditions.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "AICPA: 2025 Trends findings",
+    "url": "https://www.aicpa-cima.com/news/article/accounting-firms-report-strong-hiring-outlook-aicpa-report-finds",
+    "published_or_version": "October 27, 2025; 2023–24 degrees and 2024 hiring",
+    "method": "Professional-body report using education data and a firm survey.",
+    "limitations": "Low firm response prevented a national hiring projection. Degrees, people and CPA licenses are different measures.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "AICPA: the new CPA exam, two years in",
+    "url": "https://www.aicpa-cima.com/professional-insights/article/the-new-cpa-exam-two-years-in",
+    "published_or_version": "July 6, 2026; includes fall 2025 enrollment",
+    "method": "Professional-body account citing National Student Clearinghouse data.",
+    "limitations": "Enrollment is a leading indicator, not graduates or licensed accountants; recovery can take years to reach employers.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "ILO–NASK: generative AI and jobs, 2025 update",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+    "published_or_version": "May 20, 2025",
+    "method": "Task-based occupational exposure model.",
+    "limitations": "Potential exposure is not observed automation, unemployment or a forecast of jobs eliminated.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Brynjolfsson, Li & Raymond: Generative AI at Work",
+    "url": "https://www.gsb.stanford.edu/faculty-research/publications/generative-ai-work",
+    "published_or_version": "QJE, May 2025",
+    "method": "Staggered workplace rollout; journal abstract and institutional record.",
+    "limitations": "One customer-support setting; nonrandom rollout. Use the published 15% estimate rather than mixing earlier working-paper versions.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Siemens and Microsoft scale industrial AI",
+    "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai",
+    "published_or_version": "October 24, 2024",
+    "method": "Supplier deployment and workflow account.",
+    "limitations": "More than 100 customers were reported; 120,000 TIA Portal engineers were eligible, not active copilot users. Claims lack a controlled time study.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "Anthropic: AI assistance and coding-skill formation",
+    "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+    "published_or_version": "January 29, 2026",
+    "method": "Randomized study of 52 mostly junior engineers learning Trio.",
+    "limitations": "Immediate quiz after a short task, not long-term career outcomes. Usage-pattern subgroup comparisons are observational.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 12,
+    "title": "BLS: accountants’ occupational requirements",
+    "url": "https://www.bls.gov/ors/factsheet/pdf/accountants-and-auditors.pdf",
+    "published_or_version": "2025 Occupational Requirements Survey; current factsheet accessed September 21, 2026",
+    "method": "Official job requirements for accountants and auditors.",
+    "limitations": "Percentages describe jobs requiring prior experience or on-the-job training, not the share of workers lacking skills or the duration of onboarding.",
+    "accessed": "2026-09-21"
+  }
+]

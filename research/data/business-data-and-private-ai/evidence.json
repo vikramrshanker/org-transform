@@ -1,0 +1,61 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "At low utilization, fixed cost dominates the illustration",
+      "kind": "illustrative",
+      "unit": "USD per month",
+      "rows": [
+        {
+          "label": "Managed, 10,000 tasks",
+          "value": 2600,
+          "display": "$2,600"
+        },
+        {
+          "label": "Self-hosted, 10,000 tasks",
+          "value": 14100,
+          "display": "$14,100"
+        }
+      ],
+      "scale_max": 16000,
+      "source_ids": [],
+      "notes": "Invented assumptions shown above. Security requirements may rule out an option independently of cost. Measure cost per accepted task, including failed runs and review, rather than cost per generated token.",
+      "assumptions": {
+        "managed_fixed": 2000,
+        "managed_variable": 0.06,
+        "self_hosted_fixed": 14000,
+        "self_hosted_variable": 0.01,
+        "monthly_accepted_tasks": 10000
+      }
+    },
+    {
+      "title": "Private inference cost sensitivity",
+      "kind": "illustrative",
+      "unit": "USD/month",
+      "assumptions": {
+        "managed_fixed": 2000,
+        "managed_variable_per_accepted_task": 0.06,
+        "self_hosted_fixed": 14000,
+        "self_hosted_variable_per_accepted_task": 0.01,
+        "equal_quality_latency_availability": true
+      },
+      "volumes": [
+        10000,
+        100000,
+        500000
+      ],
+      "managed_costs": [
+        2600,
+        8000,
+        32000
+      ],
+      "self_hosted_costs": [
+        14100,
+        15000,
+        19000
+      ],
+      "break_even_tasks": 240000,
+      "source_ids": []
+    }
+  ]
+}

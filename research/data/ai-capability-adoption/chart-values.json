@@ -1,0 +1,23 @@
+{
+  "source_ids": "See sources.json",
+  "oecd_barriers_nonadopters_pct": {
+    "unsuitable_work": 57,
+    "legal_copyright_regulatory": 54,
+    "information_privacy": 52,
+    "skills": 50
+  },
+  "oecd_source": "S21",
+  "mckinsey_pct": {
+    "personal_productivity_improvement": 80,
+    "some_enterprise_EBIT_impact": 37
+  },
+  "mckinsey_source": "S20",
+  "illustration_usd_per_case": {
+    "manual_labor": 30,
+    "ai_compute": 0.5,
+    "human_review": 5,
+    "exception_allowance": 3,
+    "integration_and_support": 2
+  },
+  "illustration_note": "Invented assumptions for arithmetic only; not market measurements."
+}

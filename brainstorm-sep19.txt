@@ -1,0 +1,374 @@
+Meeting Title: Brainstorm
+Date: Sep 19
+Meeting participants: Vikram Shanker
+
+Transcript:
+Speaker A: Thing so there's like conversions. I'm just sharing with you. Like conversions. 
+Speaker B: Can I just walk around? I got on my phone now so it'll still capture as we go. 
+Speaker A: Let's. 
+Speaker B: We can like chat about this stuff and then come back to the whiteboard like as we pick up. What do you want just around the block? Well, I figured we wrap up around like in like an hour, hour and 15 or something. Is your. Is it nearby or do you have to. 
+Speaker A: It's. I think I'll put Uber there. I'm done with. Keep going after that. But it depends. You have to go back. 
+Speaker B: Yeah, I mean let's. Let's walk for a little bit and 
+Speaker A: Then there's going to be a bunch of background noise. 
+Speaker B: I've done this before. It works pretty well. 
+Speaker A: Or we can walk around waterfall. 
+Speaker B: So you're saying TKO was surprised that 
+Speaker A: Silver Lake was surprised. I was talking to the operating partner that TKO spent this much and they're like we need to see real returns. And so it's interesting because like a lot of these people month don't actually know. There's like. There's a few things that are happening. Cuz I was talking to Steven Jacobs about this last night with Premier and like Premier was sitting in the boardroom with Clair Water, which is other cors and one of our customers and they were like yo Sub, what are you doing here? Why you get side dude? That's like right there. Yeah, but like we get that up during the week. 
+Speaker B: Was bro, sometimes you got. I heard your voice. I was like no way. 
+Speaker A: Yeah, I know. Well, is it a surprise? I'm here on weekend. I don't stop working. Dude. 
+Speaker B: Why are you here? 
+Speaker A: We're just. I'm just. We're just talking about. 
+Speaker B: I was nearby as we just got out. 
+Speaker A: Yeah. 
+Speaker B: Nice to meet you. Nice to meet you. 
+Speaker A: Garage is one of our star engineers. But soon no longer. Oh, wow. Oh, did you change your mind? 
+Speaker B: No way. 
+Speaker A: Okay, we'll talk this week. Are you going to be around for a bit or you going to head out? Okay. 
+Speaker B: How are you going out? 
+Speaker A: Probably in a day. Yeah, I'll do. I'll do these folks this week. 
+Speaker B: Wait, I won't see you then in a week? 
+Speaker A: No, you have to go to Dallas, anywhere. Oh, I heard Bruce is joining. Yeah. Yeah, I'm so. He's a. He's a machine. So. Yeah, you do. You should join us too. All right. If we ever started something, I would call him. I think he's a new. Right. Okay. So what was. What Was So the other thing that was happening was like all these key pun is sitting in boardrooms with their port covers traditional key punks and they're like what the did we actually use this product? That's like a weird thing that keeps coming up. And two is this workhor mapping thing is like much more common now. And it's like a very commenting point because people are trying to find what true ROI is. 
+Speaker B: What is workflow mapping. You like figure out who talks to who and does what. 
+Speaker A: I'll show you. We were going to the last one to show you but basically like what we're doing is we have the activity graph, right. See like every everything everybody's doing with everything system we connect with for and we can infer workflows from that because the other similar activities right. And then if you couple that with screen recordings you now can like get timestamps on everything and you can see everything that you've been stuck. Obviously like if I'm doing this as a time series how does work change but me like what are my top performers doing that my modern performance on right? Or like why is onboarding especially in certain industries where like onboarding time is really important high value of time. Like why does one region have faster onboarding than another? Or like how close is the in quality world to the process today or 
+Speaker B: The looking at like the workflow today. 
+Speaker A: Right. And so like this is I think an area that is going to continue to be really important. That's like one bucket. The other bucket is what simile is doing which is not like the simulation side. Right. And obviously I touched this last year like every time simulation but it was too far to work business. But like that's another area where like as you couple these activity graphs with simulated capabilities. 
+Speaker B: What did what did like what do they do like to simulate. 
+Speaker A: So at least my last year 
+Speaker B: They 
+Speaker A: Basically will like issue. They have therapy, right. But then they what they at that time the methodology work. They send bunch of surveys to like gather data and then they will leave those results. I don't know how much their methodology change I caught up with. We go this way, walk around. 
+Speaker B: Yeah. I mean the exact methodology doesn't matter. I'm just curious. 
+Speaker A: There's one. So yeah they have surveys that they issue to get behavioral signals and there's like enough correlation between those signals. You don't need fully exhaustive data sets. 
+Speaker B: And so like but they're deploy it's basically synthetic data like using LLMs to scale. Like they have some root the real like you Know ask a thousand people from Walgreens to fill it out and then use that to like do. They'll scale that up to 10 million across different geographies, controlling for. Controlling other variables that you might care about. Why not like why are they focused on consumer. 
+Speaker A: I don't know. I think enterprise is way more. 
+Speaker B: Is the enterprise version of simply like an interesting company to build? 
+Speaker A: Yeah, it is very similar. I have a lot of thoughts on this. 
+Speaker B: In October I know a researcher could get. 
+Speaker A: The thing is like you would need to know their methodology. Like dude, like there's so much like think about it. What I wanted to show this was like, okay, what are some of the biggest problems people have? Hiring 50 hire rate. Like if a good hiring look is good, you can actually pull some of the activity data to see like how what they actually work, how they work with each other. And you create agents around this and you run simulation that takes a higher graphically M and A. Also another really big one. Ford redesign. Another really big one. We expose. No we don't. We expose like. 
+Speaker B: So what I have generally learned in like the field of industrial AI is that there are no new ideas and no one's doing anything that no one's. 
+Speaker A: Yeah. 
+Speaker B: So like with the access to like the tech talent we have, we may not be able to to like copy their exact methodology. But we for sure could come up with a good one with like, with like an understanding of what the business is. Yeah, that would like do well. 
+Speaker A: Yeah. 
+Speaker B: So like one. So if you combine trends now to look for an interesting business. One thought is we also mentioned like I think sourcing good PE businesses is getting harder and harder. 
+Speaker A: Yeah, we talked. 
+Speaker B: Yes, right. And so if you can actually go say like figure out a way maybe without but like based on whatever data they have, if you could figure out a way to either do one of two things. One, like an agent that like. Like a diligence agent or something. I'm sure a million people are already doing that. 
+Speaker A: Yeah. 
+Speaker B: Because it's one step. But the second would be can you build a platform that lets a PE shop leverage the data to do all this stuff at Lightsport? And I don't know that that play is like that's probably a many winners play because it's relationship based sale. And I think that's like a couple of different industries that not many people know a lot about. 
+Speaker A: So yes. The other thing that we'll say is like what the challenge is. So how do you like actually source like what was the thing that we saw in there. Right. Like bunch of these deals fall down due to pricing. Very few of the people who are trying to sell their businesses are planning properly. So they're not actually squeezing as much juice as they can out of the business. So there's actually a lot on like even the pre sale process for those businesses. If you think about a platform like right now, if you look it up dude, like. If you look at the like the marketplaces that exist resourcing companies and they're very old school. So like one thing is that I agree with but I actually think there's like more of a value change. So. 
+Speaker B: But okay, so the version you proposed is almost saying like flipping it instead of serving the serve the business as a marketplace. 
+Speaker A: Yeah, exactly. Like 
+Speaker B: I don't know if I were to pitch like a new business model for and I'm sure you guys are probably already thinking about this account is like instead of selling subscriptions to port co just convince the investor, activist investor that gleam is valuable and they'll make all their portos buy it. 
+Speaker A: And you now have like operating intelligence. Right. That's kind of where we want to go. Lean is not like taking that seriously enough. So that is the goal. It's the problem. The only challenge I have is in 
+Speaker B: This model with how many people like like could you make the assumption as a business that we will only serve you if you have liens and we. Well but like we won't explode with any of the data attacks. Right. 
+Speaker A: They 
+Speaker B: Like the question is can you do this yourself or like you know the technology better than I do. Like how much of it is like 
+Speaker A: With the right that's more cars because the, it's not just about the connectors right. It's about like the graph behind them. 
+Speaker B: We know how all that is set up. 
+Speaker A: So like 
+Speaker B: Once we know what the product spec is like if you know the product spec the questions you need to answer and like the data connectors that's there you don't need like the 
+Speaker A: Code 
+Speaker B: To like estimate. But I, I think that's a very like I think the PE plus port co like I think the industry is suffering. It seems like even people who are very open to tech who have historically never been enthusiastic about it it especially like an ARM type way. 
+Speaker A: Yeah. So I, I think I guess. If you had access to underlying data or you were somehow able to rebuild go down to UI nice. 
+Speaker B: There's the, there's the origin product which is like connect to a bunch of data sources and then you can do rag chat bot search that kind of stuff. Then you guys added agent store those right now you have whatever you guys should work with like the actual like workflow observability. Right. Is that. Are those the core three products or like what else? 
+Speaker A: If we don't do screen based reporting it's actually really hard to get very high to do that with your data unless everything is connected and companies have right now very different. Like 
+Speaker B: What are the set of issues? 
+Speaker A: I don't know. 
+Speaker B: Like so like I assume table stakes that everyone attaches is like your Google workspace, your Microsoft workspace. So email docs files, that kind of stuff. Then your actual slack gong as well. 
+Speaker A: Right. Like all transcripts. 
+Speaker B: Okay. So gong and like the sales specific software stack. 
+Speaker A: Yeah. 
+Speaker B: You guys probably connect your GitHub. 
+Speaker A: Yeah. We also through a LL gateway can see furries are served products as well. Right. Which is also important. 
+Speaker B: And people use your LL gateway over other. Are there other like. 
+Speaker A: Then where like. Here. 
+Speaker B: As far as I like you could ship any data. Your question is, is that one like the same data? Wait, but that's actually I think always been the case for the managed mods. 
+Speaker A: Right? Yeah. Or they were charging for those. For the access to the software. 
+Speaker B: Oh what they would do is they would. Okay so maybe they're people are getting a slightly different pricing model around. 
+Speaker A: Okay. 
+Speaker B: Yeah. 
+Speaker A: And so you have companies that build Connect. The question is like quality in the ride. Depend on. Right. 
+Speaker B: That then becomes the sales problem. Yeah. Cuz the hard problem of Connect is probably negotiating the access to the data. 
+Speaker A: Yeah. So anyways I think we're good. Unless you want to like look at the GL stack right now. 
+Speaker B: Oh let's take a look at the GL tackling always like okay. I think looking at. I think looking at that ward clothing interesting. 
+Speaker A: Care all about because like increasingly as those products exist how you actually understand work and what you can do with that is really interesting. The problem that's coming up that I heard this week from what the CXM 
+Speaker B: I think was 
+Speaker A: Hey if we do this like that's fine. But what I actually want to know is like what the optimal way is to completely redesign the process. I don't just want to map a process and then build agents that duplicate the process today. 
+Speaker B: Yes. I mean I think that's the like key insight of like build like redesigning a workflow or an org with agents is understanding that like your goal is not to like say these are the six steps replace these two steps. It's understanding this is everything that happened and this is all the context involved and what is like the ancient native way to do it. 
+Speaker A: Yeah. 
+Speaker B: That then starts becoming like the. 
+Speaker A: So the. 
+Speaker B: The services version is advisory. The max. Like the product version is like, can we build this, like, this piece of it better than you're doing it? Because, mean, it's the classic, like, employee spins out, like, you know, product feature or like product area startup. And then the third way is go buy the business. I'm really good at this product. Get the return from doing it as a business. Like, the credibility we need to like. 
+Speaker A: I mean. 
+Speaker B: So the interesting thing is, like, I can talk to Joe about the infected economics. Actually, I have this deck, I guess. Oh, yeah. So they're raising a pool of capital to do a search. There's a couple different. They're all like, kind of related to like, energy availability. So Eric is like the finance guy, energy and operator guy who has, like, relationships. So they're gonna. They're doing this. So the, the method they're basically doing is apparently called a PTM or something where basically they say, like, okay, we think total. To go buy the business, we need, you know, 30 million of capital or 50 million of capital. So I. I don't understand exactly how different from search. Like, they have like the. A year or two with like, salary. So they'll raise like some portion up front. 
+Speaker A: Yeah. 
+Speaker B: And then when they're ready to buy the business, they. They call the rest. I don't know, like, the difference in the mechanics of search versus that. I thought that's how search work. 
+Speaker A: Yeah, me too. 
+Speaker B: Maybe like, they're getting the commitment from their investors up front, like for the money, and like, they have more control. So I'll try to figure it out. Yeah, but like, if we wanted to go down that route and you like the, like where you and I. Money is in, like, sourcing businesses. 
+Speaker A: Yeah. 
+Speaker B: That's where a third partner would come in. I do kind of like the idea of like the marketplace for it. 
+Speaker A: Yeah. 
+Speaker B: Like, how do you capture both sides, like, of that asymmetry. 
+Speaker A: Yeah, like that. That's the one I think is fascinating because there's a lot you can do with that up and down the value chain. Right. But this is where it goes where I was saying, like, like, do you also. Let me show you. We can do a bunch of queries here. 
+Speaker B: Yeah. 
+Speaker A: Here's what this says. 
+Speaker B: Okay, 
+Speaker A: So let's show you. Okay. So for example, this is like one example. This is based on, like, real clean data. So what we can see is like, for this as a workflow, what are like all the steps? How much time does it typically take? What is the tool that this happens? And this is at a very high level. But then what we can actually get into is like for each step, who owns it, what is the actual output? What does it look like? We're not pulling what it actually looks like from here. But in theory you could or you can pull eval sets. You can pull in like the actual sub steps that the person's taking. This is based off of queries, this is based off of like. 
+Speaker B: So you had like a LLM create this page based on the data set. 
+Speaker A: Exactly. And then if you go to the transformed state, go up, just click there. This is not the like final. Right. But then what you can start to see is like, hey, here like the agents that should be built, you can start to get to. 
+Speaker B: How did you decide, like this is where the break is. 
+Speaker A: So this was just like, I think this, this was like the LLM determining that. Right. Like we haven't refined this yet. But then like what you basically get is like the full set of steps. Again, this is not the final output because we just, we made it shorter. But you can then throw this into a natural line language builder and it'll build the agent. And like when we did this for like a security questionnaire agent, we got to 70 accuracy single shot just from copying and pasting the blueprint. And then you tweak the, the prompting and you get to like 87 accuracy pretty quickly. Now like if you then couple this with here, like let me show you. 
+Speaker B: So, so you took that and then you used whatever agent building tool you have to like build agents to on top of it. 
+Speaker A: Right. Where is the thing I now have to give this product up, which I'm 
+Speaker B: Very sad about, to the product team. 
+Speaker A: Yeah, they're either like either build this product out which every customer is asking for, or lead applied AI. You can't do both. Where is this? Okay, so this is like once you now start including. Okay, so once you do. Okay, this is like just with the connector and then self. At least connectors today once. And then the other is like with the activity journal, which is the screen recording. What you can start to see, this is why so many people are doing screen recording. But you can start to see like the higher fidelity results that you get. Right. Like this is just for his own, his own workflows as an engineer. And you start to see like where he's spending his time. What is he actually doing? 
+Speaker B: Where do you. What's the product Is there like a user facing product for this right now? 
+Speaker A: We're building that out now, but the user facing, like, where is it? We're still playing around with the ui. No, I actually had an HTML version anyways, like, we're playing around with the ui, but basically it's not for the individual user, it's for like the transformation officer, the business unit leader. And so what we're getting to. 
+Speaker B: So your customer for this stuff is the coo, the business leader who like owns the process. 
+Speaker A: Exactly. Right. So you can imagine, like I have this in HTML too, but so I can get a spin right now so that you can imagine. Right, like you can see. Okay, because this is on an ongoing basis. Because it's a time series, you can see like transformed workflows versus opportunities. 
+Speaker B: How do you determine what a work, like, what the workflow is? Like, how do you identify? There are 78 workflows? 
+Speaker A: It's glean, like, so you can ingest sops, you can chess job descriptions, lean also, like, will map together things. So like here, I'll give you an example. Can I. Can I show you something? So like, if I do. See if this works, 
+Speaker B: Why is this not working? 
+Speaker A: My beer is like such right now. 
+Speaker B: Is your personal laptop. 
+Speaker A: No, this is my work laptop. I have no idea why it's like, I don't. I'm not running anything intensive right now. I don't know why this is not populating. 
+Speaker B: It's the WI fi. 
+Speaker A: No, it's not Wi Fi because the other URLs would not work. I don't think it's a login this way. It's like in like the dev version of dev. Okay, so now let's try. Okay, so like this, for example, I haven't listed anywhere what my projects are. Maybe I did somewhere like in a fragmented sense. But glean has like pulled all of this together based off of just its understanding of work. Right? So you can start to see if you go into like work items, like, these are all the tasks I have related to it. If you click on one of these, you can see like. Because this one doesn't have that much grounding, I explore that one a bunch. You can start to see like all of the grounding that's associated with it. So like this, this is like the degree of like the, the, like the way that the knowledge graph works on the back end. This is able to cluster these things together, right? So that's what powers also how it determines the workflows. And then you can tweak it of course. Right? 
+Speaker B: Yeah. 
+Speaker A: But anyways, like, like this type of thing is what like every company is like doing work for right now. 
+Speaker B: Is anyone else in the market building this right now? Like is anthropic. 
+Speaker A: Anthropic? No, they are trying to. We'll see how far they get. Because the thing is like this is really hard to do without having indexed all the data because if they do it just via mcp, it's like add call. Right? We can do this because we index so we can create the time series. So they can't do it right now at least unless they basically build glean. So that's one outcome. 
+Speaker B: It feels like co worker is going to turn into glean. 
+Speaker A: Right. Cowork is like, is going to try to. But again like they're not indexing data. 
+Speaker B: I mean that's just like a. There's no like fundamental like limitation. 
+Speaker A: There's none. But like dude, like Google's been trying to do this for five years and they've been failing miserably now like incompetent 
+Speaker B: Like Google because I think the issue is too much corporate politics maybe. So like, like I'm just like yeah, obviously organizational like stuff is more like very important. But like there's, I'm just trying to understand is there actually like a piece of tech? You guys have that. 
+Speaker A: So here, let's, let's run some queries, right? Let's answer some of these questions you have. So let's still run this. Stop. Okay. 
+Speaker B: What is glean as a company's core technological move? Yeah, that's why I don't use Whisper. I use Parrot. 
+Speaker A: Parrot. But it's also apparently t is a dude, the CEO of Whisper. I met him once. 
+Speaker B: He was kind of like a, like 
+Speaker A: One on one when he was trying to. We were trying to buy them. That was on Luna. So it might not be super good, but let's see. 
+Speaker B: Is there like to me I thought like the, the moat was like the 
+Speaker A: System you connect to that is part of the system. Because then it's like that plus being permission aware plus like like you guys 
+Speaker B: Will probably have better luck convincing a company to give you access to like all their data than anthropic will. Yeah, because then you guys don't train models. Exactly. 
+Speaker A: So this is why KKR did not do anything big with the model, the labs, because their IP is their, their operating label. Right. That's why they're talking to us so much. 
+Speaker B: So like it seems like private equity and like tech have already like started talking a lot. Lot like everywhere you. 
+Speaker A: Large private equity firms. 
+Speaker B: Yes, large private equity firms. Like what are the size of companies that those guys are buying? 
+Speaker A: Hundreds of millions, maybe, maybe like low hundreds, high double digits, if that. Depending on the fund size and where they're trying to. 
+Speaker B: So when you go to like a company that's let's say 10 million to 50 million, we can walk around like what changes? Like is the workflow and all that so complicated that all this about data is like still valuable? 
+Speaker A: So the thing that's valuable with this data. So like there's part of this. Yes, because like how do you, how do you map those workloads today? You send a human to do it, right? Maybe you send an agent to ask questions or you like. So like within AI, for example, what they do is they will like they'll have a browser based screen recorder for two weeks with a subset of the population and they'll use that to improve. So that's one piece. The bigger piece that people are struggling with is what is the ROI of the payments on the. How does work actually change if time is being saved? Where is that going? And is that correlated to higher metrics? Because the two questions people are asked that I've heard two flavors. I've heard one is can I fire people people and still retain revenue growth the way it is? 2 is going to get more productivity out of each person. And there's no way of seeing that 
+Speaker B: Today because why is that such a hard question? I actually don't understand because how, how 
+Speaker A: Are you supposed to see like what, where people are spending their time and what the output is like you're building all these agents, are they actually doing anything? It's hard to tell, right? 
+Speaker B: What do you mean it's hard to tell? 
+Speaker A: Like, okay, so take any 500,000 person organization, non engineering function. 
+Speaker B: You said 5,005. 
+Speaker A: 500 to a thousand. 
+Speaker B: Okay. 
+Speaker A: Okay. Take, Take any of the booking companies we were talking to early last year. Sure. Okay. Take the pick your favorite. 
+Speaker B: Yeah. 
+Speaker A: Okay, take the box company, the storage company. 
+Speaker B: Yeah. 
+Speaker A: Okay, let's say I built agents to 
+Speaker B: Run the whole business because that company could be like three agents in three months. 
+Speaker A: But like let's, let's say that they're not sophisticated enough with how they think. Right? Like let's say they're trying to replace some of their salespeople or they're like trying to do their build agents for their sales people. Okay, how do I know? Let's say this agent saves you four hours a day as a salesperson. In theory, that's the theory of it. 
+Speaker B: But like the, the measurement itself is strange to me because it's not outcome based. 
+Speaker A: That's what you're saying, right? 
+Speaker B: Yeah, yeah. Like why is. Like why are we measuring time? Like why not measure how many sales calls they make a day, how many they convert a day? Like those types of metrics. Yeah. 
+Speaker A: So you should. But the thing is like how the agents are correspond to that is a question. Right. Because not everything you're gonna do to like convert a call is gonna be based on the agent itself. 
+Speaker B: Right, Right. But like I have the baseline math. Right. And I can say like on average, you know, Jimmy spends. Jimmy calls 20 businesses. 
+Speaker A: Yeah. 
+Speaker B: Three of them convert. Like he claims. You know, whether he's right or wrong. He claims he spends four hours in my new agentic process. Like here's how it's going to look. This is the cost. Like is, is, is it. Is it the computation that's hard or is it the confidence in that number? 
+Speaker A: The confidence in that number because you don't like what data do you have to back that confidence to back that number? Let's say 500 salespeople now. And you've deployed a prep call agent. Right. Or something to assist them with prepping. Ideally you should see higher conversion. How many of them are actually using it versus not when they're using it. Are they then like actually verifying the output from it? And like of those 500, some are going to be higher performing than others. Are those people using it differently? Can I get away with 400 now because I now have this agent? Because all this time is being saved or is the time that they're saving from this agent being reinvested in other accounts or other. Other prospects? 
+Speaker B: Let's keep walking. I think we're in a good spot. I think this is very like good conversation. Let's keep going. The. So you asked actually two get categories of questions. One group of one set of questions you asked was product. Like product and deployment questions. Right. Like depending on who I am, like whether I'm the deployment manager, the product manager or like the internal champion of the customer. Like all those kind of like the data that answers those questions is the same how are they actually using it, are they actually reviewing it, blah, blah, blah. 
+Speaker A: Right. 
+Speaker B: And I can tell you like the data will pretty quickly, if you have the right data, tell you if they're using it or not. Because you'll be able to see like how long did they open the card that had the detail. They never opened it. 
+Speaker A: Yeah. 
+Speaker B: Clear and they just hit the like default check. But you can like glean some of those things out like pretty quickly. 
+Speaker A: That's why it's called. So they changed the name from Ask CEO whatever the they came up with to begin with. Autistic. 
+Speaker B: So I think in that sense 
+Speaker A: That's 
+Speaker B: One set of questions. 
+Speaker A: Yeah. 
+Speaker B: Is like the, is this working the roi, like all those things, right? 
+Speaker A: Yeah. 
+Speaker B: Now setting up your product for the COO to like be able to get that level of like, like number out like pretty automatically. Not easy, but like doable. The second question you asked is, okay, so now I know that Jimmy can handle eight, you know, people a week instead of five. 
+Speaker A: Yeah. 
+Speaker B: What like. And I have a certain capacity now you're asking like a very, a question that's very much about the business that you're like, product will never answer your correct. Maybe something like glean could have a reasonable guess at it because it has other company context and stuff. 
+Speaker A: Yeah. 
+Speaker B: But that's always going to be like a principal agent question. 
+Speaker A: Yeah. 
+Speaker B: Where you don't want AI making that decision alone. 
+Speaker A: Yeah. 
+Speaker B: And that if you like want to answer questions like that and you think a lot of the value is there, then you want to be education or maybe, maybe a consultancy if you like prove good results and like can build a big company. 
+Speaker A: So you're saying for the second piece 
+Speaker B: Is like you're one is like operational process you operate in opera in method A. I am proposing using method B. Yeah. And my product that I'm kind of giving to you on top of which you're gonna run method B has all the data I need to like answer the productivity ROI questions. You maybe like do believe it, don't believe it, or maybe we need to do a little bit more work than what's being done today to convince you in the goodness of that number. But that number for sure exists and is measurable. 
+Speaker A: Yeah. 
+Speaker B: Is just work away. 
+Speaker A: Yeah. 
+Speaker B: The second question is, now that I have the roi, etc, how do I change my business? 
+Speaker A: Yes. Yes. 
+Speaker B: Like what's the second order effect of upgrading my business? Right. And that's never going to be like something answer. You ship via the product or the platform. 
+Speaker A: No, because. Because that is a, that is a business issue. But it can be informed by the product. Right. Because like, let's say, let's say I'm in a market where like, I mean, sales as an example is this formula. Right. More reps equals higher revenue in a market where there's shared and taken. Yeah. So like in that case I can hire more or like, or might like one trust because the company in front of me, that's good. And they're like, hey, can I fund this? Can I, can I get one out the of per person? Right? And through this data you can do that so you can inform some of your business decisions. Where this now gets doubly interesting is. And this is, but this is where there's a lot of this. Combine the assembly for enterprise with this as an idea, right. As models continue to get better and longerizing, agents are able to do things that couldn't be done previously. You're going to constantly have to transform agents in these processes. Right. So like the decisions you make are not gonna wrong based on the market and based on what your capabilities and your emotions as a company. And so like. 
+Speaker B: Right, but like certain, so, but I guess the both of these are important questions. My question to you is where does like the untapped value live? Is it in the first set of questions or the second? Because if it's in the second set of questions, you're basically operating a business and you should just go buy the business as like your, as like the company you build, right? If it's the first set of questions, then you should build a platform that helps private equity or business operators make those decisions. And you know, if they're struggling with that, then the answer is probably like services advisory version of it or like there's a slightly different business model around it. 
+Speaker A: This trouble today is answer the first problem. They can't 
+Speaker B: And 
+Speaker A: Why. 
+Speaker B: Well, there's also two different things. Like the answer is very clearly like they where they is someone who can afford glean will be able to sit and like without too much difficulty. The question is like how does someone who can't afford glean like what's your Minimum contract size? 250k a year or something. 
+Speaker A: Yeah. 
+Speaker B: Okay, so like you as a business you probably need to have like 10 million of EBITDA or something, right? Feel good about to spend like what are your like smallest customers that you want to keep around? 
+Speaker A: I mean most of them. Over time. 
+Speaker B: Yeah, exactly. But like, so we this like, like, like you think of the businesses that are like at your smallest contract size and you still want to eat them, you know, next five years. 
+Speaker A: The only ones in the keep are either like es that are at that contract size or startups that we can grow rapidly. Everybody else and those people, the people that. So here's actually the other insight. 
+Speaker B: At the 250k mark, even though, even at that level like you have to Believe there's a lot more promise of future growth. 
+Speaker A: You have to believe that the other thing that we're seeing is at that level of, of the market those companies are small enough that quad plus MCP is good enough at least for the purposes of information retrieval. 
+Speaker B: And all kind of pointing towards like if the like the opportunity is not the behemoths of the world, like those guys are already going after AI and they're doing so partnership etc from each other. 
+Speaker A: Yeah. 
+Speaker B: So the opportunity is like the next tier down. 
+Speaker A: Yeah. 
+Speaker B: And we can reproduce a lot of like the workflow stuff with Lean without all the like indexing etc. Like this is continually pointing towards like the marketplace, the platform that wraps diligence, transformation, etc and selling it for mid market. And so like before we get in bed with Lisa, she's great. But you could, you could also like then consider the world in which we go find another PE person that wants to do this if they're better aligned with like an industry. If we like end up there. 
+Speaker A: Yeah. 
+Speaker B: But my take is like I think anything that's like Fortune 2000 is like probably out of reach. If you have to believe we have to see 2000. 
+Speaker A: No, we're not, we're talking about, we're talking about the other was in there was all of these funds that have assets that they cannot liquidate. So like have they. 
+Speaker B: They're going to zero, right? 
+Speaker A: They're going to zero or those assets have been like not returning for like have you tried everything back to help with that? 
+Speaker B: Well, if you do fund math are making those assets return, like really like for a vc, the answer is no. I don't know the answer. 
+Speaker A: For a vc, I think if a C. To achieve all the capital tied up in the process, you can't raise the substantive round then maybe. Or do subsequent funds then maybe. 
+Speaker B: So. This is interesting. No, I mean it feels like there's actual white space. I. Everyone's like, oh, we're just at the beginning. But to me it doesn't feel like there's a lot of like actual like addressable white space out there. There's a lot of like go build like a third tier of al services business that makes you and like your friends relatively happy. But I don't think you'll be able to sleep at night knowing. That. You can quad MCP do some basic like the real question is do you entrances that are like elder approval for this have their data in such a way where like you could actually even product business or would like someone have to be more Actively looking to sell and you take like a $5,000 like onboarding fee if you have to sit there and scan their documents. Like, are they nearly digital enough? 
+Speaker A: I mean, so that's one of the questions. I think what we're also seeing is that there's a lot of like we bought this company called Aaron that does like best in class documents. 
+Speaker B: Yeah. 
+Speaker A: Because like the models today at least are not good enough to add parts and long documents. Or like you have to understand the images, but there's so much content that listings. Right. There's open content that lives in images that aren't actually being indexed properly. That could be competitive advantage. Like this is the stuff I was telling you about, like the dealer visit. Right. So I say this to say like there's the data that exists today and how well organized that is, how well like you can access that and how clean it is. And then there's also all the other sources of data that should be integrated and like the models will eventually get to a point where they're good enough at that. Like, I have no doubt about that. Right. But like, then it's like, okay, well how do you, how do you actually expand the data you have access to? And if you're intelligent about that, you actually can gain competitive attention. 
+Speaker B: What does like the right business model or this is like, because at the end of the day, like if the data exists in a digital form, it's generally pretty easy to like build any sort of product that will make it useful. And if we're truly like designing this around like the sales process, then you don't have to be perfect. Right. 
+Speaker A: So when you say this, what do you say? 
+Speaker B: So what I'm like imagining is the problem space we roughly like kind of come to is AI transformation is not a tech problem. Or it's not only a tech problem. 
+Speaker A: Yeah. 
+Speaker B: It's an organizational design problem. 
+Speaker A: Yes, right, yes. 
+Speaker B: And so if I am a, you know, mid sized PE funder, like a larger but not behemoth PE fund, where I struggle with my diligence is understanding like what is the actual opportunity. Right. Like I have to go in, I have to first of all understand what the agents can do. Then I have to go in and like ingest a bunch of data sources, try to figure out like all of like what can an agent do here? Then I have to understand the second order impact on the business. Right. Then I have to like model all the finances out. Yeah, right. And by the time I've done this, like it's taken three months and There's a bunch of, like, low quality out there and there's a bunch of data missing. Blah, blah. Right. So this is a really hard thing. 
+Speaker A: Yeah. 
+Speaker B: There's also like a ton of these assets coming on the market. 
+Speaker A: Yes. 
+Speaker B: So volume is like being able to handle volume. Volume is important. 
+Speaker A: Yeah. 
+Speaker B: Because while there's a ton of assets, there's not really a lot of good ones. 
+Speaker A: Yeah, yeah. 
+Speaker B: Right. 
+Speaker A: Yeah. 
+Speaker B: So if you build a platform or like. Okay, so the core, like, IP of this would be like, connect to a business. 
+Speaker A: Yeah. 
+Speaker B: And get an opportunity. Like, this is a really high quality opportunity. This is a low opportunity. 
+Speaker A: Yeah. 
+Speaker B: They have. They. Deals fall apart because of pricing. So like, if you're like Zillow for selling, like, yes. Businesses. 
+Speaker A: That's exactly it. And so then the thing that also comes with this too. Right. Is this. This is where. When I was talking to Lisa, this is where my head is going. So the other things you can think about are like, okay, how do you think about augmenting data capture? You create like an army of voice agents, for example, that goes and interviews everybody, and within a day you've got all the information you need around how the business actually operates. Right. 
+Speaker B: One, I think this is a good idea, man. 
+Speaker A: I do, too. That's why I wanted to talk to you two is if I'm an owner. Right. Typically, most of these owners are not sure of when to sell or how to optimally price because they're based. They're relying on the market telling them the price. But the market is the banker who's working for the people. 
+Speaker B: Yeah. 
+Speaker A: They also don't know how to maximize the squeeze, especially if they're trying to retire the next five years to create equity or wealth for their family. Right. So, like, if you actually make this something, like, it's not just like Zillow for the transaction, but it's actually like you come and you upload all of 
+Speaker B: Your information and we will tell you, and that's your free quote within however many days. And at the end of the day, even if we lose you, we got all your data to do it better in the future. 
+Speaker A: Yes. 
+Speaker B: And then the PE guys see the onslaught coming and it no longer, like, becomes a competitive advantage to have this. It's a disadvantage to not have it. 
+Speaker A: But then also, if we think that there's an asset that's interesting because we're Brazilo, you could invest in some of those companies because we have Writer for First Refusals. Right. There's like. Right. Which is the thing that we talking about. So like this. 
+Speaker B: So what you really need is seed deal flow. Like your hook is the product and then your growth is cycle is the market. 
+Speaker A: Yeah. So that, so that is what I was asking her about. Okay. When people are trying to sell, who are the people involved in that process and how do you actually get distribution? Because having something that you found on the web is not how you're going to get there. Right. So since you're talking about brokers, talking about the wealth advisors and the wealth advisors care a lot which is why I had that question in there about like who are the one guys banks and it's private. Where do they sit? Because the other thing like we have to think about is is there data from this that could actually benefit those people so that they're incented more than just permission to actually suggest this platform. Right. Or like if you have a wealth advisor that tells that client, hey use this. Three years of they're planning to sell but they know they want to sell now the L some because they'll make more money as well. 
+Speaker B: Yeah, right. No, I, I do. This is juicy. 
+Speaker A: Yeah, I do too. 
+Speaker B: All right, cool. That's still working. 
+Speaker A: Yeah. So yeah. 
+Speaker B: Yeah. So make sure like get the agency work. Probably have to talk to Lisa about like me getting a good size of like how many buyable there are. 
+Speaker A: Well we have. It was in the report so we should verify. 
+Speaker B: I trend to not like trust those. 
+Speaker A: Yeah, I agree. I agree. 
+Speaker B: Or like at least gut check them with. 
+Speaker A: Yeah with her. 
+Speaker B: And then also figure out like what market are variables. You, you could probably build the product and sell it to like a PE pretty easily. And then once you have enough and you feel good about the product and you build out like the. You build out the like sales like the business basic side of. 
+Speaker A: Yeah, exactly. 
+Speaker B: Have you heard of anyone doing this? 
+Speaker A: Talk to anybody about. 
+Speaker B: I've heard a lot of like similar. You know like I've heard a lot of like individual feature ideas as like like. 
+Speaker A: I. 
+Speaker B: The way to do it would be to like actually represent an ecosystem of buying and selling mid size business as a graph. And then agent then like brought before and after agents and that would inform like basically everything you know which players you can cut out. 
+Speaker A: Like how well they're going to what what is seems like a little bit harder to do. 
+Speaker B: But like two this is big question here. 
+Speaker A: One is are they going to be comfortable uploading their data? Okay. Because 
+Speaker B: This is where. 
+Speaker A: Okay. Two is what happens. 
+Speaker B: Every GSB you're doing search immediately. 
+Speaker A: Immediately. That's exactly. And then what you're also doing is you're saying hey, it's not. You also need to be like PE level, like JP Morgan, like top tier PPG level circulation. Like right, like PPG level financial combine the tier. Tell you what. And they don't know what the. 
+Speaker B: So if you think about the timeline in the next three months or six months, they need to tell their lps how they're fixing their sourcing strategy around like the wave of businesses. 
+Speaker A: Yeah. 
+Speaker B: We probably need to validate like this with people like Lisa, rp, people in pe. 
+Speaker A: Yeah. 
+Speaker B: But like what, what are, what are they telling their boards in the next six months and how can you position the product that like that would be something they'd be excited to tell their board about. Then six to 18 months you're actually delivering the product. Yeah, actually helping source build. Maybe ideally like two or three partner that you're working with really closely. Only on the like they have their. The deal flow is all this. They already like own the data. All we have to do is give them CDRs on top of like you know him believe them believing that we can do it securely. 
+Speaker A: Yeah. 
+Speaker B: Which is pretty easy when it's a design partner. Cuz you just say like I turn off global access. Like no one can touch my. Yeah, I know the engineer that we should like hire stuff too. So we're not like daily writing code October. This is exciting enough that I think October we got access to one or two good researchers. I think this is good. 
+Speaker A: Yeah. I just don't want to precede you with all of this because I wanted. 
+Speaker B: Yeah, no, no, I think this is quite legit. The other idea that you know, we don't have to dive into into right now. But the other idea that is interesting to me is so the way the ads world work right now and the reason like you know, people like the winners in ads today are Google and Facebook. Right. Is there anyone else? Amazon. A little. I don't know what the offer. I don't know exactly how like product recommendations work today. I think, I don't know like how it works specifically. You could assume like if they hadn't done anything around this it would be like a combination of web search and free training which would inform. Right. And I think if you do Google, that's actually how it works. Whether or not. Because I don't think they're like monetizing that piece of. Yeah, I don't think they're monetizing that piece of the business yet. But I don't know for ads they May have like an entirely. They probably have an entirely different. So the Google business is like Google's, you know, business based institution to ingest the actual like information about your business. And this integrates with ads and all that. And my question is, is there a third party version of Google business where you look something like, you know, there is like already graphic engine optimization and like that kind of stuff. 
+Speaker A: Okay. 
+Speaker B: But is there a middle where you become a connector and provide that data to allies or like surface it organically? I don't know if there's like the problem is geo already exists. 
+Speaker A: Right. 
+Speaker B: So everyone that already has customers. Well, is now going to like build a new connector. 
+Speaker A: Sure. 
+Speaker B: So I don't know. And the unique angle that opens up a brand new marketplace platform or that kind of thing is I think if incumbents go after building these chapters, like all it does is provide data to the. Those with data do that. Well, at that point you look like an aggregator. Like the, the Muse connector is simply like an implementation detail and the core IP is like you're basically providing another data set. 
+Speaker A: Right. 
+Speaker B: And maybe that, you know, that data set gets almost like a function instead of a table you can personalize. But I, I feel like if we wanted to pursue that angle, we need to understand how that. How does Chinese. 
+Speaker A: Oh, they don't. 
+Speaker B: Mark. 
+Speaker A: Yeah. 
+Speaker B: I feel like, I don't know how excited you are about it. It feels like I just don't know what our. Yeah. It feels like. For us, I think the right to win does not feel. 
+Speaker A: No. 
+Speaker B: Like to me like a lot of our right to win with this comes down to three areas. We know how to build agents. Yeah, we especially you. But I think all three of us to some extent understand organizational transformation, especially as it relates to AI. 
+Speaker A: Yeah. 
+Speaker B: And with partnering with the PE person, like we understand what, like we understand our customers. Right. 
+Speaker A: Y. 
+Speaker B: And this is like a, this is like the modern iteration of the class and be like MBA in tech. 
+Speaker A: Yes. 
+Speaker B: It used to be done as a search fund, now it's done. Or a startup. Now it's done like this. 
+Speaker A: Yep. 
+Speaker B: So it feels like, you know, like if you pick an average like person off the SF streets, like say like, oh, could you do this? Right. The Muse connector, like anyone who's worked for any ads, business, Google, Facebook, etc, probably has a better right to and understands the technology, the ecosystem better. But not for this. 
+Speaker A: Yeah. The other thing on, on the front. Yeah, that was tex ago. 
+Speaker B: Yeah. 
+Speaker A: And she's like, she's ready to rock in Europe if we do something. 
+Speaker B: What is she in the U.S. i don't know. 
+Speaker A: She still Amazon. 
+Speaker B: So where is she based right now? 
+Speaker A: She is based on. I think she said she's going to move. She's actually moving. Looking at moving to the bay. That's what we talked about once her boyfriend sells his business or sells his 
+Speaker B: St in the business. Does she have a like if we brought her on she would require like, like basically I'm in my mental model. Like the engine engineering team I'm thinking of does not require like founder participation. The like if we brought Farah on like I don't think she'd join as employee number one. We either have to give her like her own economics on Europe or like one over X. Yeah. Right. Like I'm thinking like if you, me and Lisa do this right it'd probably be like 1/3. 1/3. 
+Speaker A: 1/3, yeah. 
+Speaker B: Or whatever the equivalent to that is for the business director chosen. 
+Speaker A: Yes. The other thing by the way that she was thinking about too is like. Which is what I was telling you is like I think like where her brain is also really helpful is like on the financial engineering side. Right. Which is like what are ways we can participate in the cap table versus just taking these and like what the medium plan term plan is to get there. Right. 
+Speaker B: I think we should pursue this. 
+Speaker A: Yeah. 
+Speaker B: I think what's the like. Right. So let me next step. 
+Speaker A: Let me, let me, let me give her a call. Okay. She was just like brainstorming stuff. 
+Speaker B: I mean I would be a little careful about like I know it sounds paranoid but I'd be a little careful about people like even people that are close. 
+Speaker A: I'm not telling anyone. I don't think you either. She's like she hasn't told anybody. I do think yes. 
+Speaker B: Like because okay, let's say there's four founders. We probably need to build 250 million dollar business out of this. I mean like maybe I don't know how bad we can do stuff. 
+Speaker A: Like I think, I think it would actually do more harm than good not doing this with her. Because here's why. Right. Like think about it from a relationship standpoint as well. All I'm saying is like I, I think A, like she has good deal flow and good connections. She gives us credibility. B, like she has of hunger to go through this. 
+Speaker B: Yeah. Okay, so I, we should probably run 
+Speaker A: Some 
+Speaker B: Rough numbers with what size this do you need for what outcome? Yeah, for people. I mean I don't know like what the scale of ambition for folks is, but I'm guessing like Lisa's not leaving a P.E. job for like a $5 million outcome. 
+Speaker A: No, she. She wants. And she's already making good economics there to your point. What she wants is to be able to just like, you know, in like 10 years, sit on a portfolio of like, really nice. Pass. Generating assets. 
+Speaker B: She's designing for the like a life, like a reasonable life, but like low work. 
+Speaker A: Yes. 
+Speaker B: In 10 plus years. 
+Speaker A: Which is, I think, what we're all designing. 
+Speaker B: Yeah, I mean, I, I would love that. 
+Speaker A: Yeah. So I think we're all. Okay. 
+Speaker B: And you think Fara would be on board with that? 
+Speaker A: Yeah, I don't think we need far at my point. 
+Speaker B: Oh, I thought you were advocating for. 
+Speaker A: No, no, no. I'm saying I don't think we need her. Like, okay, like, if, if we think that there is value to having her, we can. If we want to just start something on our own, we can do that too. Right. Like with just the three of us is my problem. 
+Speaker B: I'm not saying probably depends on, like, I don't think we need her in the beginning for financial engineering. You can probably bring her on for cheaper with like a significant. 
+Speaker A: Yeah, well, you give her like an advisory stake for like she gets something on the side. Right. Like different ways to cut her 
+Speaker B: Or if you started your own business, she gets like. 
+Speaker A: Yeah, there's like, what I'm doing in me. What she's doing. Right. So she has really deep. Like, this is the one thing she has. Like, she's a, like an insanely good salesperson and has very deep network. 
+Speaker B: Where is the network? 
+Speaker A: Oh, it's all. It's mostly. It's actually two things. She knows everybody. One is like, obviously hard enterprises. Right. Like the coo, CTO would do this or it would be helpful because all of those people are probably investing in 
+Speaker B: A series of assets. 
+Speaker A: Right. And then obviously, like through. 
+Speaker B: Yeah, 
+Speaker A: Yeah. So that's nice. We can give her. Like, the point is, I think we should build this. We should build conviction realm. The reality different. 
+Speaker B: Okay. So the. There needs to be one. Like, I don't know. I don't really like investment. I've done them twice now for like other business ideas that I thought were reasonable. And it takes way too long to get to a specific idea or not. And it's way too easy to hide behind bad details. Probably need to produce like a real like, investment. Like, but like, way too detailed of an investment. 
+Speaker A: Yeah, yeah. We need to find all the other questions. 
+Speaker B: Yeah. Okay. So I think, like, I can point on. Yeah, I can take point on like, making sure that's happening. Like setting up an outline. 
+Speaker A: Yeah. This is also like 500 some. It's like, it's just more. So she was just thinking about, like, what are some of the quality is not amazing, but I think what she was just trying to put down on paper, like, what are the things that we have to cover in the value proposition? 
+Speaker B: Yeah, I guess. At what point does it make sense to converge the two? I don't know if you know, like, if she knows that. 
+Speaker A: No, she. 

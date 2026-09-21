@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Pew: Google users and AI-summary clicks",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+    "published_or_version": "July 22, 2025; March browsing, April result reconstruction",
+    "method": "Observed browsing from 900 US adults; 68,879 unique searches.",
+    "limitations": "Queries were not randomized. Search results were reconstructed later and could differ from what the user originally saw.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "Adobe: Q2 2026 AI-sourced traffic insights",
+    "url": "https://business.adobe.com/resources/sdk/.2026-q2-ai-traffic-report/q2-2026-adi-ai-sourced-traffic-insights.pdf",
+    "published_or_version": "April 2026; traffic through March 2026",
+    "method": "Adobe Analytics observations; separate consumer survey.",
+    "limitations": "Customer-site coverage, referral attribution and user intent affect comparisons. Retail findings do not measure autonomous checkout volume.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "Shopify: how agentic commerce works",
+    "url": "https://www.shopify.com/blog/how-agentic-commerce-works",
+    "published_or_version": "June 18, 2026; Q1 2026 growth metrics",
+    "method": "Platform-reported traffic, order growth and deployment status.",
+    "limitations": "No absolute denominator supplied for the growth claims. AI-sourced orders include human-completed checkouts.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "Google: agentic-commerce launch and UCP",
+    "url": "https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/",
+    "published_or_version": "January 11, 2026",
+    "method": "Platform announcement.",
+    "limitations": "Initial eligible-merchant rollout and forward-looking availability; not independent adoption or transaction data.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "Google: UCP updates",
+    "url": "https://blog.google/products-and-platforms/products/shopping/ucp-updates/",
+    "published_or_version": "March 19, 2026",
+    "method": "Product capability announcement.",
+    "limitations": "Cart, catalog and identity capabilities establish technical scope, not usage or commercial outcomes.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "Google Developers: under the hood of UCP",
+    "url": "https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/",
+    "published_or_version": "January 11, 2026",
+    "method": "Primary protocol explanation and reference implementation.",
+    "limitations": "Illustrative integration; interoperability and merchant participation must be checked for a particular deployment.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "Walmart and Google: shopping in Gemini",
+    "url": "https://corporate.walmart.com/news/2026/01/11/walmart-and-google-turn-ai-discovery-into-effortless-shopping-experiences",
+    "published_or_version": "January 11, 2026",
+    "method": "Retailer announcement of a planned experience.",
+    "limitations": "Does not disclose transaction volume, conversion lift or the resulting split of customer economics.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "Visa: completed agent-initiated transactions",
+    "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-partners-complete-secure-agentic-transactions.html",
+    "published_or_version": "December 18, 2025",
+    "method": "Payment-network announcement of partner transactions.",
+    "limitations": "Hundreds of completed transactions establish feasibility, not mass adoption, independent fraud performance or long-run unit economics.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Visa Intelligent Commerce: developer capabilities",
+    "url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Primary payment and authorization architecture.",
+    "limitations": "Available functions and consent controls do not show usage or guarantee prevention of fraud and disputes.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Cloudflare: measuring crawl-to-referral ratios",
+    "url": "https://blog.cloudflare.com/ai-search-crawl-refer-ratio-on-radar/",
+    "published_or_version": "July 1, 2025",
+    "method": "Primary traffic-measurement methodology.",
+    "limitations": "Cloudflare-covered sites; HTML requests and identifiable referer headers. Crawling is neither a citation nor a sale.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "Google Search Central: AI features and websites",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Primary guidance on search eligibility and measurement.",
+    "limitations": "No special AI markup requirement does not mean ranking is predictable; visibility remains platform-dependent.",
+    "accessed": "2026-09-21"
+  }
+]

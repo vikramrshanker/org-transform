@@ -1,0 +1,47 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "Where selected transactions broke after signing an LOI",
+      "kind": "observed",
+      "unit": "Percent of 75 unsuccessful transactions",
+      "rows": [
+        {
+          "label": "Non-earnings diligence",
+          "value": 25.3,
+          "display": "25.3%"
+        },
+        {
+          "label": "Earnings discrepancies",
+          "value": 21.3,
+          "display": "21.3%"
+        },
+        {
+          "label": "Financing",
+          "value": 10.7,
+          "display": "10.7%"
+        }
+      ],
+      "scale_max": 30,
+      "source_ids": [
+        6
+      ],
+      "notes": "Axial, 2025. Selected categories, not an exhaustive breakdown. The first two categories sum to 46.6%. This measures reasons among failed deals, not a 46.6% failure rate across deals.",
+      "assumptions": null
+    },
+    {
+      "title": "Succession cash-flow illustration",
+      "kind": "illustrative",
+      "unit": "USD per year",
+      "assumptions": {
+        "owner_cash_flow": 300000,
+        "replacement_manager": 140000,
+        "maintenance_capex": 30000,
+        "debt_service": 100000
+      },
+      "result": 30000,
+      "formula": "300000 - 140000 - 30000 - 100000; before tax and working-capital changes",
+      "source_ids": []
+    }
+  ]
+}

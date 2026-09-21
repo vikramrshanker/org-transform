@@ -1,0 +1,79 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "Time to complete assigned professional writing tasks",
+      "kind": "observed",
+      "unit": "Time index; control = 100",
+      "rows": [
+        {
+          "label": "Without AI, normalized",
+          "value": 100,
+          "display": "100"
+        },
+        {
+          "label": "With AI, normalized",
+          "value": 60,
+          "display": "60"
+        }
+      ],
+      "scale_max": 100,
+      "source_ids": [
+        2
+      ],
+      "notes": "Noy and Zhang, 2023. The published experiment reports 40% less completion time and 18% higher evaluator-rated quality. The chart normalizes the time result; it is not observed minutes or a firm cost reduction.",
+      "assumptions": null
+    },
+    {
+      "title": "Illustrative cost per accepted case",
+      "kind": "illustrative",
+      "unit": "USD per accepted case",
+      "rows": [
+        {
+          "label": "Initial process",
+          "value": 25,
+          "display": "$25.00"
+        },
+        {
+          "label": "Cheaper model only",
+          "value": 23.2,
+          "display": "$23.20"
+        },
+        {
+          "label": "Redesigned workflow",
+          "value": 9.2,
+          "display": "$9.20"
+        }
+      ],
+      "scale_max": 30,
+      "source_ids": [],
+      "notes": "An invented sensitivity example, not an observed provider cost curve. The largest assumed savings come from review, support and rework. Those are operational hypotheses to test.",
+      "assumptions": {
+        "initial": [
+          2,
+          12,
+          6,
+          5
+        ],
+        "cheaper_model": [
+          0.2,
+          12,
+          6,
+          5
+        ],
+        "redesigned": [
+          0.2,
+          4,
+          3,
+          2
+        ],
+        "components": [
+          "model/tools",
+          "review",
+          "support",
+          "rework"
+        ]
+      }
+    }
+  ]
+}

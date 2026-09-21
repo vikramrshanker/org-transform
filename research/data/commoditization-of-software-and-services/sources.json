@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Epoch AI: inference price trends",
+    "url": "https://epoch.ai/data-insights/llm-inference-price-trends",
+    "published_or_version": "March 12, 2025",
+    "method": "Independent analysis of model prices at fixed benchmark performance.",
+    "limitations": "Historical rates vary by benchmark and period. Token prices exclude integration, review and the cost of an accepted business outcome.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "Noy & Zhang: productivity effects of generative AI",
+    "url": "https://doi.org/10.1126/science.adh2586",
+    "published_or_version": "Science, July 14, 2023",
+    "method": "Randomized experiment; 453 professionals on writing tasks.",
+    "limitations": "Short assigned work products and evaluator scores, not whole-job productivity or firm profit. Published abstract and institutional summary reviewed.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "METR: early-2025 developer productivity experiment",
+    "url": "https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf",
+    "published_or_version": "July 2025; February–June 2025 tools",
+    "method": "Randomized task access; 16 developers, 246 tasks.",
+    "limitations": "Experienced contributors working in familiar mature projects. A narrow historical result, not a current estimate for all developers.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "METR: changes to developer experiment design",
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "published_or_version": "February 24, 2026",
+    "method": "Primary follow-up and methodological analysis.",
+    "limitations": "Later observations suffered selection and measurement problems. The researchers do not provide a dependable universal current speedup estimate.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "Chegg: 2025 full-year results",
+    "url": "https://investor.chegg.com/Press-Releases/press-release-details/2026/Chegg-Reports-2025-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx",
+    "published_or_version": "February 9, 2026; year ended December 31, 2025",
+    "method": "Company financial results and management commentary.",
+    "limitations": "Financial decline is observed; the contribution of AI substitution versus distribution and other changes is not experimentally identified.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "Accenture: FY2025 financial performance",
+    "url": "https://www.accenture.com/en/about/company/integrated-reporting-financial",
+    "published_or_version": "FY2025, ended August 31, 2025",
+    "method": "Company-reported revenue, bookings and investment.",
+    "limitations": "AI classifications are management-defined. Bookings are not recognized revenue or profit; company performance does not establish the whole market.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "Thomson Reuters: 2025 full-year results",
+    "url": "https://ir.thomsonreuters.com/news-releases/news-release-details/thomson-reuters-reports-fourth-quarter-and-full-year-2025",
+    "published_or_version": "February 5, 2026; calendar 2025",
+    "method": "Public-company results, with organic-growth reconciliation.",
+    "limitations": "Growth includes more than AI. Organic and reported revenue growth are different metrics; no isolated causal AI profit measure.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "Thomson Reuters: one million CoCounsel users",
+    "url": "https://investors.thomsonreuters.com/news-releases/news-release-details/one-million-professionals-turn-cocounsel-thomson-reuters-scales",
+    "published_or_version": "February 24, 2026",
+    "method": "Vendor-reported product reach.",
+    "limitations": "Reported users are not a disclosed paid-active-user cohort, retention measure or customer productivity estimate.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Salesforce: Q4 and FY2026 results",
+    "url": "https://www.salesforce.com/news/press-releases/2026/02/25/fy26-q4-earnings/",
+    "published_or_version": "February 25, 2026; fiscal year ended January 31",
+    "method": "Company results and product ARR disclosures.",
+    "limitations": "ARR is a run-rate metric, not period revenue. The combined Agentforce/Data 360 figure includes acquired Informatica Cloud ARR.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Intercom: pricing",
+    "url": "https://www.intercom.com/pricing",
+    "published_or_version": "Price page checked September 21, 2026",
+    "method": "Vendor’s advertised commercial terms.",
+    "limitations": "List price per outcome is not the full customer cost. Eligibility, plan charges and negotiated terms can differ.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "Intercom: pricing FAQs and outcome definition",
+    "url": "https://www.intercom.com/help/en/articles/8344190-pricing-faqs",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Provider definitions of billable events.",
+    "limitations": "A billed resolution can include a customer leaving without requesting more help; it is not independently verified customer success.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 12,
+    "title": "Google Cloud: 2025 DORA findings",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report",
+    "published_or_version": "September 23, 2025",
+    "method": "Primary survey research summary; nearly 5,000 technology professionals.",
+    "limitations": "Associations between AI use and delivery outcomes are not randomized causal estimates. Publisher supplies development tools.",
+    "accessed": "2026-09-21"
+  }
+]

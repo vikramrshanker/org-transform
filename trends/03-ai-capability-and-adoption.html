@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>AI capability and adoption — Organizational Transformation</title><meta content="An evidence-first review of AI capability, workflow redesign and organizational transformation, with documented deployments, measured outcomes and implications." name="description"/><style>
+:root{--ink:#292e29;--muted:#61655c;--green:#365743;--rust:#766d61;--paper:#f8f5ed;--line:#d6d2c6;--soft:#eeeee4;--white:#faf8f2;--sans:"Helvetica Neue",Arial,sans-serif;--serif:Baskerville,"Baskerville Old Face",Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:36px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+::selection{background:#dbe3d6;color:var(--ink)}
+a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--green);outline-offset:5px}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;line-height:1.07;text-wrap:balance}
+h1{font-family:var(--sans);font-size:clamp(68px,7.5vw,112px);font-weight:600;letter-spacing:-.055em;line-height:.99;margin:45px 0 35px;max-width:1000px}
+h2{font-size:clamp(38px,3.65vw,53px);max-width:900px;margin:16px 0 29px}
+h3{font-size:23px;line-height:1.35;letter-spacing:-.028em;font-weight:600;margin:40px 0 14px;text-wrap:balance}
+p{max-width:760px;margin-bottom:23px}
+b,strong{font-weight:600}
+sup{font-size:11px;line-height:0;margin-left:4px;white-space:nowrap}
+sup a{text-decoration:none;margin-right:2px;font-weight:600}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
+.hero{max-width:1200px;margin:auto;padding:47px 58px 48px;border-bottom:1px solid var(--ink)}
+.hero .eyebrow{letter-spacing:.17em}
+.hero-bottom{display:grid;grid-template-columns:1fr 290px;gap:60px;align-items:start}
+.deck{font-size:23px;line-height:1.5;letter-spacing:-.025em;color:var(--muted);max-width:700px;margin:0}
+.meta{font-size:12px;line-height:1.6;color:var(--muted);border-left:1px solid var(--line);padding:1px 0 1px 25px;display:grid;gap:7px}
+.meta span:first-child{color:var(--ink);font-weight:600}
+.report-layout{max-width:1200px;margin:auto;display:grid;grid-template-columns:164px minmax(0,1fr);gap:56px;padding:0 48px;align-items:start}
+.report-sidebar{position:sticky;top:38px;padding:57px 0 25px;max-height:calc(100vh - 45px);overflow-y:auto;scrollbar-width:thin}
+.nav-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:0 0 21px}
+.report-sidebar nav{display:flex;flex-direction:column;gap:2px}
+.report-sidebar nav a{display:flex;align-items:baseline;gap:11px;padding:7px 0 7px 12px;margin-left:-12px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:12px;line-height:1.45}
+.nav-index{font-size:10px;font-variant-numeric:tabular-nums;color:var(--muted);min-width:17px}
+.report-sidebar nav a:hover{color:var(--ink)}
+.report-sidebar nav a[aria-current="location"]{border-left-color:var(--green);color:var(--ink);font-weight:600}
+.report-sidebar nav a[aria-current="location"] .nav-index{color:var(--green)}
+.print-button{border:0;border-top:1px solid var(--line);background:none;color:var(--muted);font:11px var(--sans);padding:18px 0 0;margin:25px 0 0;cursor:pointer;text-align:left}
+.print-button:hover{color:var(--ink)}
+.mobile-contents{display:none}
+.skip-link{position:absolute;left:24px;top:-80px;background:var(--ink);color:white;padding:10px 20px;z-index:30}
+.skip-link:focus{top:12px;color:white}
+main{min-width:0}
+section{padding:64px 0 60px;border-bottom:1px solid var(--line);scroll-margin-top:35px}
+section:last-child{border-bottom:0}
+section>h3{max-width:760px}
+.lead{font-size:21px;line-height:1.6;letter-spacing:-.015em;max-width:800px}
+.brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:39px 0 23px}
+.brief-grid article{border-top:1px solid var(--line);padding:23px 0 21px;display:grid;grid-template-columns:24px 1fr;column-gap:13px;align-content:start}
+.brief-grid .number{grid-row:1/3;float:none;font:12px/1.8 var(--sans);font-variant-numeric:tabular-nums;color:var(--green);padding-top:2px}
+.brief-grid h3{font-size:19px;line-height:1.35;margin:0 0 10px;letter-spacing:-.025em;text-wrap:initial}
+.brief-grid p{font-size:14px;line-height:1.7;margin:0;color:var(--muted)}
+.note{font-size:13px;line-height:1.75;border-left:2px solid var(--green);padding:4px 0 4px 20px;margin:28px 0 0;max-width:800px;color:var(--muted)}
+.note b{color:var(--ink)}
+.takeaway{border-left:2px solid var(--green);padding:3px 0 3px 20px;font-size:16px;line-height:1.65;margin:34px 0 0;max-width:800px}
+.table-wrap{overflow-x:auto;margin:32px 0;scrollbar-width:thin;scrollbar-color:#8f9b8c var(--soft)}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.65;font-variant-numeric:tabular-nums}
+caption{text-align:left;font-size:14px;font-weight:600;padding:0 0 15px;color:var(--ink);line-height:1.5}
+th{font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.085em;text-align:left;vertical-align:bottom;padding:14px 16px;background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted)}
+td{vertical-align:top;padding:19px 16px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{padding-left:14px;width:26%}
+th:last-child,td:last-child{padding-right:14px}
+tbody tr:last-child td{border-bottom-color:#babfb0}
+td strong{font-weight:600}
+.stat{font:36px/1.2 var(--serif);letter-spacing:-.04em;color:var(--green);white-space:nowrap}
+.evidence td:first-child{width:27%;font-size:13px}
+.evidence td:nth-child(2){width:36%}
+.pill{display:inline-block;font-size:9px;letter-spacing:.045em;text-transform:uppercase;color:var(--green);margin-top:8px;line-height:1.5}
+figure{margin:35px 0;background:var(--white);border:1px solid var(--line);padding:28px 28px 24px}
+.figure-head>span{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.figure-head h3{font-size:22px;line-height:1.35;margin:9px 0 24px;max-width:700px}
+figcaption,.small{font-size:12px;line-height:1.7;color:var(--muted);max-width:850px}
+figcaption{border-top:1px solid var(--line);padding-top:17px;margin-top:23px}
+.chart-scroll{overflow-x:auto}
+svg{width:100%;min-width:820px;display:block;overflow:visible}
+svg text{font-family:var(--sans);fill:var(--ink)}
+.axis{font-size:14px;fill:var(--muted)}
+.model{font-size:15px}
+.legend{display:flex;flex-wrap:wrap;gap:11px 23px;font-size:11px;color:var(--muted);margin:0 0 25px}
+.legend span{display:flex;align-items:center;gap:7px}
+.dot,.square{display:inline-block;width:8px;height:8px;background:var(--green);border-radius:50%}
+.square{background:var(--rust);border-radius:0}
+.bars{margin:28px 0}
+.bar-row{display:grid;grid-template-columns:250px 1fr 46px;gap:18px;align-items:center;margin:25px 0;font-size:13px}
+.bar-track{height:9px;background:var(--soft)}
+.bar{height:100%;background:var(--green)}
+.bar-row b{font-size:23px;font-weight:600;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.case{margin:52px 0 0;padding:29px 0 36px;border-top:1px solid var(--ink);scroll-margin-top:35px}
+.case-meta{font-size:9px;letter-spacing:.11em;line-height:1.7;text-transform:uppercase;color:var(--muted);max-width:100%}
+.case h3{font-size:29px;line-height:1.2;letter-spacing:-.04em;font-weight:600;margin:12px 0 26px;max-width:790px;text-wrap:initial}
+.case h4{font-size:10px;line-height:1.5;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:0 0 11px}
+.case p{font-size:15px;line-height:1.7;max-width:780px}
+.case-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:29px}
+.case-grid p{margin:0;font-size:14px}
+.case-bottom{margin:24px 0 0;padding-top:17px;border-top:1px solid var(--line);color:var(--muted)}
+.case .case-bottom{font-size:12px;max-width:none;line-height:1.7}
+.case .case-bottom b{color:var(--ink)}
+.case-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:23px 24px 25px;margin:25px 0;background:var(--soft)}
+.case-metrics>div+div{border-left:1px solid #d6d2c6;padding-left:22px}
+.case-metrics strong{display:block;font:39px/1.15 var(--serif);letter-spacing:-.045em;color:var(--green);white-space:nowrap;margin-bottom:9px}
+.case-metrics span{display:block;font-size:11px;line-height:1.6;color:var(--muted);max-width:240px}
+.case-table caption{font-size:13px}
+.case-table td{padding:14px}
+.case .case-table{font-size:13px}
+.case .table-wrap{margin:23px 0 0}
+.workflow-figure{border:0;background:var(--soft);padding:24px;margin:25px 0}
+.workflow-figure .figure-head h3{font-size:21px;margin-bottom:22px}
+.swimlane{display:grid;grid-template-columns:85px 1fr 14px 1fr 14px 1.2fr;gap:8px;align-items:center;font-size:12px;margin:16px 0}
+.swimlane>b{font-size:9px;line-height:1.5;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.swimlane>div{padding:14px 10px;background:var(--white);border:1px solid var(--line);text-align:center;line-height:1.5}
+.swimlane>span{text-align:center;color:var(--muted)}
+.swimlane .ai-step{background:var(--green);color:white;border-color:var(--green)}
+.workflow-figure figcaption{border-top:0;padding:0;font-size:11px}
+.part-divider{margin:65px 0 0;background:var(--ink);color:white;padding:29px 32px}
+.part-divider span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#bdd3bc}
+.part-divider p{font:20px/1.5 var(--serif);margin:11px 0 0;max-width:700px}
+.design-row{display:grid;grid-template-columns:145px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line);font-size:14px}
+.design-row>b{color:var(--green);font-size:12px}
+.design-row p{margin:0}
+.design-row.changed{background:var(--soft);padding:20px 16px;margin:0 -16px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:21px;margin:32px 0 18px}
+.flow>div{position:relative;border-top:1px solid var(--green);padding:17px 0}
+.flow>div:not(:last-child)::after{content:'→';position:absolute;right:-16px;top:20px;color:var(--muted);font-size:14px}
+.flow span{display:block;color:var(--green);font:26px var(--serif);margin-bottom:14px}
+.flow b{font-size:13px}
+.flow p{font-size:12px;line-height:1.6;color:var(--muted);margin:7px 0 0}
+.total{font-weight:600;background:var(--soft)}
+.source-list{display:grid;grid-template-columns:1fr 1fr;gap:0 36px;list-style-position:outside;padding-left:23px;margin-top:35px;font-size:12px}
+.source-list li{padding:17px 0 21px 5px;border-top:1px solid var(--line);break-inside:avoid;scroll-margin-top:35px;overflow-wrap:anywhere}
+.source-list li::marker{color:var(--green);font-size:10px;font-variant-numeric:tabular-nums}
+.source-list li>a{font-size:13px;font-weight:600;line-height:1.5;text-decoration:none}
+.source-list li>a:hover{text-decoration:underline}
+.source-list p{font-size:12px;line-height:1.65;color:var(--muted);margin:8px 0 0}
+.source-list p b{font-weight:600;color:var(--ink)}
+.source-date{font-size:10px;line-height:1.6;color:var(--muted);margin-top:6px}
+.sources>p{font-size:14px}
+footer{max-width:1200px;margin:auto;border-top:1px solid var(--ink);padding:25px 58px 40px;display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:10px;line-height:1.6}
+footer a{text-decoration:none;white-space:nowrap}
+
+/* Warm paper, a single green accent, and a restrained two-family type system. */
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+h1{font-size:76px;line-height:1.04;max-width:none;margin:31px 0 24px;color:var(--green)}
+h1 em{font-weight:400}
+em,i{font-style:normal}
+h2{font-size:44px;line-height:1.13;margin:17px 0 28px;max-width:830px}
+h3{font-size:27px;line-height:1.25;margin:35px 0 15px}
+p{max-width:720px}
+.hero{padding:35px 48px 33px;text-align:center;border-bottom:1px solid var(--line)}
+.hero .eyebrow{padding-bottom:22px;border-bottom:1px solid var(--line);font-weight:400;font-size:10px;letter-spacing:.16em}
+.hero-bottom{display:block}
+.deck{max-width:650px;margin:0 auto 24px;font-size:17px;line-height:1.65;letter-spacing:0;color:var(--muted)}
+.meta{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 0;border:0;padding:0;font-size:11px;line-height:1.5}
+.meta span{padding:0 17px}
+.meta span+span{border-left:1px solid var(--line)}
+.meta span:first-child{font-weight:400}
+.report-sidebar{padding-top:61px;top:20px;max-height:calc(100vh - 24px);overflow-x:hidden}
+.nav-label{font:normal 17px/1.4 var(--serif);letter-spacing:0;text-transform:none;color:var(--green);margin-bottom:19px}
+.report-sidebar nav a{font-size:12px;margin-left:0;padding:8px 0 8px 8px;border-left-width:1px;gap:9px}
+.nav-index{font-family:var(--serif);font-style:normal;font-size:12px;min-width:17px}
+.report-sidebar nav a[aria-current="location"]{color:var(--green);font-weight:600}
+.print-button{font-size:12px;line-height:1.5}
+.eyebrow{font-size:11px;letter-spacing:.11em;font-weight:400}
+section{padding:62px 0 58px}
+.lead{font-size:19px;line-height:1.75;letter-spacing:0;max-width:740px}
+.brief-grid{gap:0 32px;margin-top:32px}
+.brief-grid article{column-gap:12px;grid-template-columns:22px 1fr;padding:23px 0}
+.brief-grid .number{font:normal 17px/1.5 var(--serif);padding-top:1px}
+.brief-grid h3{font:400 24px/1.2 var(--serif);letter-spacing:-.01em;margin-bottom:12px}
+.brief-grid p{font-size:14px;line-height:1.75}
+.note{border-left-width:1px;font-size:13px;line-height:1.75}
+.takeaway{border-left:0;border-top:1px solid var(--line);padding:19px 0 0;font-size:16px}
+.takeaway>b:first-child{font-family:var(--serif);font-style:normal;font-weight:400;font-size:19px}
+caption{font:normal 18px/1.35 var(--serif);padding-bottom:15px}
+table{font-size:14px;line-height:1.65;font-variant-numeric:lining-nums tabular-nums}
+th{font-size:11px;letter-spacing:.035em;font-weight:600;text-transform:none;color:var(--ink);background:var(--soft);padding:13px 15px}
+td{padding:18px 15px}
+.stat{font-family:var(--serif);font-size:35px;letter-spacing:-.01em;text-align:right}
+.pill{font-size:10px;letter-spacing:.025em}
+figure{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent;padding:24px 0 20px}
+.figure-head>span{font:normal 15px/1.5 var(--serif);text-transform:none;letter-spacing:0;color:var(--green)}
+.figure-head h3{font:400 26px/1.2 var(--serif);letter-spacing:-.01em;margin:9px 0 24px;max-width:760px}
+figcaption,.small{font-size:12px;line-height:1.75}
+figcaption{border-top:0;padding-top:0;margin-top:20px}
+.legend{font-size:12px;gap:12px 22px}
+.bar-label{font-size:14px}
+.bar-row{grid-template-columns:250px 1fr 55px;gap:20px}
+.bar-row b{text-align:right;font-size:22px;letter-spacing:0;font-weight:400}
+.bar-track{height:10px;background:#e4e5d9}
+.case{border-top:1px solid #9ea996;margin-top:43px;padding:27px 0 30px}
+.case-meta{font-size:10px;line-height:1.7;letter-spacing:.065em}
+.case h3{font:400 31px/1.18 var(--serif);letter-spacing:-.012em;max-width:780px;margin:13px 0 24px}
+.case h4{font-size:11px;letter-spacing:.025em;font-weight:600;text-transform:none}
+.case-grid{gap:26px}
+.case-grid p{font-size:14px}
+.case-metrics{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0;gap:24px;margin:24px 0}
+.case-metrics strong{font:400 39px/1.15 var(--serif);letter-spacing:-.015em;font-variant-numeric:lining-nums tabular-nums}
+.case-metrics span{font-size:12px;line-height:1.6}
+.case .case-bottom{font-size:13px;line-height:1.7}
+.case-table caption{font:normal 18px/1.35 var(--serif)}
+.case .case-table{font-size:14px}
+.case-table td{padding:14px 13px}
+#case-hiring th:not(:first-child),#case-hiring td:not(:first-child),#economics th:not(:first-child),#economics td:not(:first-child){text-align:right}
+#adoption th:nth-child(2){text-align:right}
+#case-hiring td:not(:first-child),#economics td:not(:first-child){white-space:nowrap}
+.workflow-figure{background:var(--soft);border:0;padding:24px}
+.workflow-figure .figure-head h3{font:400 25px/1.2 var(--serif)}
+.swimlane{font-size:13px}
+.swimlane>b{font-size:11px;font-weight:400;letter-spacing:0;text-transform:none}
+.swimlane>div{background:var(--paper);border-color:#d1d5c6}
+.workflow-figure figcaption{font-size:12px}
+.part-divider{border-top:3px double #9ea996;border-bottom:1px solid var(--line);background:transparent;text-align:center;padding:27px 25px;margin-top:58px;color:var(--ink)}
+.part-divider span{font:normal 20px/1.3 var(--serif);text-transform:none;letter-spacing:0;color:var(--green)}
+.part-divider p{font:400 16px/1.7 var(--sans);max-width:660px;margin:12px auto 0}
+.design-row>b{font-size:13px;font-weight:600}
+.flow span{font-style:normal}
+.source-list li>a{font-size:14px;font-weight:400;text-decoration:underline;text-decoration-color:#b0b8a7;text-underline-offset:3px}
+.source-list p{font-size:13px;line-height:1.65}
+.source-date{font-size:11px}
+.source-list li::marker{font-size:12px}
+footer{border-top:1px solid var(--line);padding:25px 48px 35px;font-size:11px}
+
+@media(min-width:1450px){.hero{padding-top:43px;padding-bottom:35px}}
+@media(max-width:1150px){
+html{scroll-padding-top:85px}.hero{padding:35px 40px 40px}h1{font-size:68px}.hero-bottom{grid-template-columns:1fr 240px;gap:30px}.deck{font-size:17px}.report-layout{display:block;padding:0 40px;max-width:980px}.report-sidebar{display:none}.mobile-contents{display:block;position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:0 40px}.mobile-contents summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600;height:54px;list-style:none}.mobile-contents summary::-webkit-details-marker{display:none}.mobile-contents summary::after{content:'+';font-size:20px;font-weight:400;color:var(--green)}.mobile-contents[open] summary::after{content:'−'}.mobile-contents nav{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;padding:5px 0 20px;max-height:65vh;overflow-y:auto}.mobile-contents nav a{padding:11px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-decoration:none;display:flex;gap:10px}.mobile-contents nav a[aria-current="location"]{color:var(--ink);font-weight:600}.mobile-contents nav .print-button{margin:0;padding:8px 0;border:0}.nav-current{font-weight:400;color:var(--muted);margin-left:18px;margin-right:auto}.case,section,.source-list li{scroll-margin-top:24px}footer{padding:23px 40px 35px}
+}
+@media(max-width:680px){
+body{font-size:16px}.hero{padding:26px 23px 33px}.hero .eyebrow{font-size:9px;max-width:none;line-height:1.8;padding-bottom:19px;letter-spacing:.10em}h1{font-size:clamp(43px,10.5vw,58px);letter-spacing:-.018em;margin:29px 0 21px}.hero-bottom{display:block}.deck{font-size:16px;line-height:1.65}.deck br{display:none}.meta{display:grid;border:0;padding:0;margin-top:22px;gap:6px;font-size:11px}.meta span{padding:0}.meta span+span{border:0}.report-layout{padding:0 23px}.mobile-contents{padding:0 23px}.mobile-contents summary{height:54px;font-size:12px}.nav-current{font-size:11px}.mobile-contents nav{gap:0 15px}.mobile-contents nav a{font-size:12px}.mobile-contents .nav-index{font-size:9px;min-width:13px}section{padding:43px 0}.eyebrow{font-size:10px;letter-spacing:.075em}h2{font-size:34px;line-height:1.16;letter-spacing:-.015em;margin:15px 0 24px}h2 br{display:none}h3{font-size:25px;margin-top:32px}.lead{font-size:18px;line-height:1.7}.brief-grid{grid-template-columns:1fr;margin-top:28px;gap:0}.brief-grid article{padding:21px 0}.brief-grid h3{font-size:23px}.brief-grid p{font-size:14px}.note{font-size:13px;padding-left:15px}.takeaway{font-size:15px;padding-left:0}.table-wrap table{min-width:620px}.table-wrap{margin:25px 0}table{font-size:13px}figure{padding:22px 0;margin:28px 0}.figure-head h3{font-size:25px}.legend{font-size:11px;gap:10px 15px}.chart-scroll{margin:0 -3px}.bar-row{grid-template-columns:1fr 45px;gap:9px;margin:21px 0}.bar-label{grid-column:1/-1;font-size:12px}.bar-track{grid-column:1}.bar-row b{font-size:21px}figcaption,.small{font-size:12px}.case{margin-top:35px;padding:25px 0 25px}.case h3{font-size:29px;line-height:1.2}.case-meta{font-size:10px;letter-spacing:.035em}.case p{font-size:14px}.case-grid{grid-template-columns:1fr;gap:22px}.case h4{font-size:10px}.case-metrics{grid-template-columns:1fr;gap:0;padding:0;margin:23px 0}.case-metrics>div{display:grid;grid-template-columns:1.25fr 1fr;gap:15px;align-items:center;padding:17px 0}.case-metrics>div+div{border-left:0;border-top:1px solid #d6d2c6;padding:17px 0}.case-metrics strong{font-size:clamp(22px,7.5vw,30px);margin:0}.case-metrics span{font-size:12px}.case .case-bottom{font-size:13px}.case .case-table{min-width:530px}.workflow-figure{padding:18px}.workflow-figure .figure-head h3{font-size:24px}.swimlane{grid-template-columns:1fr;gap:5px;margin:22px 0}.swimlane>b{margin-bottom:6px}.swimlane>span{transform:rotate(90deg)}.swimlane>div{padding:12px}.part-divider{margin-top:37px;padding:23px}.part-divider p{font-size:15px}.design-row{grid-template-columns:1fr;gap:8px;font-size:13px}.design-row.changed{margin:0 -9px;padding:18px 9px}.flow{grid-template-columns:1fr 1fr;gap:16px 22px}.flow>div::after{display:none}.source-list{grid-template-columns:1fr;margin-top:25px;padding-left:22px}.sources>p{font-size:13px}footer{display:block;padding:23px 23px 30px;font-size:10px}footer a{display:block;margin-top:14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+@page{size:A4;margin:16mm}html{scroll-behavior:auto}body{font-size:10pt;line-height:1.5;background:white;color:#172622}.skip-link,.report-sidebar,.mobile-contents{display:none!important}.hero,.report-layout,footer{max-width:none;padding:0;display:block}.hero{padding-bottom:20px;margin-bottom:0}.hero .eyebrow{font-size:8pt}h1{font-size:40pt;margin:25px 0 24px}.hero-bottom{display:block}.deck{margin:0 auto 17px}.meta{display:flex;justify-content:center;border:0;gap:5px}.meta span{padding:0 8px}.meta span+span{border-left:1px solid var(--line)}.deck{font-size:14pt}.meta{font-size:8pt}section{padding:27px 0;scroll-margin:0}h2{font-size:25pt;break-after:avoid}h3{font-size:15pt;break-after:avoid}.eyebrow{font-size:8pt}.lead{font-size:12pt}.brief-grid{grid-template-columns:1fr 1fr;gap:0 25px;margin:24px 0 12px}.brief-grid article{padding:16px 0;break-inside:avoid}.brief-grid h3{font-size:11pt}.brief-grid p{font-size:9pt}.brief-grid .number{font-size:9pt}.note,.takeaway{font-size:9pt;padding-left:13px;margin-top:20px}.table-wrap,.chart-scroll{overflow:visible}.table-wrap table,.case .case-table{min-width:0}table,.case .case-table,.evidence td:first-child{font-size:8pt;line-height:1.45}th{font-size:7pt}th,td,.case-table td{padding:9px}caption,.case-table caption{font-size:9pt}thead{display:table-header-group}tr{break-inside:avoid}figure{padding:16px;break-inside:avoid;margin:24px 0}.figure-head h3{font-size:13pt}.figure-head>span{font-size:8pt}.legend{font-size:8pt;margin-bottom:16px}svg{min-width:0}.small,figcaption{font-size:8pt}figcaption{margin-top:16px;padding-top:12px}.bar-row{grid-template-columns:220px 1fr 35px;font-size:9pt;margin:15px 0}.bar-row b{font-size:15pt}.case{padding:20px 0;margin:25px 0 0;break-inside:avoid}.case h3{font-size:18pt;margin:10px 0 17px}.case-meta{font-size:7pt}.case p,.case-grid p{font-size:9pt}.case-grid{gap:20px}.case h4{font-size:8pt}.case .case-bottom{font-size:8pt;padding-top:12px;margin-top:16px}.case-metrics{grid-template-columns:repeat(3,1fr);padding:15px 0;gap:15px;margin:18px 0}.case-metrics strong{font-size:25pt}.case-metrics span{font-size:8pt}.case-metrics>div{display:block;padding:0}.case-metrics>div+div{border-top:0;border-left:1px solid var(--line);padding:0 0 0 15px}.workflow-figure{padding:16px}.workflow-figure .figure-head h3{font-size:13pt}.swimlane{font-size:8pt;grid-template-columns:65px 1fr 12px 1fr 12px 1.2fr;gap:5px}.swimlane>b{font-size:7pt}.swimlane>div{padding:9px}.workflow-figure figcaption{font-size:8pt}.part-divider{padding:20px;margin-top:30px;break-inside:avoid}.part-divider p{font-size:10pt}.part-divider span{font-size:14pt}.design-row{font-size:9pt;grid-template-columns:110px 1fr;gap:15px}.design-row>b{font-size:9pt}.flow{grid-template-columns:repeat(4,1fr);gap:20px;break-inside:avoid}.flow b{font-size:9pt}.flow p{font-size:8pt}.source-list{display:block;columns:2;column-gap:30px;font-size:8pt}.source-list li{padding:12px 0;break-inside:avoid}.source-list li>a{font-size:9pt}.source-list p{font-size:8pt}.source-date{font-size:7pt}.sources>p{font-size:9pt}footer{font-size:8pt;padding-top:18px;margin-top:25px}a{color:inherit}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style></head><body><a class="skip-link" href="#report-content">Skip to report</a>
+<header class="hero" id="top">
+<div class="eyebrow">Organizational Transformation / Market research / 01</div>
+<h1>AI capability<br/><em>
+and adoption</em></h1>
+<div class="hero-bottom"><p class="deck">From task capability to workflow redesign<br/>
+and organizational change.</p><div class="meta"><span>20 September 2026</span><span>Evidence review · Version 3</span><span>US focus, international comparisons</span></div></div></header>
+<details class="mobile-contents"><summary>Contents <span class="nav-current">Executive brief</span></summary><nav aria-label="Report sections, compact"><a href="#brief"><span aria-hidden="true" class="nav-index">—</span><span>Executive brief</span></a><a href="#capability"><span aria-hidden="true" class="nav-index">01</span><span>Capability</span></a><a href="#adoption"><span aria-hidden="true" class="nav-index">02</span><span>Adoption</span></a><a href="#results"><span aria-hidden="true" class="nav-index">03</span><span>Measured outcomes</span></a><a href="#workflows"><span aria-hidden="true" class="nav-index">04</span><span>Workflow changes</span></a><a href="#barriers"><span aria-hidden="true" class="nav-index">05</span><span>Adoption barriers</span></a><a href="#organization"><span aria-hidden="true" class="nav-index">06</span><span>Organization</span></a><a href="#implementation"><span aria-hidden="true" class="nav-index">07</span><span>Implementation</span></a><a href="#economics"><span aria-hidden="true" class="nav-index">08</span><span>Economics</span></a><a href="#implications"><span aria-hidden="true" class="nav-index">09</span><span>Opportunities</span></a><a href="#questions"><span aria-hidden="true" class="nav-index">10</span><span>Open questions</span></a><a href="#sources"><span aria-hidden="true" class="nav-index">—</span><span>Sources</span></a><button class="print-button" onclick="window.print()">Print / save PDF ↗</button></nav></details><div class="report-layout"><aside class="report-sidebar"><div class="nav-label">In this report</div><nav aria-label="Report sections"><a href="#brief"><span aria-hidden="true" class="nav-index">—</span><span>Executive brief</span></a><a href="#capability"><span aria-hidden="true" class="nav-index">01</span><span>Capability</span></a><a href="#adoption"><span aria-hidden="true" class="nav-index">02</span><span>Adoption</span></a><a href="#results"><span aria-hidden="true" class="nav-index">03</span><span>Measured outcomes</span></a><a href="#workflows"><span aria-hidden="true" class="nav-index">04</span><span>Workflow changes</span></a><a href="#barriers"><span aria-hidden="true" class="nav-index">05</span><span>Adoption barriers</span></a><a href="#organization"><span aria-hidden="true" class="nav-index">06</span><span>Organization</span></a><a href="#implementation"><span aria-hidden="true" class="nav-index">07</span><span>Implementation</span></a><a href="#economics"><span aria-hidden="true" class="nav-index">08</span><span>Economics</span></a><a href="#implications"><span aria-hidden="true" class="nav-index">09</span><span>Opportunities</span></a><a href="#questions"><span aria-hidden="true" class="nav-index">10</span><span>Open questions</span></a><a href="#sources"><span aria-hidden="true" class="nav-index">—</span><span>Sources</span></a></nav><button class="print-button" onclick="window.print()">Print / save PDF ↗</button></aside><main id="report-content">
+<section id="brief">
+<div class="eyebrow">The evidence in two minutes</div>
+<h2>Better tools are changing<br/>
+how work is divided.</h2>
+<p class="lead">AI has improved individual tasks. There is also evidence of a deeper change: organizations are separating information collection from judgment, moving routine work into systems, and changing the roles of reviewers and specialists. The economic return depends on how that new division of work performs.</p>
+<div class="brief-grid">
+<article><span class="number">01</span><h3>Capability is the starting point</h3><p>Benchmarks show a wider technical range; workplace studies show gains in bounded tasks. Neither measures an entire organization’s transformation. <sup><a href="#s01" title="METR: task-completion time horizons">[1]</a>,<a href="#s10" title="Brynjolfsson, Li &amp; Raymond: Generative AI at Work">[10]</a>,<a href="#s11" title="Cui et al.: AI and software developer productivity">[11]</a></sup></p></article>
+<article><span class="number">02</span><h3>Workflows are changing</h3><p>DBS has deployed agent-assisted credit preparation. IBM changed how employees enter HR services. These are changes to the process and its responsibilities, beyond adding a writing tool. <sup><a href="#s22" title="DBS: agentic credit-assessment rollout">[22]</a>,<a href="#s23" title="IBM CHRO: redesigning HR service delivery">[23]</a></sup></p></article>
+<article><span class="number">03</span><h3>Human work moves</h3><p>A recruiting experiment automated information collection while preserving human hiring decisions. A software study found production gains accompanied by a shift toward automated review. <sup><a href="#s24" title="Jabarian &amp; Henkel: Voice AI in Firms">[24]</a>,<a href="#s25" title="He et al.: AI Writes Faster Than Humans Can Review">[25]</a></sup></p></article>
+<article><span class="number">04</span><h3>Redesign is not a proven formula</h3><p>Some interventions improve outcomes; others move the bottleneck or create transition costs. The evidence supports testing specific designs, not assuming that fewer people or more automation means a better business.</p></article>
+</div>
+<div class="note"><b>How to read this report.</b> Sections 1–5 review evidence, including <a href="#workflows">documented workflow changes</a>. Sections 6–10 examine <a href="#organization">organizational consequences</a>, implementation, economics and opportunities. Interpretations and illustrative designs are labeled. “AI” includes several technologies in business surveys; “generative AI” is narrower. Observation dates are shown because a study published in 2026 may describe much older tools. This is a selected evidence review, not a meta-analysis or a current model ranking.</div>
+</section>
+<section id="capability">
+<div class="eyebrow">01 / Observed capability</div><h2>AI can handle longer tasks.<br/>
+Reliability changes the answer.</h2>
+<p>METR’s TH1.1 benchmark shows progress from minutes to hours of human-equivalent task difficulty. Requiring 80% success sharply reduces that horizon. <sup><a href="#s01" title="METR: task-completion time horizons">[1]</a></sup></p>
+<figure><div class="figure-head"><span>Figure 1</span><h3>Task duration depends on the success rate you require</h3></div>
+<div class="legend"><span><i class="dot"></i>50% success</span><span><i class="square"></i>80% success</span><span>Whiskers: 95% interval for 50% estimate</span></div>
+<div aria-label="Capability chart; scroll horizontally if needed" class="chart-scroll" role="region" tabindex="0"><svg aria-labelledby="metr-title metr-desc" role="img" viewBox="0 0 940 470"><title id="metr-title">Longer tasks are becoming feasible, but requiring 80% success sharply reduces the horizon.</title><desc id="metr-desc">Selected models on METR Horizon version 1.1. Fifty-percent horizons rise from seven minutes for GPT-4o to 719 minutes for Claude Opus 4.6. Eighty-percent horizons are shorter. Whiskers show 95% confidence intervals for the fifty-percent estimate. A logarithmic axis runs from one minute to over two days.</desc><line stroke="#dcded2" x1="235.0" x2="235.0" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="235.0" y="425">1 min</text><line stroke="#dcded2" x1="370.2" x2="370.2" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="370.2" y="425">10 min</text><line stroke="#dcded2" x1="475.4" x2="475.4" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="475.4" y="425">1 hour</text><line stroke="#dcded2" x1="556.7" x2="556.7" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="556.7" y="425">4 hours</text><line stroke="#dcded2" x1="638.1" x2="638.1" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="638.1" y="425">16 hours</text><line stroke="#dcded2" x1="719.5" x2="719.5" y1="48" y2="400"></line><text class="axis" text-anchor="middle" x="719.5" y="425">64 hours</text><text class="axis" text-anchor="middle" x="840" y="24">50% / 80% horizon</text><text class="model" x="0" y="68">GPT-4o</text><text class="axis" x="0" y="87">2024-05-13</text><line stroke="#748c75" stroke-width="3" x1="316.4038593077363" x2="385.1476010726516" y1="70" y2="70"></line><line stroke="#748c75" x1="316.4038593077363" x2="316.4038593077363" y1="64" y2="76"></line><line stroke="#748c75" x1="385.1476010726516" x2="385.1476010726516" y1="64" y2="76"></line><circle cx="349.1603493335098" cy="70" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="243.89301612567186" y="65"></rect><text class="model" text-anchor="middle" x="840" y="75">7m / 1m</text><text class="model" x="0" y="126">Claude 3.7 Sonnet</text><text class="axis" x="0" y="145">2025-02-24</text><line stroke="#748c75" stroke-width="3" x1="440.2726980888543" x2="507.7754130396972" y1="128" y2="128"></line><line stroke="#748c75" x1="440.2726980888543" x2="440.2726980888543" y1="122" y2="134"></line><line stroke="#748c75" x1="507.7754130396972" x2="507.7754130396972" y1="122" y2="134"></line><circle cx="475.73693256398815" cy="128" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="376.32324604450065" y="123"></rect><text class="model" text-anchor="middle" x="840" y="133">1.0h / 12m</text><text class="model" x="0" y="184">o3</text><text class="axis" x="0" y="203">2025-04-16</text><line stroke="#748c75" stroke-width="3" x1="488.1553997015925" x2="543.316315019906" y1="186" y2="186"></line><line stroke="#748c75" x1="488.1553997015925" x2="488.1553997015925" y1="180" y2="192"></line><line stroke="#748c75" x1="543.316315019906" x2="543.316315019906" y1="180" y2="192"></line><circle cx="515.9177330748057" cy="186" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="429.63055221358127" y="181"></rect><text class="model" text-anchor="middle" x="840" y="191">2.0h / 30m</text><text class="model" x="0" y="242">GPT-5</text><text class="axis" x="0" y="261">2025-08-07</text><line stroke="#748c75" stroke-width="3" x1="512.3336728071645" x2="587.5367978924128" y1="244" y2="244"></line><line stroke="#748c75" x1="512.3336728071645" x2="512.3336728071645" y1="238" y2="250"></line><line stroke="#748c75" x1="587.5367978924128" x2="587.5367978924128" y1="238" y2="250"></line><circle cx="546.9142546949877" cy="244" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="444.0244051520567" y="239"></rect><text class="model" text-anchor="middle" x="840" y="249">3.4h / 38m</text><text class="model" x="0" y="300">GPT-5.2</text><text class="axis" x="0" y="319">2025-12-11</text><line stroke="#748c75" stroke-width="3" x1="545.4665899046638" x2="628.522000899582" y1="302" y2="302"></line><line stroke="#748c75" x1="545.4665899046638" x2="545.4665899046638" y1="296" y2="308"></line><line stroke="#748c75" x1="628.522000899582" x2="628.522000899582" y1="296" y2="308"></line><circle cx="579.2647734666747" cy="302" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="475.9551394118347" y="297"></rect><text class="model" text-anchor="middle" x="840" y="307">5.9h / 1.1h</text><text class="model" x="0" y="358">Claude Opus 4.6</text><text class="axis" x="0" y="377">2026-02-05</text><line stroke="#748c75" stroke-width="3" x1="573.016864765315" x2="716.2636169896707" y1="360" y2="360"></line><line stroke="#748c75" x1="573.016864765315" x2="573.016864765315" y1="354" y2="366"></line><line stroke="#748c75" x1="716.2636169896707" x2="716.2636169896707" y1="354" y2="366"></line><circle cx="621.1361665155696" cy="360" fill="#365743" r="6"></circle><rect fill="#766d61" height="10" width="10" x="479.30173153657756" y="355"></rect><text class="model" text-anchor="middle" x="840" y="365">12.0h / 1.2h</text><text class="axis" x="235" y="460">Human task duration · logarithmic scale · longer is better</text></svg></div>
+<figcaption>METR TH1.1; selected releases, not a leaderboard. Human task duration, not agent runtime. Opus 4.6: 12-hour estimate, roughly 5–61-hour interval. METR cautions against estimates above 16 hours; the newer Mythos Preview point exceeds that threshold and is omitted. <sup><a href="#s01" title="METR: task-completion time horizons">[1]</a></sup> <a href="../research/data/ai-capability-adoption/metr-selected-models.csv">Chart data</a>.</figcaption>
+</figure>
+<p>The tasks are mainly software, machine learning and cybersecurity with clear goals. This does not establish full-job capability. <sup><a href="#s01" title="METR: task-completion time horizons">[1]</a></sup></p>
+<div aria-label="Other tests measure different parts of the problem; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Other tests measure different parts of the problem</caption><thead><tr><th>Test</th><th>What it establishes</th><th>What it leaves open</th></tr></thead><tbody>
+<tr><td><b>Professional deliverables</b><br/>
+GDPval · September 2025 <sup><a href="#s03" title="OpenAI: GDPval">[3]</a></sup></td><td>1,320 tasks across 44 occupations, with files and context supplied. In the initial evaluation, Claude Opus 4.1 matched or beat expert deliverables on just under half the comparisons.</td><td>A provider-designed test of work products. Defining the problem, obtaining missing context, handling feedback and carrying responsibility are not the same test.</td></tr>
+<tr><td><b>Long computer workflows</b><br/>
+OSWorld 2.0 · July 2026 revision <sup><a href="#s02" title="OSWorld 2.0">[2]</a></sup></td><td>On 108 workflows taking humans a median 1.6 hours, the best tested setup completed 20.6% end to end; partial-completion score was 54.8%, with a 500-step limit.</td><td>A deliberately difficult benchmark, not a representative sample of all office work. It uses different tasks from OSWorld 1.0; lower scores do not show that models regressed.</td></tr>
+</tbody></table></div>
+<h3>Price has fallen for a fixed level of performance</h3>
+<p>Epoch’s March 2025 analysis found steep historical declines in the price of reaching fixed benchmark scores. Matching GPT-4’s science-question performance became roughly 40 times cheaper per year over the measured period. Rates varied widely by benchmark. This is evidence of past price improvement, not a forecast and not the cost of operating a business process. <sup><a href="#s04" title="Epoch AI: inference price trends">[4]</a></sup></p>
+<p class="takeaway"><b>What is established:</b> the technical range has widened. The probability of finishing a specific workflow at an acceptable cost still has to be measured in that workflow.</p>
+</section>
+<section id="adoption">
+<div class="eyebrow">02 / Observed adoption</div><h2>There is no single adoption rate.</h2>
+<p>A business counts as an adopter if one qualifying use exists. A worker counts as an adopter when that person uses the tool. Neither measure tells us how much of the work has changed. The denominator is part of the finding.</p>
+<div aria-label="Three widely different numbers can all be correct; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Three widely different numbers can all be correct</caption><thead><tr><th>Measure</th><th>Observed rate</th><th>Population and meaning</th></tr></thead><tbody>
+<tr><td>US business use<br/>
+BTOS, May 3, 2026 <sup><a href="#s05" title="Census: business AI use, December 2025–May 2026">[5]</a></sup></td><td class="stat">19.8%</td><td>Employer businesses reporting AI in any business function in the previous two weeks. Counts firms, regardless of size.</td></tr>
+<tr><td>US worker use<br/>
+RPS, November 2025 <sup><a href="#s07" title="Federal Reserve: Monitoring AI Adoption in the U.S. Economy">[7]</a></sup></td><td class="stat">40.7%</td><td>Workers reporting generative AI at work; 35.2% weekly and 12% daily. People, not firms.</td></tr>
+<tr><td>Global respondent organizations<br/>
+McKinsey, May–June 2026 <sup><a href="#s20" title="McKinsey: The State of AI in 2026">[20]</a></sup></td><td class="stat">~90%</td><td>Regular AI use in at least one function. Survey respondents disproportionately come from large organizations; not a census of businesses.</td></tr>
+</tbody></table></div>
+<p class="note"><b>A break in the US series:</b> on November 17, 2025, Census broadened the question from AI used to produce goods or services to AI used in any business function. Joining the old and new rates into one growth curve would overstate what the data show. The May figure above is a dated snapshot, not a claim about September prevalence. <sup><a href="#s05" title="Census: business AI use, December 2025–May 2026">[5]</a></sup></p>
+<h3>Size and intensity matter</h3>
+<p>In the Census May analysis, 37% of firms with at least 250 employees used AI, versus less than 20% of firms with fewer than five. A separate Census supplement found 18% adoption when counting firms and 32% when weighting firms by employment. The latter is the share of employment at adopting firms, not the share of workers personally using AI. <sup><a href="#s05" title="Census: business AI use, December 2025–May 2026">[5]</a>,<a href="#s06" title="Census: The Microstructure of AI Diffusion">[6]</a></sup></p>
+<p>Europe shows a similar size gradient: 20% of covered enterprises used AI in 2025, rising to 55% among large enterprises. Eurostat excludes businesses with fewer than ten workers, so its headline cannot be directly compared with the US figure. <sup><a href="#s08" title="Eurostat: Digitalisation in Europe 2026">[8]</a></sup></p>
+<p>Use within firms is often limited. In the Census supplement, 57% of adopters used AI in three or fewer business functions; 66% used it only to augment work. Separately, an August 2026 worker study found adoption spread across many tasks but below half of workers within most of them. Technical exposure is not the same as actual use. <sup><a href="#s06" title="Census: The Microstructure of AI Diffusion">[6]</a>,<a href="#s09" title="Bick et al.: What Work Does Generative AI Do?">[9]</a></sup></p>
+<p class="takeaway"><b>What is established:</b> AI reaches many kinds of work, with sharp differences in depth and frequency. The number of businesses that have not adopted is not, by itself, a market size.</p>
+</section>
+<section id="results">
+<div class="eyebrow">03 / Measured outcomes</div><h2>Task gains are real.<br/>
+They do not add up automatically.</h2>
+<p>The strongest studies compare similar work with and without access to AI. Their results should be read in their original units. Faster completion, more completed tasks, better work and higher profit are different outcomes.</p>
+<div aria-label="What workplace studies actually measured; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="evidence"><caption>What workplace studies actually measured</caption><thead><tr><th>Setting and design</th><th>Finding</th><th>Boundary of the result</th></tr></thead><tbody>
+<tr><td><b>Customer support</b><br/>
+5,172 agents; staggered rollout<br/>
+<span class="pill">Field study</span> <sup><a href="#s10" title="Brynjolfsson, Li &amp; Raymond: Generative AI at Work">[10]</a></sup></td><td><strong>15% more resolved issues per hour.</strong> Less-experienced workers improved most. The strongest workers saw small speed gains and some quality decline.</td><td>One company; assistance during a conversation, with a human still responsible. Not a randomized test of eliminating the team.</td></tr>
+<tr><td><b>Software development</b><br/>
+4,867 developers at three firms<br/>
+<span class="pill">Randomized access</span> <sup><a href="#s11" title="Cui et al.: AI and software developer productivity">[11]</a></sup></td><td><strong>26.08% more completed tasks</strong> in the pooled estimate of adoption; standard error 10.3 percentage points.</td><td>Company results varied. Task throughput is not equivalent to software value, quality or profit. Earlier coding tools, not today’s frontier agents.</td></tr>
+<tr><td><b>Email and office work</b><br/>
+66 firms; 7,137 workers; six months<br/>
+<span class="pill">Randomized access</span> <sup><a href="#s12" title="Dillon et al.: Shifting Work Patterns with Generative AI">[12]</a></sup></td><td><strong>Two fewer hours on email per week</strong> for users in the second half of the experiment; less work outside regular hours.</td><td>No detectable shift in task quantity or composition from individual access. The two-hour result is not the effect averaged across everyone assigned access.</td></tr>
+<tr><td><b>Product innovation at P&amp;G</b><br/>
+776 professionals, working-paper version<br/>
+<span class="pill">Randomized exercise</span> <sup><a href="#s13" title="Dell’Acqua et al.: The Cybernetic Teammate">[13]</a></sup></td><td><strong>Individuals with AI matched the performance of teams without it</strong> on the study’s innovation exercise.</td><td>A bounded exercise. It does not show that durable teams, coordination or specialist accountability can be removed.</td></tr>
+<tr><td><b>Experienced open-source developers</b><br/>
+16 developers; 246 tasks; early 2025<br/>
+<span class="pill">Randomized tasks</span> <sup><a href="#s14" title="METR: early-2025 developer experiment">[14]</a></sup></td><td><strong>19% longer completion time</strong> with AI allowed; 95% interval: 2%–39% longer.</td><td>Developers working in familiar, mature repositories. Important counterevidence to universal speedups, but not a current estimate for all coding.</td></tr>
+</tbody></table></div>
+<h3>The negative coding result has an important follow-up</h3>
+<p>METR’s February 2026 update studied newer tools and more developers. The original participants’ estimated time change was −18% (95% interval −38% to +9%); new participants’ was −4% (−15% to +9%). Both intervals include no effect. Selection changed because developers increasingly declined tasks without AI, and parallel agent use complicated time measurement. The authors believe gains are now more likely, but do not present these estimates as a reliable measure of their size. <sup><a href="#s15" title="METR: developer-productivity follow-up">[15]</a></sup></p>
+<p>A separate METR survey of 349 technical workers found median <em>perceived</em> gains of 1.4–2 times in value and three times in speed. This is useful evidence of users’ experience. It is a selected sample reporting imagined alternatives, not an experimental measurement of output. <sup><a href="#s16" title="METR: AI usage survey">[16]</a></sup></p>
+<h3>At the company level, evidence is mixed</h3>
+<p>A four-country study of nearly 6,000 executives reported that over 80% of firms saw no effect on productivity or employment over the preceding three years. A different CFO survey found reported 2025 output-per-worker gains averaging 1.8%; gains implied by respondents’ revenue and headcount answers were smaller. These studies use different samples and questions. Neither licenses a claim that AI has no value, or that all firms have captured it. <sup><a href="#s18" title="Yotzov et al.: Firm Data on AI">[18]</a>,<a href="#s19" title="Atlanta Fed, Richmond Fed &amp; Duke: CFO evidence">[19]</a></sup></p>
+<figure><div class="figure-head"><span>Figure 2</span><h3>Personal improvement is more commonly reported than company profit impact</h3></div>
+<div class="bars"><div class="bar-row"><div class="bar-label">Personal productivity improved</div><div class="bar-track"><div class="bar" style="width:80%"></div></div><b>80%</b></div><div class="bar-row"><div class="bar-label">Some enterprise EBIT impact</div><div class="bar-track"><div class="bar" style="width:37%"></div></div><b>37%</b></div></div>
+<figcaption>McKinsey, May–June 2026; self-reported outcomes, not a conversion funnel. EBIT: earnings before interest and taxes. The difference is not a failure rate. <sup><a href="#s20" title="McKinsey: The State of AI in 2026">[20]</a></sup></figcaption></figure>
+<p>Danish research linked adoption surveys to administrative records and found no detectable average earnings or recorded-hours effects two years after ChatGPT’s launch, ruling out effects above 2% in that setting. Tasks and occupational moves did change. This constrains claims about immediate labor-market transformation; it does not settle longer-term effects. <sup><a href="#s17" title="Humlum &amp; Vestergaard: Still Waters, Rapid Currents">[17]</a></sup></p>
+<p class="takeaway"><b>What is established:</b> AI can improve particular work. How much becomes additional output, lower expense, better quality or personal time depends on what happens after the task is finished.</p>
+</section>
+<section id="workflows">
+<div class="eyebrow">04 / Documented workflow changes</div>
+<h2>The unit of change is becoming<br/>
+the whole process.</h2>
+<p>A workflow connects a request to an outcome through people, information, decisions and actions. Improving one task leaves those connections intact. Redesign changes them: who gathers information, where work waits, what requires approval, and who handles the difficult cases.</p>
+<p>The cases below show several kinds of change. They provide stronger evidence that a process has changed than that an entire organization has become more productive. Experiments, company reports and targets are labeled separately.</p>
+<article class="case" id="case-dbs">
+<div class="case-meta">Banking · Deployed process · Company report · August 2026</div>
+<h3>DBS: bankers revise a prepared assessment</h3>
+<div class="case-metrics"><div><strong>150 → 1,500</strong><span>Pilot users → staff in global rollout</span></div><div><strong>70+</strong><span>Tasks performed by specialized agents</span></div><div><strong>≥30%</strong><span>Preparation-time reduction: target</span></div></div>
+<div class="case-grid"><div><h4>Inputs</h4><p>Annual reports, industry research and internal records. Credit preparation and related activities can consume up to 40% of a relationship manager’s time.</p></div><div><h4>Changed process</h4><p>Agents assemble a credit-memo draft. Bankers request deeper research and add client context, industry knowledge and risk judgment.</p></div><div><h4>Intended use of capacity</h4><p>Relationship managers spend more time with clients; risk managers focus on portfolio strategy and emerging risks. <sup><a href="#s22" title="DBS: agentic credit-assessment rollout">[22]</a></sup></p></div></div>
+<p class="case-bottom"><b>Scale of the target:</b> at 40% of a role, a 30% saving would release 12% of working time—before extra review. This is illustrative arithmetic, not a measured outcome or staffing reduction. Lending speed, credit quality and net hours saved remain undisclosed.</p>
+</article>
+<article class="case" id="case-dbs-service">
+<div class="case-meta">Banking service · Deployed process · Company report · July 2026</div>
+<h3>DBS Joy: answer the account question inside the conversation</h3>
+<p><b>Before:</b> the assistant explained where to find a payment. <b>After the July upgrade:</b> it retrieves account and transaction data for an authenticated customer, checks payment status or totals fees, and answers directly. Human escalation remains available. <sup><a href="#s29" title="DBS: customer assistants and agentic rollout">[29]</a></sup></p>
+<div aria-label="Reported results: Singapore, first half of 2026; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="case-table"><caption>Reported results: Singapore, first half of 2026</caption><thead><tr><th>Measure</th><th>Change</th><th>What it tells us</th></tr></thead><tbody><tr><td>Active users / chats</td><td><b>+61% / +22%</b></td><td>Actual use grew; these are different measures.</td></tr><tr><td>Calls or emails to service</td><td><b>−7%</b></td><td>Some work shifted out of assisted channels.</td></tr><tr><td>Customer satisfaction score</td><td><b>+17%</b></td><td>Reported increase; baseline and scale undisclosed.</td></tr></tbody></table></div>
+<p class="case-bottom"><b>Timing matters:</b> these results preceded the agentic upgrade; they cannot show its effect. July access covered 350,000 corporate users in Singapore, not 350,000 active users. Separately, retail digibot reportedly resolved 90% of first-half queries without a follow-up call; it serves a different population.</p>
+</article>
+<article class="case" id="case-ibm">
+<div class="case-meta">Internal services · Process and policy redesign · Company report</div>
+<h3>IBM: the service channel changed along with the technology</h3>
+<p>Low chatbot use in 2017 led IBM to close HR phone/email channels in 2018 and withdraw HR-partner support for 21,000 first-line managers. AskHR later added transfers and promotions; over 25 leave types were consolidated. <sup><a href="#s23" title="IBM CHRO: redesigning HR service delivery">[23]</a></sup></p>
+<div aria-label="Management’s operating measures; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="case-table"><caption>Management’s operating measures</caption><thead><tr><th>Measure</th><th>Reported result</th></tr></thead><tbody><tr><td>2024 volume</td><td><b>11.5m+ interactions; 1m+ transactions</b></td></tr><tr><td>Escalation, 2024</td><td><b>94%</b> contained in AskHR; 6% routed to specialists</td></tr><tr><td>Service satisfaction (NPS)</td><td><b>−35 initially → +74</b> at publication</td></tr><tr><td>HR operating budget</td><td><b>40% lower over four years</b></td></tr></tbody></table></div>
+<p class="case-bottom"><b>Change in work:</b> one entry point handles questions and executes routine transactions; specialists handle escalations. The budget change combines policy, channel and automation changes beginning before generative AI. IBM’s CHRO recommends a smaller initial rollout in hindsight.</p>
+</article>
+<article class="case" id="case-hiring">
+<div class="case-meta">Recruiting · Separation of collection and judgment · Randomized experiment</div><h3>PSG Global Solutions: automate the interview, retain the hiring decision</h3>
+<p>Philippines, March–June 2025: applications randomized to human, AI or choice arms. Recruiters retained hiring authority. The two assigned-interviewer arms are compared below. <sup><a href="#s24" title="Jabarian &amp; Henkel: Voice AI in Firms">[24]</a></sup></p>
+<figure class="workflow-figure"><div class="figure-head"><span>Figure 3</span><h3>One role was split into two kinds of work</h3></div>
+<div class="swimlane"><b>Human arm</b><div>Recruiter conducts interview</div><span>→</span><div>Applicant takes tests</div><span>→</span><div>Recruiter evaluates and decides</div></div>
+<div class="swimlane"><b>AI arm</b><div class="ai-step">AI conducts interview</div><span>→</span><div>Applicant takes tests</div><span>→</span><div>Recruiter evaluates and decides</div></div>
+<figcaption>Simplified experimental design; human decision authority is unchanged.</figcaption></figure>
+<div aria-label="Outcomes per applicant assigned to each arm; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="case-table"><caption>Outcomes per applicant assigned to each arm</caption><thead><tr><th>Outcome</th><th>Human · n=13,557</th><th>AI · n=40,103</th><th>Difference</th></tr></thead><tbody><tr><td>Received offer</td><td>8.70%</td><td>9.73%</td><td><b>+1.03 pp</b></td></tr><tr><td>Started job</td><td>5.65%</td><td>6.71%</td><td><b>+1.06 pp</b></td></tr><tr><td>Employed after one month</td><td>4.98%</td><td>5.89%</td><td><b>+0.91 pp</b></td></tr></tbody></table></div><p class="case-bottom"><b>Downstream outcome:</b> about nine more people still employed after one month per 1,000 applicants. These are shares of all assigned applicants, not retention among hires. “pp” means percentage points. Entry-level service recruitment; generalization remains untested.</p>
+</article>
+<article class="case" id="case-engineering">
+<div class="case-meta">Software delivery · A moving bottleneck · Observational study</div>
+<h3>More code required a different review process</h3>
+<p>A mid-sized company targeted twice as many merged changes per engineer. Researchers tracked 802 developers and 196,212 pull requests, January 2024–April 2026. Automated reviews overtook human reviews. <sup><a href="#s25" title="He et al.: AI Writes Faster Than Humans Can Review">[25]</a></sup></p>
+<div aria-label="Output rose; the slow review queue remained; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="case-table"><caption>Output rose; the slow review queue remained</caption><thead><tr><th>Measure</th><th>Earlier</th><th>Later</th></tr></thead><tbody><tr><td>Authored changes per active developer/month</td><td>21.2 · Jan–Apr 2025</td><td><b>44.3 · Apr 2026</b> (2.09×)</td></tr><tr><td>Substantive human review: share of merged changes</td><td>~48% · pre-mandate peak</td><td><b>~21%</b></td></tr><tr><td>90th-percentile cycle time, human-reviewed changes</td><td>~63 hours · pre-ramp</td><td><b>~73 hours in 2026</b>; peaked near 114</td></tr></tbody></table></div>
+<p class="case-bottom"><b>Change in work:</b> aggregate turnaround improved partly because more changes bypassed substantive human review. Adoption was not randomized. Stable merge/revert rates do not establish long-term quality. The output statistic counts authored changes; the mandate targeted merged changes.</p>
+</article>
+<article class="case" id="case-klarna">
+<div class="case-meta">Customer service · Automation plus human access · Company filing</div>
+<h3>Klarna: scale automation while preserving a human route</h3>
+<p>The assistant handles errands such as refunds and returns; customers can still choose a human representative. <sup><a href="#s27" title="Klarna: 2025 Form 20-F">[27]</a></sup></p>
+<div class="case-metrics"><div><strong>80%</strong><span>Customer-service chats handled by AI · 2025</span></div><div><strong>$59m</strong><span>Estimated annual cost savings · 2025</span></div><div><strong>2 vs 12 min</strong><span>AI vs human chat resolution · 2024</span></div></div>
+<p>Klarna also estimates capacity equivalent to <b>850+ full-time agents</b> in 2025, using the reduction in conversations handled by staff. This is a workload-equivalence estimate, not a count of layoffs.</p>
+<p class="case-bottom"><b>Evidence limit:</b> these are management measures from service logs and estimates. Faster AI conversations may handle different cases. Chat share is not total workload, and the filing does not isolate AI’s causal savings.</p>
+</article>
+<article class="case" id="case-permanente">
+<div class="case-meta">Health care · Clinical documentation · Institutional study account</div>
+<h3>Permanente: the conversation becomes the draft record</h3>
+<p>With patient consent, an ambient scribe drafts notes from the visit; physicians edit them in a workflow integrated with the medical record. Clinical decisions remain with the physician. <sup><a href="#s31" title="Permanente: ambient AI scribe deployment">[31]</a></sup></p>
+<div class="case-metrics"><div><strong>7,260</strong><span>Physicians who used the tool</span></div><div><strong>2.5m+</strong><span>Patient encounters · 63-week evaluation</span></div><div><strong>89%</strong><span>Activations from the top third of users</span></div></div>
+<p>The institution estimates <b>1,794 working days of documentation time saved</b>. Among surveyed patients, 47% reported less physician attention to the computer; 39% reported more direct conversation.</p>
+<p class="case-bottom"><b>Change in work:</b> documenting from memory becomes editing a prepared record. Use remained concentrated despite broad availability. Observational results support reduced burden and better reported interaction; they do not establish more appointments, fewer clinicians or a financial return.</p>
+</article>
+<h3>Changes to expertise and coordination are also being tested</h3>
+<p>In the P&amp;G experiment, AI-assisted proposals combined commercial and technical perspectives more evenly; individuals with AI matched teams without it on the bounded task. That is evidence that some expertise can cross functional boundaries more cheaply. It is not evidence that P&amp;G eliminated departments or permanently replaced teams. <sup><a href="#s13" title="Dell’Acqua et al.: The Cybernetic Teammate">[13]</a></sup></p>
+<p>The office-work experiment provides a useful contrast: individual AI access saved email time without a detectable change in the amount or composition of work. A tool can improve a person’s day while leaving coordination among people largely intact. <sup><a href="#s12" title="Dillon et al.: Shifting Work Patterns with Generative AI">[12]</a></sup></p>
+<h3>Does redesign cause better returns?</h3>
+<p>McKinsey’s 2026 survey links workflow redesign with reported financial success: roughly three-quarters of its high performers reported redesign, versus one-quarter of others. High performers were defined partly by reported EBIT impact. This is an association: stronger firms may both redesign and perform better, and successful respondents may describe their changes more favorably. <sup><a href="#s20" title="McKinsey: The State of AI in 2026">[20]</a></sup></p>
+<p>DORA’s 2025 research similarly associated more AI use with both higher software throughput and greater instability. It points to the surrounding delivery system as an important condition, but does not randomly test alternative organization designs. <sup><a href="#s28" title="Google Cloud: 2025 DORA findings">[28]</a></sup></p>
+<p class="takeaway"><b>Evidence boundary:</b> workflow change is observable, and some interventions have improved downstream outcomes. The sources reviewed do not establish a general causal return to “organizational transformation,” or prove that every firm needs a wholesale redesign.</p>
+</section>
+<section id="barriers">
+<div class="eyebrow">05 / Reported constraints</div><h2>Non-adoption has several causes.</h2>
+<p>The OECD asked 5,232 SMEs across seven countries about generative AI in late 2024. Among non-adopters, lack of fit with their work was the most common barrier. Concerns about legal issues, information handling and skills were also frequent. These are owners’ and managers’ assessments, not independently tested diagnoses. <sup><a href="#s21" title="OECD: Generative AI and the SME Workforce">[21]</a></sup></p>
+<figure><div class="figure-head"><span>Figure 4</span><h3>Why SMEs said they were not using generative AI</h3></div>
+<div class="bars"><div class="bar-row"><div class="bar-label">Not suitable for the work</div><div class="bar-track"><div class="bar" style="width:57%"></div></div><b>57%</b></div><div class="bar-row"><div class="bar-label">Legal, copyright or regulatory concerns</div><div class="bar-track"><div class="bar" style="width:54%"></div></div><b>54%</b></div><div class="bar-row"><div class="bar-label">Concern about information fed to models</div><div class="bar-track"><div class="bar" style="width:52%"></div></div><b>52%</b></div><div class="bar-row"><div class="bar-label">Employees lack the skills</div><div class="bar-track"><div class="bar" style="width:50%"></div></div><b>50%</b></div></div>
+<figcaption>Share of non-adopters citing each reason; multiple responses allowed. Austria, Canada, Germany, Ireland, Japan, Korea and UK; October–December 2024. Includes one-person firms. Rounded percentages. This older survey helps identify types of friction; it does not measure today’s demand. <sup><a href="#s21" title="OECD: Generative AI and the SME Workforce">[21]</a></sup></figcaption></figure>
+<p>Organizational friction and technical limits coexist. A process change must work within both.</p>
+<p class="takeaway"><b>What is established:</b> there is no single “adoption gap” to sell into. Some firms lack skills or a workable deployment. Others may have little useful work for the current tools, or too little volume to justify the cost.</p>
+</section>
+<div class="part-divider"><span>From evidence to interpretation</span><p>The following is our analysis. These are implications to test, not findings established by the studies above.</p></div>
+<section id="organization">
+<div class="eyebrow">06 / Organizational consequences · Analysis</div>
+<h2>The deeper change is who knows,<br/>
+who acts and who decides.</h2>
+<p>The following interpretation draws on the cases above. AI can change the cost of obtaining expertise, coordinating work and checking results. If those costs change enough, a business can change how it divides work. That is a different proposition from giving everyone an assistant.</p>
+<div aria-label="Six organizational choices that the technology reopens; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Six organizational choices that the technology reopens</caption><thead><tr><th>Dimension</th><th>Possible change</th><th>What still has to be solved</th></tr></thead><tbody>
+<tr><td><b>Roles and specialization</b></td><td>One person can perform a broader span of work with AI assistance. Specialists may spend less time preparing standard outputs and more on review and unusual cases.</td><td>Access to a specialist-like answer does not confer the ability to judge it. Measure quality on difficult cases and preserve a path for developing expertise.</td></tr>
+<tr><td><b>Handoffs and teams</b></td><td>A shared system can gather inputs in parallel and keep a case moving across functions. Some status meetings, copying and routine transfers may become unnecessary.</td><td>Someone must own the whole outcome. Otherwise faster upstream work simply increases the queue elsewhere.</td></tr>
+<tr><td><b>Authority and management</b></td><td>Routine actions can operate within explicit limits; managers may focus on exceptions, policies and performance. Standard rules can support more local execution.</td><td>Decide separately who may prepare, recommend, approve and execute. Cheaper information could flatten some structures while centralizing control over others; the cases do not establish a universal direction.</td></tr>
+<tr><td><b>Knowledge and memory</b></td><td>Rules held by experienced employees can become reusable instructions, reference material and examples. Each resolved exception can improve the process.</td><td>Know-how must be elicited, reconciled and maintained. A document archive does not tell an agent which rule applies, which source is current or when an exception is justified.</td></tr>
+<tr><td><b>Staffing and incentives</b></td><td>Capacity may shift toward customer work, quality or growth. Hiring needs may change even without immediate layoffs. New work appears in testing, exception handling and system maintenance.</td><td>Specify what happens to saved capacity. Employees asked to reveal their expertise also need a reason to participate; an output quota can reward volume while hiding quality loss.</td></tr>
+<tr><td><b>Boundaries of the firm</b></td><td>Work previously bought from a specialist or outsourced provider may move inside; a managed service may instead absorb a workflow the customer cannot run.</td><td>Compare the full cost of ownership. Internal automation introduces maintenance and accountability, while outsourcing can create dependence on the provider.</td></tr>
+</tbody></table></div>
+<h3>Two different kinds of advantage</h3>
+<p><b>An existing firm</b> has customers, operating history and experienced staff. Its opportunity may be to turn that knowledge into a process more people can run. Its constraint is changing a working business without interrupting service or losing the people who understand it.</p>
+<p><b>A new firm</b> can design roles and systems together. It may need fewer handoffs because it does not inherit the old departmental boundaries. But it lacks the incumbent’s relationships and hard-won exceptions. Lower coordination cost is a hypothesis to demonstrate, not an automatic advantage of being new.</p>
+<p>For an acquisition strategy, the distinction matters. A business that looks inefficient may contain valuable judgment disguised as manual work. Removing that work before understanding it can destroy the asset one intended to improve.</p>
+</section>
+<section id="implementation">
+<div class="eyebrow">07 / Implementation · Evidence and analysis</div>
+<h2>The hard part is making<br/>
+a different process work every day.</h2>
+<h3>What sat behind the DBS deployments</h3>
+<p>DBS reports a sequence of investments in process, data and organization. These measures describe different programs; they should not be added together as “AI savings.”</p>
+<div aria-label="DBS: the operating system around the use cases; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table class="case-table"><caption>DBS: the operating system around the use cases</caption><thead><tr><th>Layer</th><th>What changed</th><th>Reported scale or result</th></tr></thead><tbody><tr><td>Digital workflow foundation · 2024</td><td>Operations processes were moved onto shared workflows.</td><td><b>&gt;80% of addressable processes</b>; over <b>1.3m manual hours</b> removed cumulatively. Operational risk incidents fell <b>15% year on year</b>. <sup><a href="#s32" title="DBS: 2024 CIO statement">[32]</a></sup></td></tr><tr><td>Change controls · 2024</td><td>An internal ML model scored technology change requests using past cases.</td><td>Coverage <b>5% → 100%</b>; monthly average incidents caused by changes fell <b>81%</b>. Conventional ML, not an LLM result. <sup><a href="#s32" title="DBS: 2024 CIO statement">[32]</a></sup></td></tr><tr><td>Reusable infrastructure · June 2025 account</td><td>Central data platform and a repository for reusing models; senior oversight of use cases.</td><td>AI time to market: <b>15 → under 3 months</b>. Company report; no isolated causal estimate. <sup><a href="#s26" title="DBS: platforms, processes and people">[26]</a></sup></td></tr><tr><td>Operating-model redesign · 2025</td><td>Human/AI processes, reskilling and simpler organizational structures changed together.</td><td><b>9 initiatives completed</b> against a target of 6. Completion is not a measured return. <sup><a href="#s30" title="DBS: 2025 CEO reflections">[30]</a></sup></td></tr></tbody></table></div>
+<p class="small"><b>Bank-wide context:</b> over 2,000 models and 430 use cases in 2025; approximately SGD 1bn in management-estimated economic value. That includes data analytics and all AI/ML, not just generative AI or the credit-memo deployment. <sup><a href="#s30" title="DBS: 2025 CEO reflections">[30]</a></sup></p>
+<p><b>Our interpretation:</b> a production workflow is a maintained system of rules, information and responsibilities. The implementation work is therefore broader than connecting a model to company files. The following is a practical way to examine it, not a claim that every successful firm followed the same sequence.</p>
+<div aria-label="From a promising task to a dependable operation; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>From a promising task to a dependable operation</caption><thead><tr><th>Work required</th><th>Concrete output</th><th>What it reveals</th></tr></thead><tbody>
+<tr><td><b>Understand the actual process</b></td><td>Follow real cases from request to completion. Record touch time, waiting, handoffs, exceptions and who resolves them.</td><td>Whether the expensive part is production, coordination, missing information or judgment. Process diagrams alone can miss informal work.</td></tr>
+<tr><td><b>Remove unnecessary work</b></td><td>A revised process with redundant reports, approvals and policy variants removed where justified.</td><td>How much improvement comes from ordinary process simplification, before attributing anything to AI.</td></tr>
+<tr><td><b>Make knowledge usable</b></td><td>Current rules with owners; examples of acceptable outputs; access to the records needed for action; documented exceptions.</td><td>Whether the barrier is model ability or the firm’s inability to supply dependable context.</td></tr>
+<tr><td><b>Define the division of work</b></td><td>Named authority for recommendations, actions and exceptions; a person or team accountable for the full process.</td><td>Whether responsibility has actually changed, or a second system has merely been added alongside the first.</td></tr>
+<tr><td><b>Test and change the operating routine</b></td><td>A controlled rollout with training, clear handoffs and measurement of quality, total effort and customer outcomes.</td><td>Whether people can use the new process under real constraints, including unusual cases and busy periods.</td></tr>
+<tr><td><b>Operate and improve it</b></td><td>Ownership of failures, policy updates, evaluations and support; a budget and a plan for the capacity released.</td><td>Whether gains survive after the pilot team leaves, and whether each additional customer or workflow is cheaper to support.</td></tr>
+</tbody></table></div>
+<h3>A concrete example: the quote-to-job process</h3>
+<p>Consider a service business receiving inquiries, gathering job details, preparing quotes, approving prices and scheduling work. The diagram is illustrative, not a documented deployment. It shows the difference between accelerating a step and changing how a case moves through the business.</p>
+<figure><div class="figure-head"><span>Figure 5 · Illustrative</span><h3>Three designs for the same customer outcome</h3></div>
+<div class="design-row"><b>Existing process</b><p>Customer inquiry → coordinator collects details → estimator prepares quote → manager approves → scheduler books the job.</p></div>
+<div class="design-row"><b>Task assistance</b><p>The estimator uses AI to draft faster. The same people, queues and approvals remain.</p></div>
+<div class="design-row changed"><b>Workflow redesign</b><p>A shared case gathers missing details, prepares a quote and checks price and scheduling rules. Authorized standard cases proceed; unusual scope, price or capacity goes to a named specialist. The case owner tracks the outcome through booking.</p></div>
+<figcaption>Proposed design, not a recommendation to automate pricing or approvals without validation. The value could come from less waiting and fewer incomplete handoffs, even if drafting was already cheap.</figcaption></figure>
+<p>The changed design requires current price rules, reliable availability, permission to act and a workable exception route. If every quote is unusual, it may create more review work than it removes. If the business cannot deliver more jobs, faster quoting may improve service without increasing revenue.</p>
+<p class="note"><b>The experiment that would distinguish these designs:</b> compare the current process, task assistance and the redesigned workflow on similar cases. Measure time to an accepted outcome, total human effort, rework, customer conversion and full operating cost. Include difficult cases and a period after launch support declines. This would test the incremental value of redesign instead of assuming it.</p>
+</section>
+<section id="economics">
+<div class="eyebrow">08 / Economic mechanism</div><h2>A saved minute is not yet a dollar.</h2>
+<p>A tool can make one step much faster while leaving the business almost unchanged. If a quote takes ten minutes to draft but three days to approve, cheaper drafting does not remove the delay. If sales are fixed, additional production capacity may sit idle. If errors are expensive, review can consume the saving.</p>
+<div aria-label="Capability must become reliable workflow output, then deployable capacity, then a business result." class="flow" role="img">
+<div><span>1</span><b>Task capability</b><p>Can it do the work?</p></div><div><span>2</span><b>Reliable workflow</b><p>Including exceptions and review</p></div><div><span>3</span><b>Usable capacity</b><p>More work, less delay or lower cost</p></div><div><span>4</span><b>Business result</b><p>Revenue, margin, quality or time</p></div>
+</div>
+<p class="small">Conceptual diagram. Each transition needs evidence. It is not an estimated conversion model.</p>
+<h3>The useful unit is the cost of an accepted result</h3>
+<p>That cost includes model usage, human checking, failed attempts, systems work and ongoing maintenance. It should be compared with the current process at the same quality level. A reduction in token prices changes only one part of this calculation.</p>
+<div aria-label="Illustration only: processing one case at equal quality; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Illustration only: processing one case at equal quality</caption><thead><tr><th>Cost per accepted case</th><th>Manual</th><th>AI-assisted</th><th>AI-assisted, 90% cheaper compute</th></tr></thead><tbody>
+<tr><td>Human work / review</td><td>$30.00</td><td>$5.00</td><td>$5.00</td></tr>
+<tr><td>Model usage</td><td>—</td><td>$0.50</td><td>$0.05</td></tr>
+<tr><td>Exception handling allowance</td><td>Included</td><td>$3.00</td><td>$3.00</td></tr>
+<tr><td>Allocated integration and support</td><td>Included</td><td>$2.00</td><td>$2.00</td></tr>
+<tr class="total"><td>Total</td><td>$30.00</td><td>$10.50</td><td>$10.05</td></tr>
+</tbody></table></div>
+<p class="small">Invented assumptions, not an industry estimate. Manual work is 30 minutes at $60/hour; review is five minutes at the same rate. Exception and implementation costs are assumed averages per case. A 90% compute-price cut reduces total AI-process cost by only 4.3% here. Actual quality, volume, failures and staffing decisions could reverse the conclusion.</p>
+<p>For an owner, the immediate gain might be a shorter day. For a growing firm, it might be serving more customers without proportional hiring. For a fixed-volume operation, it might become a cost saving only after staffing or contractor commitments change. A business case should specify which result it expects.</p>
+</section>
+<section id="implications">
+<div class="eyebrow">09 / Possible consequences</div><h2>Who might gain—and where an opening might remain.</h2>
+<p>The evidence favors examining specific workflows before making a broad claim about “transforming a company.” It does not yet identify a winning sector, buyer or company concept. The following are causal hypotheses.</p>
+<div aria-label="Possible winners, pressure points and unmet needs; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Possible winners, pressure points and unmet needs</caption><thead><tr><th>Situation</th><th>Who may gain or lose—and why</th><th>Possible opening / what could defeat it</th></tr></thead><tbody>
+<tr><td><b>High-volume work with a clear quality test</b></td><td>Operators able to spread setup costs over many cases may gain. Rivals may face price pressure if savings reach customers.</td><td>Reliable delivery of one workflow. Defeated if an incumbent tool already solves it cheaply or exceptions erase the saving.</td></tr>
+<tr><td><b>Capacity or expertise is the constraint</b></td><td>Small teams and less-experienced staff may produce work they previously could not. Routine external providers may face substitution.</td><td>Assistance that raises usable output. Defeated if qualified review remains the bottleneck or demand cannot absorb more output.</td></tr>
+<tr><td><b>Useful tasks, difficult local context</b></td><td>Businesses holding usable process knowledge and data may gain. Firms unable to retrieve or maintain that knowledge may lag.</td><td>Capturing context and handling exceptions. Defeated if every deployment is bespoke and customers will not pay its full cost.</td></tr>
+<tr><td><b>Ability to build is spreading</b></td><td>Customers may capture more value as standard features become easier to reproduce. Thin software and undifferentiated services may face pressure.</td><td>A product owning difficult integration, trust or distribution. Defeated if platform vendors bundle the capability or the supposed advantage is easy to copy.</td></tr>
+</tbody></table></div>
+<h3>What this changes in the brainstorms</h3>
+<p>The <a href="../brainstorm-synthesis.md">existing synthesis</a> proposes workflow discovery, diligence, operating intelligence and implementation. The research makes the case for <em>measuring a process</em> more concrete. It does not establish willingness to pay for a diagnostic product, repeat demand after the first assessment or defensibility against existing software and service providers.</p>
+<p>Four possible needs follow from this analysis. They differ in buyer, delivery burden and potential for repeat revenue. None is validated by the deployment cases alone.</p>
+<div aria-label="Where the organizational work might create a business; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Where the organizational work might create a business</caption><thead><tr><th>Potential need</th><th>Why it might remain unmet</th><th>Company test</th></tr></thead><tbody>
+<tr><td><b>Discover and assess workflows</b></td><td>Owners or buyers may lack a reliable account of actual work, exceptions and economics.</td><td>Can the diagnosis change a decision enough to justify its price? Is it recurring software or a one-time service?</td></tr>
+<tr><td><b>Capture operating knowledge</b></td><td>Important rules may live with a few employees and lack a maintained, usable form.</td><td>Can capture and upkeep be repeated economically, with customer permission and continued participation?</td></tr>
+<tr><td><b>Run a specific workflow</b></td><td>The customer may want the outcome but lack staff to operate the system and handle exceptions.</td><td>Can a provider own the outcome at an attractive margin after integration, human work and support?</td></tr>
+<tr><td><b>Measure and govern ongoing operations</b></td><td>Owners may lack visibility into quality, failure, capacity and whether projected gains persist.</td><td>Does this create a continuing decision advantage beyond reports and controls already built into existing systems?</td></tr>
+</tbody></table></div>
+<p>There is also a different route: capture the gains by operating or acquiring the underlying business. That requires operating competence and attractive purchase economics, not just evidence that a process can be automated. For a small firm, the commercially useful package may combine software and hands-on operation; enterprise case studies do not establish its price or market size.</p>
+<p>Low adoption alone is weak evidence for a business. The more useful opening would be a repeated, valuable workflow where present tools underperform for a specific, removable reason—and where the customer will pay to remove it.</p>
+</section>
+<section id="questions">
+<div class="eyebrow">10 / What remains unknown</div><h2>The next evidence should distinguish demand from possibility.</h2>
+<div aria-label="Questions that would change our view; scroll horizontally if needed" class="table-wrap" role="region" tabindex="0"><table><caption>Questions that would change our view</caption><thead><tr><th>Question</th><th>Evidence worth collecting</th><th>Result that would weaken the opportunity</th></tr></thead><tbody>
+<tr><td>Is the work valuable enough?</td><td>Actual volume, time, delay, rework and spending for one recurring process.</td><td>Too little volume; no backlog, cash cost or customer problem to remove.</td></tr>
+<tr><td>Can current tools do it reliably?</td><td>Comparable real cases across the old process, task assistance and workflow redesign; blind quality review; total human minutes and costs.</td><td>Gains disappear after review or difficult cases are included.</td></tr>
+<tr><td>What prevents adoption?</td><td>Observe the workflow and trial a narrow intervention. Separate data access, capability, skills, ownership and incentives.</td><td>Cheap existing tools solve it, or the apparent barrier is rational lack of demand.</td></tr>
+<tr><td>Does capacity become value?</td><td>Before/after throughput, customer outcomes and expense, ideally with a comparable control group.</td><td>Local speed improves but the bottleneck, revenue and costs do not move.</td></tr>
+<tr><td>Is there a repeatable business?</td><td>Several independent customers with the same need, paid use, repeat deployment effort and ongoing support cost.</td><td>Each customer requires a different solution; custom labor consumes the margin.</td></tr>
+</tbody></table></div>
+<p><b>Timing remains open.</b> Better models can remove a technical barrier, while coordination and customer behavior may move more slowly. Re-test technical limits after meaningful model changes. Re-test the economics when price, volume or review requirements change. Neither an exponential benchmark curve nor a slow adoption survey supplies a dependable company-building timetable.</p>
+</section>
+<section class="sources" id="sources">
+<div class="eyebrow">Evidence appendix</div><h2>Sources, dates and limits</h2>
+<p>32 sources covering independent evaluations, official statistics, workplace experiments, administrative records, business surveys and company deployment accounts. Linked sources support the nearby claims; hypotheses are labeled separately. Abstract-only evidence is identified below. Publication dates and observation periods are different fields wherever available.</p>
+<p>Research checked September 20, 2026. Version 3 deepens the operational cases and adds four source entries, including supporting implementation accounts. It includes recent 2026 findings, but does not claim every series is current to that date. Census comparisons use the cited May snapshot; capability figures use the archived METR release. Studies use different generations of tools and should not be averaged into one productivity estimate.</p>
+<p><a href="../research/data/ai-capability-adoption/sources.json">Structured source register</a> · <a href="../research/data/ai-capability-adoption/metr-selected-models.csv">Capability chart data</a> · <a href="../research/data/ai-capability-adoption/chart-values.json">Other chart values and illustration assumptions</a> · <a href="../research/data/ai-capability-adoption/workflow-evidence.json">Workflow evidence and diagram notes</a> · <a href="../research/data/ai-capability-adoption/README.md">Data and update notes</a></p>
+<ol class="source-list"><li id="s01"><a href="https://metr.org/time-horizons/">METR: task-completion time horizons ↗</a><div class="source-date">Page updated May 8, 2026; data retrieved Sep 20, 2026</div><p><b>Independent benchmark; TH1.1 raw estimates.</b> Selected releases: May 2024–Feb 2026. Narrow domains and wide uncertainty. See archived raw data.</p></li><li id="s02"><a href="https://arxiv.org/abs/2606.29537">OSWorld 2.0 ↗</a><div class="source-date">July 13, 2026 revision</div><p><b>Academic benchmark; preprint abstract.</b> 108 long computer workflows; maximum 500 steps in cited result. New task set; scores cannot be compared directly with OSWorld 1.0.</p></li><li id="s03"><a href="https://openai.com/index/gdpval/">OpenAI: GDPval ↗</a><div class="source-date">September 25, 2025</div><p><b>Provider-created benchmark and methods.</b> 1,320 tasks, 44 occupations. Measures supplied-context work products; does not establish full-job substitution. Publisher sells the evaluated technology.</p></li><li id="s04"><a href="https://epoch.ai/data-insights/llm-inference-price-trends">Epoch AI: inference price trends ↗</a><div class="source-date">March 12, 2025</div><p><b>Independent analysis of benchmark and API price data.</b> Historical price at fixed performance. Different benchmarks yield different rates; excludes deployment and human costs.</p></li><li id="s05"><a href="https://www.census.gov/library/stories/2026/05/ai-use-businesses.html">Census: business AI use, December 2025–May 2026 ↗</a><div class="source-date">May 26, 2026; observations through May 3</div><p><b>Official BTOS survey analysis.</b> US employer businesses. Any business function, previous two weeks. November 17, 2025 question change breaks comparison with earlier narrower series.</p></li><li id="s06"><a href="https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-25.pdf">Census: The Microstructure of AI Diffusion ↗</a><div class="source-date">April 2026; November 2025–January 2026 supplement</div><p><b>Official working paper; firm survey.</b> Firm and employment weights answer different questions. Adoption and business outcomes are reported, not randomized.</p></li><li id="s07"><a href="https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html">Federal Reserve: Monitoring AI Adoption in the U.S. Economy ↗</a><div class="source-date">April 3, 2026; late-2025 observations</div><p><b>Primary survey comparison and methodological analysis.</b> BTOS, RPS and SBU cover different populations, reference periods and definitions. Employment weighting is not a worker-use rate.</p></li><li id="s08"><a href="https://ec.europa.eu/eurostat/web/interactive-publications/digitalisation-2026">Eurostat: Digitalisation in Europe 2026 ↗</a><div class="source-date">2026 edition; 2025 enterprise observations</div><p><b>Official enterprise statistics.</b> Survey covers enterprises with at least 10 workers in covered sectors. Excludes microbusinesses; not directly comparable with US BTOS.</p></li><li id="s09"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7377853">Bick et al.: What Work Does Generative AI Do? ↗</a><div class="source-date">August 2026; abstract revised September 7</div><p><b>Working paper; author abstract.</b> Nationally representative worker survey linked to tasks. Self-reported use; exposure and platform chat categories do not measure the same thing.</p></li><li id="s10"><a href="https://digitaleconomy.stanford.edu/publication/generative-ai-at-work/">Brynjolfsson, Li &amp; Raymond: Generative AI at Work ↗</a><div class="source-date">QJE, May 2025; earlier deployment observations</div><p><b>Peer-reviewed field study; staggered rollout.</b> 5,172 support agents at one firm. Updated published estimate is 15%; do not mix with earlier 14% working-paper version.</p></li><li id="s11"><a href="https://doi.org/10.2139/ssrn.4945566">Cui et al.: AI and software developer productivity ↗</a><div class="source-date">August 20, 2025 version</div><p><b>Three randomized company field experiments.</b> 4,867 developers. Pooled effect of adoption estimated using randomized access; 26.08%, standard error 10.3 percentage points. Company-level estimates are noisy; Microsoft-affiliated coauthors.</p></li><li id="s12"><a href="https://www.aeaweb.org/articles?id=10.1257/aeri.20250275">Dillon et al.: Shifting Work Patterns with Generative AI ↗</a><div class="source-date">AER: Insights, forthcoming; abstract accessed September 20, 2026</div><p><b>Randomized field experiment; accepted article abstract.</b> 66 firms, 7,137 workers, six months. Two-hour estimate concerns users in the second half, not all assigned workers. Microsoft-affiliated coauthors.</p></li><li id="s13"><a href="https://www.nber.org/papers/w33641">Dell’Acqua et al.: The Cybernetic Teammate ↗</a><div class="source-date">April 2025 working-paper version</div><p><b>Randomized innovation exercise; author abstract and HBS researcher account.</b> 776 P&amp;G professionals in this version. Short product-development exercise; does not measure enduring team replacement. P&amp;G supported the research. <a href="https://www.library.hbs.edu/working-knowledge/when-ai-joins-the-team-better-ideas-surface">Researcher account ↗</a></p></li><li id="s14"><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR: early-2025 developer experiment ↗</a><div class="source-date">July 10, 2025; early-2025 tools</div><p><b>Randomized task-level experiment.</b> 16 experienced open-source developers, 246 tasks in familiar repositories. Time increase 19%, 95% interval 2%–39%. Narrow and dated setting.</p></li><li id="s15"><a href="https://metr.org/blog/2026-02-24-uplift-update/">METR: developer-productivity follow-up ↗</a><div class="source-date">February 24, 2026; experiment begun August 2025</div><p><b>Experimental follow-up with selection problems.</b> 57 developers, 800+ tasks. Participation and task selection changed; both reported subgroup intervals cross zero. Not a clean estimate of current average gains.</p></li><li id="s16"><a href="https://metr.org/blog/2026-05-11-ai-usage-survey/">METR: AI usage survey ↗</a><div class="source-date">May 11, 2026; February–April observations</div><p><b>Self-report survey of technical workers.</b> 349 respondents; selected sample. Perceived counterfactual speed and value are not experimentally measured output.</p></li><li id="s17"><a href="https://www.rfberlin.com/wp-content/uploads/2026/03/26078.pdf">Humlum &amp; Vestergaard: Still Waters, Rapid Currents ↗</a><div class="source-date">March 13, 2026 version; two years after ChatGPT launch</div><p><b>Working paper; surveys linked to administrative records.</b> Danish difference-in-differences estimates. Null average earnings/hours effects do not rule out task change, later effects or different outcomes elsewhere.</p></li><li id="s18"><a href="https://www.atlantafed.org/research-and-data/publications/working-papers/2026/03/24/03-firm-data-on-ai">Yotzov et al.: Firm Data on AI ↗</a><div class="source-date">March 24, 2026</div><p><b>Working paper; stratified executive surveys.</b> Nearly 6,000 executives across US, UK, Germany and Australia. Retrospective impact is self-reported. Future expectations are not observed results.</p></li><li id="s19"><a href="https://www.richmondfed.org/research/national_economy/cfo_survey/research_and_commentary/2026/20260325_research_commentary">Atlanta Fed, Richmond Fed &amp; Duke: CFO evidence ↗</a><div class="source-date">March 25, 2026; November 2025–January 2026 fieldwork</div><p><b>Primary survey analysis; 748 responses.</b> Reported output-per-worker gains exceed gains implied by reported revenue and headcount. Neither measure is an audited causal estimate.</p></li><li id="s20"><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey: The State of AI in 2026 ↗</a><div class="source-date">August 25, 2026; May 4–June 8 fieldwork</div><p><b>Consultancy survey; 1,719 respondents in 97 nations.</b> 36% work at firms with over $1bn revenue; country-GDP weighting. Self-reported use and impact, not representative of all firms by count. Publisher sells AI consulting.</p></li><li id="s21"><a href="https://www.oecd.org/en/publications/generative-ai-and-the-sme-workforce_2d08b99d-en.html">OECD: Generative AI and the SME Workforce ↗</a><div class="source-date">November 5, 2025; October–December 2024 fieldwork</div><p><b>Representative telephone survey; 5,232 SMEs in seven countries.</b> Includes one-person businesses through 249 employees. Barrier percentages refer to non-adopters; multiple answers allowed. Older adoption snapshot, not September 2026 prevalence.</p></li><li id="s22"><a href="https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements">DBS: agentic credit-assessment rollout ↗</a><div class="source-date">August 19, 2026</div><p><b>Company deployment announcement.</b> 150-person pilot followed by rollout to about 1,500 staff. The 30% time reduction is a goal, not a measured result. No controlled outcomes disclosed.</p></li><li id="s23"><a href="https://www.ibm.com/think/insights/embracing-future-of-hr-ai-first-enterprise">IBM CHRO: redesigning HR service delivery ↗</a><div class="source-date">2025 account; describes 2017–2024 changes</div><p><b>First-person management account.</b> Channel closures, policy simplification and automation changed together. Reported containment and budget changes do not isolate generative AI. IBM also sells these systems.</p></li><li id="s24"><a href="https://arxiv.org/html/2607.28222v2">Jabarian &amp; Henkel: Voice AI in Firms ↗</a><div class="source-date">September 11, 2026 revision; March–June 2025 experiment</div><p><b>Randomized field experiment; full methods reviewed.</b> Philippine entry-level service recruitment; human hiring authority retained. Google Cloud support. One author later accepted an unpaid role at the partner firm.</p></li><li id="s25"><a href="https://arxiv.org/html/2607.01904v1">He et al.: AI Writes Faster Than Humans Can Review ↗</a><div class="source-date">July 2, 2026; January 2024–April 2026 observations</div><p><b>Longitudinal single-company study; preprint.</b> Nonrandom adoption. The 2.09× statistic counts authored pull requests per active developer, distinct from the mandate’s merged-output target. Quality proxies miss latent defects.</p></li><li id="s26"><a href="https://www.dbs.com/artificial-intelligence-machine-learning/artificial-intelligence/responsible-ai-in-banking-gaining-a-competitive-edge.html">DBS: platforms, processes and people ↗</a><div class="source-date">June 11, 2025</div><p><b>Company account of deployment infrastructure.</b> Reported delivery-time reduction accompanies shared data and model infrastructure. No counterfactual or cost breakdown; large-bank infrastructure may not transfer economically to an SME.</p></li><li id="s27"><a href="https://s205.q4cdn.com/644747736/files/doc_financials/2025/q4/Klarna-Group-plc-20-F-2025.pdf">Klarna: 2025 Form 20-F ↗</a><div class="source-date">2026 filing; year ended December 31, 2025</div><p><b>Company regulatory filing; narrative disclosures, PDF page 188.</b> 80% chat share and approximately $59m savings are company-reported measures. A filing is not independent causal validation of AI savings; customers retained human support.</p></li><li id="s28"><a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">Google Cloud: 2025 DORA findings ↗</a><div class="source-date">September 23, 2025</div><p><b>Primary research summary; survey of nearly 5,000 technology professionals.</b> Reported associations, not random assignment. More AI use correlated with both throughput and instability. Google Cloud sells AI and development products.</p></li><li id="s29"><a href="https://www.dbs.com/NewsPrinter.page?locale=en&amp;newsId=mqdetosw">DBS: customer assistants and agentic rollout ↗</a><div class="source-date">July 28, 2026; first-half 2026 outcomes</div><p><b>Company deployment and operating-metrics announcement.</b> Joy outcomes precede its July agentic upgrade. Eligible users are not active users. Satisfaction baseline and causal contribution are undisclosed.</p></li><li id="s30"><a href="https://www.dbs.com/annualreports/2025/ceo-reflections.html">DBS: 2025 CEO reflections ↗</a><div class="source-date">2025 annual report; published 2026</div><p><b>Management account of bank-wide transformation.</b> Economic value covers data analytics and all AI/ML, not just generative AI. Program counts and management estimates are not controlled returns.</p></li><li id="s31"><a href="https://permanente.org/analysis-ai-scribes-save-physicians-time-improve-patient-interactions-and-work-satisfaction/">Permanente: ambient AI scribe deployment ↗</a><div class="source-date">April 7, 2025; 63-week evaluation</div><p><b>Deploying institution’s account of its NEJM Catalyst study.</b> Observational adoption and patient surveys. Primary institutional summary reviewed; journal full text was inaccessible. No demonstrated increase in patient capacity or profit. <a href="https://permanente.org/lessons-learned-from-the-kaiser-permanente-rollout-of-ambient-ai-scribes/">Rollout and integration account ↗</a></p></li><li id="s32"><a href="https://www.dbs.com/annualreports/2024/cio-statement.html">DBS: 2024 CIO statement ↗</a><div class="source-date">2024 annual report; published 2025</div><p><b>Management account of process and control changes.</b> Manual hours are cumulative; incident reductions have different definitions. Digitalization and conventional ML are included. These are not isolated generative-AI effects.</p></li></ol>
+<div class="note"><b>Scope.</b> This report tests claims relevant to AI capability and adoption. It does not validate the other claims in the supplied research memo, size a market, choose a sector or recommend a company. The earlier brainstorms and supplied memo remain idea sources. The remaining trend reports are unchanged.</div>
+</section>
+</main></div>
+<footer>Organizational Transformation · Research report 01 · Version 3 · 20 September 2026 <a href="#top">Back to top ↑</a></footer>
+<script>
+(() => {
+  const links = [...document.querySelectorAll('.report-sidebar nav a, .mobile-contents nav a')];
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const compact = document.querySelector('.mobile-contents');
+  const current = document.querySelector('.nav-current');
+  let pending = false;
+  function updateLocation() {
+    const threshold = window.innerWidth <= 1150 ? 110 : 100;
+    let active = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= threshold) active = section;
+    }
+    for (const link of links) {
+      const selected = link.hash === '#' + active.id;
+      if (selected) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+      if (selected) current.textContent = link.lastElementChild.textContent;
+    }
+    pending = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!pending) { pending = true; requestAnimationFrame(updateLocation); }
+  }, { passive: true });
+  window.addEventListener('resize', updateLocation);
+  compact.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => { compact.open = false; }));
+  compact.addEventListener('keydown', e => { if (e.key === 'Escape') { compact.open = false; compact.querySelector('summary').focus(); } });
+  updateLocation();
+})();
+</script></body></html>

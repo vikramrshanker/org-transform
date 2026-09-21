@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Census: business owners’ ages",
+    "url": "https://www.census.gov/library/visualizations/2020/comm/business-owners-ages.html",
+    "published_or_version": "September 2020; 2019 ABS, reference year 2018",
+    "method": "Official historical owner demographics.",
+    "limitations": "Owners are not firms or prospective sellers. This older snapshot is not a 2026 age estimate.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "SBA Advocacy: 2025 small-business profiles and technical notes",
+    "url": "https://advocacy.sba.gov/wp-content/uploads/2025/06/State_Profiles_2025_Technical-Notes.pdf",
+    "published_or_version": "June 2025; underlying series have different reference years",
+    "method": "Official statistical compilation.",
+    "limitations": "Small-business totals include nonemployers. Counts do not measure transferable companies or businesses for sale.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "BizBuySell: 2025 year in review",
+    "url": "https://www.bizbuysell.com/blog/2025-year-in-review/",
+    "published_or_version": "January 30, 2026; calendar 2025",
+    "method": "Marketplace transaction report.",
+    "limitations": "Broker-reported closed transactions; selected coverage. Medians and average multiples are different statistics.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "BizBuySell: Q2 2026 Insight Report",
+    "url": "https://www.bizbuysell.com/insight-report/",
+    "published_or_version": "Q2 2026; page checked September 21",
+    "method": "Marketplace transactions and sentiment.",
+    "limitations": "A changing report URL. Reported transactions are not a national census; mix shifts can affect prices.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "Stanford GSB: 2026 search-fund study findings",
+    "url": "https://www.gsb.stanford.edu/insights/search-funds-keep-offering-proven-path-ownership",
+    "published_or_version": "July 13, 2026; study through December 2025",
+    "method": "University summary of core search-fund research.",
+    "limitations": "US and Canada; this institutional acquisition model differs from self-funded small-business buying. Primary summary reviewed; full study not relied upon.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "Axial: 2025 broken letters of intent",
+    "url": "https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/",
+    "published_or_version": "2026 report; unsuccessful 2025 transactions",
+    "method": "Platform analysis of 75 failed transactions.",
+    "limitations": "Selected failures with member explanations. No denominator for all attempted deals; cannot estimate the overall probability of failure.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "NCEO: employee ownership by the numbers",
+    "url": "https://www.nceo.org/research/employee-ownership-by-the-numbers",
+    "published_or_version": "Updated January 2026; 2023 Form 5500 data",
+    "method": "Analysis of US retirement-plan filings.",
+    "limitations": "Plans, companies, participants and new ownership transactions are different units. Filing and processing create a lag.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "Project Equity: Westbrae Nursery",
+    "url": "https://project-equity.org/ownership-story/westbrae-nursery/",
+    "published_or_version": "Undated account; April 2022 transition",
+    "method": "Transaction adviser’s case account.",
+    "limitations": "Six-employee business. Price, debt terms, post-transition profitability and an independent outcome evaluation are not disclosed.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Project Equity: employee ownership for manufacturers",
+    "url": "https://project-equity.org/wp-content/uploads/2023/08/Employee_Ownership_for_Manufacturers_Project-Equity_91923.pdf",
+    "published_or_version": "September 2023; Adams & Chittenden transition in 2019",
+    "method": "Adviser case account, page 6.",
+    "limitations": "Illustrates succession in a specialist manufacturer; no quantified causal effect on productivity or survival.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "SBA: 7(a) loans",
+    "url": "https://www.sba.gov/loans/7a-loans/",
+    "published_or_version": "Current program page checked September 21, 2026",
+    "method": "Official program description.",
+    "limitations": "The $5m maximum is a loan limit, not an acquisition-price limit or guaranteed approval. Eligibility and transaction terms require current lender review.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "Census: nonemployer statistics by demographics",
+    "url": "https://www.census.gov/programs-surveys/abs/data/nesd.html",
+    "published_or_version": "Series page checked September 21, 2026",
+    "method": "Official statistical scope and releases.",
+    "limitations": "Nonemployer businesses are a separate population from employer-firm owner surveys. Neither population directly measures businesses for sale.",
+    "accessed": "2026-09-21"
+  }
+]

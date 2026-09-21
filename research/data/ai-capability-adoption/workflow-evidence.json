@@ -1,0 +1,171 @@
+{
+  "report_version": 3,
+  "researched_on": "2026-09-20",
+  "cases": [
+    {
+      "source": "S22",
+      "case": "DBS credit memos",
+      "status": "deployed; outcome target",
+      "pilot_users": 150,
+      "rollout_staff_approx": 1500,
+      "time_reduction_goal_pct_at_least": 30,
+      "not_observed": "30% target is not a reported measured saving",
+      "agent_tasks_more_than": 70,
+      "role_time_credit_activities_max_pct": 40,
+      "illustrative_role_time_release_pct": 12,
+      "calculation": "40% role share × 30% target task saving = 12% role capacity before additional review; not an observed saving",
+      "source_locator": "Release sections: Reimagining corporate banking; paragraphs on workload and iteration"
+    },
+    {
+      "source": "S23",
+      "case": "IBM HR",
+      "status": "management account; combined multi-year changes",
+      "first_line_managers_affected_2018": 21000,
+      "initial_nps": -35,
+      "later_nps": 74,
+      "containment_2024_pct": 94,
+      "interactions_2024_more_than": 11500000,
+      "transactions_2024_more_than": 1000000,
+      "operating_budget_reduction_four_years_pct": 40,
+      "source_locator": "Infusing AI into HR; The future of AI in HR",
+      "limitations": "Combined channel, policy and automation changes; no attribution of budget decline solely to generative AI"
+    },
+    {
+      "source": "S24",
+      "case": "PSG recruitment",
+      "status": "randomized intervention",
+      "total_applications": 70884,
+      "eligible_randomized_all_three_arms": 67056,
+      "human_arm_n": 13557,
+      "ai_arm_n": 40103,
+      "choice_arm_n": 13396,
+      "human_offer_pct": 8.7,
+      "ai_offer_pct": 9.73,
+      "difference_percentage_points": 1.03,
+      "relative_difference_pct_derived": 11.839080459770134,
+      "observation_period": "2025-03-07 to 2025-06-07",
+      "diagram": "Simplified process; collection changes, human hiring decision retained",
+      "human_job_start_pct": 5.65,
+      "ai_job_start_pct": 6.71,
+      "job_start_difference_pp": 1.06,
+      "human_employed_one_month_pct": 4.98,
+      "ai_employed_one_month_pct": 5.89,
+      "employment_one_month_difference_pp": 0.91,
+      "additional_employed_one_month_per_1000_derived": 9.1,
+      "denominator": "All applicants randomized to Human Interviewer or AI Interviewer, not only hires; excludes choice arm",
+      "source_locator": "Section 3.1, Sample: all applicants"
+    },
+    {
+      "source": "S25",
+      "case": "Engineering organization",
+      "status": "observational; no full causal attribution",
+      "developers": 802,
+      "pull_requests": 196212,
+      "end_vs_baseline_throughput_ratio": 2.09,
+      "observation_period": "2024-01 to 2026-04",
+      "throughput_definition": "Authored pull requests per active developer/month; not merged PR mandate measure",
+      "throughput_baseline": 21.2,
+      "throughput_baseline_period": "January–April 2025",
+      "throughput_april_2026": 44.3,
+      "substantive_review_share_earlier_peak_approx_pct": 48,
+      "substantive_review_share_later_approx_pct": 21,
+      "human_reviewed_p90_cycle_time_hours_approx": {
+        "pre_ramp": 63,
+        "peak": 114,
+        "2026": 73
+      },
+      "source_locator": "Section IV-A and footnote 6; Appendix C-D",
+      "limitation": "Review-coverage endpoints and cycle-time endpoints differ; rounded figures describe transitions, not matched monthly observations"
+    },
+    {
+      "source": "S27",
+      "case": "Klarna customer service",
+      "status": "company-reported",
+      "year": 2025,
+      "ai_share_customer_chats_pct": 80,
+      "estimated_savings_usd_million": 59,
+      "ai_chat_resolution_minutes_2024": 2,
+      "human_chat_resolution_minutes_2024": 12,
+      "equivalent_full_time_agent_workload_2025_more_than": 850,
+      "equivalence_method": "Average monthly reduction in conversations handled by staff; not a count of layoffs",
+      "source_locator": "PDF page 188 (index 187), AI cost savings paragraph",
+      "limitation": "2024 time comparison is not randomized; no case-mix adjustment disclosed. Do not combine with 2025 chat share as same-period funnel."
+    },
+    {
+      "source": "S26",
+      "case": "DBS infrastructure",
+      "status": "company-reported",
+      "previous_time_to_market_months": 15,
+      "later_time_to_market_months_less_than": 3
+    },
+    {
+      "source": "S29",
+      "case": "DBS Joy and digibot",
+      "status": "company-reported; service metrics precede agentic launch",
+      "joy_observation_period": "First half 2026, Singapore",
+      "joy_active_users_growth_pct": 61,
+      "joy_chats_growth_pct": 22,
+      "joy_calls_or_emails_change_pct": -7,
+      "joy_satisfaction_score_increase_pct": 17,
+      "joy_agentic_launch": "July 2026",
+      "joy_singapore_users_eligible": 350000,
+      "retail_digibot_resolved_without_followup_call_pct": 90,
+      "limits": "Growth rates not percentage-point changes. Satisfaction scale undisclosed. Digibot population differs from Joy. Eligible users not active users. No causal estimate of July upgrade.",
+      "source_locator": "DBS Joy goes agentic; DBS digibot sections"
+    },
+    {
+      "source": "S30",
+      "case": "DBS bank-wide operating model",
+      "status": "management account; 2025",
+      "completed_transformations": 9,
+      "target_transformations": 6,
+      "models_more_than": 2000,
+      "use_cases_more_than": 430,
+      "estimated_economic_value_sgd_billion": 1,
+      "limits": "Economic value covers analytics and all AI/ML. No isolated gen-AI contribution or return from completed transformations.",
+      "source_locator": "CEO reflections, question 2"
+    },
+    {
+      "source": "S31",
+      "case": "Permanente clinical documentation",
+      "status": "institutional summary of observational study; journal full text inaccessible",
+      "evaluation_weeks": 63,
+      "physicians_using": 7260,
+      "encounters_more_than": 2500000,
+      "top_third_users_share_activations_pct": 89,
+      "estimated_saved_working_days": 1794,
+      "patient_survey_less_computer_time_pct": 47,
+      "patient_survey_more_direct_conversation_pct": 39,
+      "limits": "Usage concentration, nonrandom adoption and patient self-report. No capacity or profit result. Working-day conversion not independently reconstructed.",
+      "source_locator": "Primary institutional article dated April 7, 2025; supporting rollout account March 20, 2025"
+    },
+    {
+      "source": "S32",
+      "case": "DBS process foundation and change controls",
+      "status": "management account; 2024",
+      "addressable_processes_in_workflows_more_than_pct": 80,
+      "manual_hours_removed_cumulative_more_than": 1300000,
+      "operational_risk_incidents_yoy_change_pct": -15,
+      "change_request_risk_scoring_coverage_before_pct": 5,
+      "change_request_risk_scoring_coverage_after_pct": 100,
+      "monthly_average_change_related_incidents_change_pct": -81,
+      "limits": "Digitalization and conventional ML, not only generative AI. Incident series differ; manual hours cumulative.",
+      "source_locator": "CIO statement, AI-powered change risk scoring; Enhancing operational productivity through Gen AI"
+    }
+  ],
+  "additional_survey": {
+    "source": "S20",
+    "workflow_redesign_among_high_performers": "roughly three-quarters",
+    "among_other_respondents": "one-quarter",
+    "design": "cross-sectional association, not randomized"
+  },
+  "illustrative_workflow": {
+    "title": "Quote-to-job process",
+    "status": "Analytical example, not a measured deployment",
+    "variants": [
+      "existing process",
+      "task assistance",
+      "workflow redesign"
+    ]
+  }
+}

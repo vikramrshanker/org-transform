@@ -1,0 +1,129 @@
+{
+  "research_date": "2026-09-21",
+  "charts": [
+    {
+      "title": "Secondary transactions provide two different forms of liquidity",
+      "kind": "observed",
+      "unit": "USD billions",
+      "rows": [
+        {
+          "label": "LP-led, 2025",
+          "value": 125,
+          "display": "$125bn"
+        },
+        {
+          "label": "GP-led, 2025",
+          "value": 115,
+          "display": "$115bn"
+        }
+      ],
+      "scale_max": 140,
+      "source_ids": [
+        3
+      ],
+      "notes": "Jefferies estimates. LP-led: an investor sells fund interests. GP-led: a sponsor organizes an asset or portfolio transaction, often into a continuation vehicle. Combined total $240bn; 48% above 2024. This is not additive to a buyout exit series with a different scope.",
+      "assumptions": null
+    },
+    {
+      "title": "The same 2.0× money outcome loses annual return as the wait grows",
+      "kind": "illustrative",
+      "unit": "Annualized percent",
+      "rows": [
+        {
+          "label": "Exit after 5 years",
+          "value": 14.8698,
+          "display": "14.9%"
+        },
+        {
+          "label": "Exit after 7 years",
+          "value": 10.40895,
+          "display": "10.4%"
+        },
+        {
+          "label": "Exit after 10 years",
+          "value": 7.17735,
+          "display": "7.2%"
+        }
+      ],
+      "scale_max": 16,
+      "source_ids": [],
+      "notes": "Illustration: one initial equity contribution, one final distribution equal to twice that contribution, and no interim cash flows. Formula: 2^(1/years) − 1. This is not an observed PE return series.",
+      "assumptions": {
+        "initial_equity": 1,
+        "exit_proceeds": 2,
+        "interim_distributions": 0,
+        "years": [
+          5,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "title": "Illustrative buyout sensitivity",
+      "kind": "illustrative",
+      "unit": "USD millions",
+      "assumptions": {
+        "entry_ebitda": 10,
+        "entry_multiple": 10,
+        "entry_debt": 50,
+        "entry_equity": 50,
+        "exit_debt": 30,
+        "years": 5,
+        "excluded": [
+          "fees",
+          "taxes",
+          "interim distributions",
+          "management dilution"
+        ]
+      },
+      "scenarios": [
+        {
+          "growth": 0,
+          "exit_multiple": 10,
+          "exit_ebitda": 10,
+          "equity_proceeds": 70,
+          "moic": 1.4,
+          "annual_return": 0.06961037572506878
+        },
+        {
+          "growth": 0.05,
+          "exit_multiple": 10,
+          "exit_ebitda": 12.762815625000004,
+          "equity_proceeds": 97.62815625000003,
+          "moic": 1.9525631250000006,
+          "annual_return": 0.1431968434890467
+        },
+        {
+          "growth": 0.1,
+          "exit_multiple": 10,
+          "exit_ebitda": 16.105100000000007,
+          "equity_proceeds": 131.05100000000007,
+          "moic": 2.6210200000000015,
+          "annual_return": 0.2125343956790433
+        },
+        {
+          "growth": 0.05,
+          "exit_multiple": 8,
+          "exit_ebitda": 12.762815625000004,
+          "equity_proceeds": 72.10252500000003,
+          "moic": 1.4420505000000006,
+          "annual_return": 0.07595991982311179
+        }
+      ],
+      "source_ids": []
+    },
+    {
+      "title": "Medline December 2025 IPO uses",
+      "kind": "reported",
+      "unit": "USD millions",
+      "net_proceeds_before_other_offering_expenses": 7048,
+      "term_loan_repayments": 4023,
+      "pre_ipo_owner_redemptions": 1970,
+      "source_ids": [
+        9
+      ],
+      "note": "Not a complete uses table; remaining proceeds for general corporate purposes and offering expenses."
+    }
+  ]
+}

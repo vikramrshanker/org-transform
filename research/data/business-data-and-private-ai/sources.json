@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "IBM: 2026 cost-of-breach findings",
+    "url": "https://www.ibm.com/think/x-force/2026-cost-of-a-data-breach-ai-adversaries-enterprise-risk",
+    "published_or_version": "July 29, 2026; breaches March 2025–February 2026",
+    "method": "Ponemon research sponsored and analyzed by IBM; 602 breached organizations.",
+    "limitations": "Conditioned on organizations that suffered breaches. Not an incidence estimate across all businesses; associations do not establish causal savings.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "IBM: 2026 breach study announcement and methods",
+    "url": "https://newsroom.ibm.com/2026-07-29-ibm-study-one-in-four-malicious-breaches-are-ai-enabled%2C-costing-companies-6-million-on-average",
+    "published_or_version": "July 29, 2026",
+    "method": "Primary study announcement and observation window.",
+    "limitations": "Same study as source 1, not independent corroboration. AI-enabled attacks and attacks on AI systems are different categories.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "Microsoft/LinkedIn: 2024 Work Trend Index",
+    "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part",
+    "published_or_version": "May 8, 2024",
+    "method": "Survey of 31,000 knowledge workers across 31 markets.",
+    "limitations": "Historical self-report; 78% BYOAI figure applies to AI users, not all employees. Not current prevalence or evidence of a breach.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "Microsoft: Copilot security and oversharing",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/security-microsoft-365-copilot",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Primary product security documentation.",
+    "limitations": "Honoring permissions does not fix permissions that were overly broad before deployment; product behavior is not a blanket compliance guarantee.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "Microsoft: data protection and auditing architecture",
+    "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Primary architecture and retention documentation.",
+    "limitations": "Prompts, responses and referenced content can create auditable and retained records. Actual behavior depends on service and configuration.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "AWS: Bedrock security and privacy",
+    "url": "https://aws.amazon.com/bedrock/security-compliance/",
+    "published_or_version": "Documentation checked September 21, 2026",
+    "method": "Primary managed-cloud service commitments.",
+    "limitations": "No base-model training and private connectivity are distinct from zero retention across a customer’s application, logs and integrated services.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "Morgan Stanley: Debrief launch",
+    "url": "https://www.morganstanley.com/press-releases/ai-at-morgan-stanley-debrief-launch",
+    "published_or_version": "June 26, 2024",
+    "method": "Deploying institution’s workflow and adoption account.",
+    "limitations": "98% refers to teams adopting the earlier Assistant, not Debrief usage, productivity or independent security validation.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "BBVA: expansion to 11,000 enterprise licenses",
+    "url": "https://www.bbva.com/en/innovation/bbva-expands-its-agreement-with-openai-to-11000-chatgpt-licences-for-the-banks-employees/",
+    "published_or_version": "2025 announcement, one year after May 2024 rollout",
+    "method": "Bank-reported adoption and employee time estimates.",
+    "limitations": "Self-reported savings among task-automating users, not measured firm-wide cash savings; license count is not proof of valuable usage.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Apple: Private Cloud Compute architecture",
+    "url": "https://security.apple.com/blog/private-cloud-compute/",
+    "published_or_version": "June 10, 2024",
+    "method": "First-party security architecture.",
+    "limitations": "Architecture and inspectability claims, not independent proof that every deployment is invulnerable. Consumer platform, not a general enterprise product.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Apple: expanding Private Cloud Compute",
+    "url": "https://security.apple.com/blog/expanding-pcc/",
+    "published_or_version": "June 8, 2026",
+    "method": "First-party account of expansion onto Google Cloud infrastructure.",
+    "limitations": "The announcement describes a summer preview ramp toward the full protections. It is not evidence that every planned protection was deployed on the announcement date.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "EDPB: Opinion 28/2024 on AI models",
+    "url": "https://www.edpb.europa.eu/news/edpb-opinion-on-ai-models-gdpr-principles-support-responsible-ai_en",
+    "published_or_version": "December 18, 2024",
+    "method": "EU supervisory-board interpretation.",
+    "limitations": "Anonymity and legitimate-interest assessments are case-specific. Does not supply a universal lawful basis for private business data.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 12,
+    "title": "European Commission: Data Act explained",
+    "url": "https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained",
+    "published_or_version": "Act generally applies from September 12, 2025; page checked September 2026",
+    "method": "Official explanation of connected-product data access and sharing.",
+    "limitations": "Scope, safeguards and phased obligations matter. It is not a general right to use every company dataset or override personal-data law.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 13,
+    "title": "OWASP: 2025 Top 10 for LLM applications",
+    "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf",
+    "published_or_version": "2025 edition",
+    "method": "Expert security guidance.",
+    "limitations": "Threat taxonomy and design guidance, not frequency estimates. Retrieval and fine-tuning do not eliminate prompt injection.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 14,
+    "title": "NIST: generative AI risk-management profile",
+    "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "published_or_version": "July 26, 2024; AI 600-1",
+    "method": "Voluntary risk-management framework.",
+    "limitations": "A framework for identifying and evaluating risks, not a product certification, compliance verdict or measured business outcome.",
+    "accessed": "2026-09-21"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Bain: private equity outlook 2026",
+    "url": "https://www.bain.com/insights/outlook-gaining-traction-global-private-equity-report-2026/",
+    "published_or_version": "February 22, 2026; principally 2025 market data",
+    "method": "Industry synthesis using transaction and fund datasets.",
+    "limitations": "Announced transactions can be pending. Disclosed deal values are not fund cash distributions; provider coverage and definitions differ.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 2,
+    "title": "Bain: welcome to a new era in private equity",
+    "url": "https://www.bain.com/insights/welcome-to-a-new-era-global-private-equity-report-2026/",
+    "published_or_version": "February 22, 2026",
+    "method": "Industry analysis and illustrative buyout model.",
+    "limitations": "The 5% versus 10–12% EBITDA-growth comparison depends on different financing and valuation assumptions; it is not an empirical hurdle for every deal.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "Jefferies: 2025 global secondary market review",
+    "url": "https://www.jefferies.com/insights/leadership-spotlight/2025-global-secondary-market-review-another-record-breaking-year/",
+    "published_or_version": "February 10, 2026; calendar 2025",
+    "method": "Adviser estimates of secondary transactions and pricing.",
+    "limitations": "Selected market coverage. NAV is a reported valuation reference, not independently verified intrinsic value. LP and GP transactions are distinct.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 4,
+    "title": "ILPA: NAV-based facilities guidance",
+    "url": "https://ilpa.org/industry-guidance/principles-best-practices/nav-based-facilities-guidance-roadmap/",
+    "published_or_version": "July 2024 guidance",
+    "method": "Limited-partner association recommendations.",
+    "limitations": "Governance guidance, not a universal legal obligation or a measured prevalence estimate.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 5,
+    "title": "ILPA: continuation-fund guidance",
+    "url": "https://ilpa.org/resources-tools/resource-library/continuation-funds-considerations-for-limited-partners-and-general-partners/",
+    "published_or_version": "May 2023",
+    "method": "Industry governance guidance.",
+    "limitations": "Transaction circumstances differ; recommendations do not establish that a particular price or process is fair.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 6,
+    "title": "ILPA: draft updated continuation-vehicle guidance",
+    "url": "https://ilpa.org/resources-tools/resource-library/draft-new-continuation-vehicle-cv-guidance/",
+    "published_or_version": "June 24, 2026; comments closed August 5",
+    "method": "Primary status announcement.",
+    "limitations": "Still described as draft on the checked page. This report does not treat draft provisions as final requirements.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 7,
+    "title": "Nucor: completion of C.H.I. acquisition",
+    "url": "https://nucor.com/news/?article=nucor-completes-acquisition-of-chi-overhead-doors-122921",
+    "published_or_version": "June 24, 2022",
+    "method": "Acquirer’s completed-transaction disclosure.",
+    "limitations": "Establishes purchase consideration, not sponsor net returns or the causes of operating improvement.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 8,
+    "title": "KKR: Q2 2022 earnings-call transcript",
+    "url": "https://ir.kkr.com/media/document/9067f645-0ad3-4cd4-a5e6-e62e61c5b7a4/assets/KKR%20Q2%202022%20Earnings%20Call%20Transcript.pdf?disposition=inline",
+    "published_or_version": "August 2022; C.H.I. ownership-period account",
+    "method": "Sponsor management account.",
+    "limitations": "Selected successful investment. Reported 10× money multiple is not an LP net IRR or a typical buyout outcome.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 9,
+    "title": "Medline: Q1 2026 Form 10-Q, Note 1",
+    "url": "https://www.sec.gov/Archives/edgar/data/2046386/000204638626000026/mdln-20260328.htm",
+    "published_or_version": "2026 filing; quarter ended March 28",
+    "method": "Regulatory filing; December 2025 IPO proceeds reconciliation.",
+    "limitations": "Includes full underwriter option. Net proceeds are after underwriting discounts but before other offering expenses. Pre-IPO owners are broader than one PE fund.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Davis et al.: heterogeneous effects of PE buyouts",
+    "url": "https://www.nber.org/papers/w26371",
+    "published_or_version": "2019 working paper; revised study record",
+    "method": "Academic research using firm and establishment data.",
+    "limitations": "Historical US buyouts; outcomes vary by deal type, sponsor and economic conditions. It does not estimate AI-era returns.",
+    "accessed": "2026-09-21"
+  },
+  {
+    "id": 11,
+    "title": "Bain: Global Private Equity Report 2026, full report",
+    "url": "https://www.bain.cn/pdfs/202603050532513699.pdf",
+    "published_or_version": "February 2026; 2025 transaction observations",
+    "method": "Full report supporting aggregate exit value.",
+    "limitations": "Same underlying research as sources 1–2, not independent corroboration; announced exit value includes debt where relevant.",
+    "accessed": "2026-09-21"
+  }
+]

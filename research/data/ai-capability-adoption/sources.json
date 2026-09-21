@@ -1,0 +1,267 @@
+{
+  "researched_on": "2026-09-20",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "METR: task-completion time horizons",
+      "url": "https://metr.org/time-horizons/",
+      "date": "Page updated May 8, 2026; data retrieved Sep 20, 2026",
+      "method": "Independent benchmark; TH1.1 raw estimates",
+      "limits": "Selected releases: May 2024–Feb 2026. Narrow domains and wide uncertainty. See archived raw data."
+    },
+    {
+      "id": "S02",
+      "title": "OSWorld 2.0",
+      "url": "https://arxiv.org/abs/2606.29537",
+      "date": "July 13, 2026 revision",
+      "method": "Academic benchmark; preprint abstract",
+      "limits": "108 long computer workflows; maximum 500 steps in cited result. New task set; scores cannot be compared directly with OSWorld 1.0."
+    },
+    {
+      "id": "S03",
+      "title": "OpenAI: GDPval",
+      "url": "https://openai.com/index/gdpval/",
+      "date": "September 25, 2025",
+      "method": "Provider-created benchmark and methods",
+      "limits": "1,320 tasks, 44 occupations. Measures supplied-context work products; does not establish full-job substitution. Publisher sells the evaluated technology."
+    },
+    {
+      "id": "S04",
+      "title": "Epoch AI: inference price trends",
+      "url": "https://epoch.ai/data-insights/llm-inference-price-trends",
+      "date": "March 12, 2025",
+      "method": "Independent analysis of benchmark and API price data",
+      "limits": "Historical price at fixed performance. Different benchmarks yield different rates; excludes deployment and human costs."
+    },
+    {
+      "id": "S05",
+      "title": "Census: business AI use, December 2025–May 2026",
+      "url": "https://www.census.gov/library/stories/2026/05/ai-use-businesses.html",
+      "date": "May 26, 2026; observations through May 3",
+      "method": "Official BTOS survey analysis",
+      "limits": "US employer businesses. Any business function, previous two weeks. November 17, 2025 question change breaks comparison with earlier narrower series."
+    },
+    {
+      "id": "S06",
+      "title": "Census: The Microstructure of AI Diffusion",
+      "url": "https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-25.pdf",
+      "date": "April 2026; November 2025–January 2026 supplement",
+      "method": "Official working paper; firm survey",
+      "limits": "Firm and employment weights answer different questions. Adoption and business outcomes are reported, not randomized."
+    },
+    {
+      "id": "S07",
+      "title": "Federal Reserve: Monitoring AI Adoption in the U.S. Economy",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html",
+      "date": "April 3, 2026; late-2025 observations",
+      "method": "Primary survey comparison and methodological analysis",
+      "limits": "BTOS, RPS and SBU cover different populations, reference periods and definitions. Employment weighting is not a worker-use rate."
+    },
+    {
+      "id": "S08",
+      "title": "Eurostat: Digitalisation in Europe 2026",
+      "url": "https://ec.europa.eu/eurostat/web/interactive-publications/digitalisation-2026",
+      "date": "2026 edition; 2025 enterprise observations",
+      "method": "Official enterprise statistics",
+      "limits": "Survey covers enterprises with at least 10 workers in covered sectors. Excludes microbusinesses; not directly comparable with US BTOS."
+    },
+    {
+      "id": "S09",
+      "title": "Bick et al.: What Work Does Generative AI Do?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7377853",
+      "date": "August 2026; abstract revised September 7",
+      "method": "Working paper; author abstract",
+      "limits": "Nationally representative worker survey linked to tasks. Self-reported use; exposure and platform chat categories do not measure the same thing."
+    },
+    {
+      "id": "S10",
+      "title": "Brynjolfsson, Li & Raymond: Generative AI at Work",
+      "url": "https://digitaleconomy.stanford.edu/publication/generative-ai-at-work/",
+      "date": "QJE, May 2025; earlier deployment observations",
+      "method": "Peer-reviewed field study; staggered rollout",
+      "limits": "5,172 support agents at one firm. Updated published estimate is 15%; do not mix with earlier 14% working-paper version."
+    },
+    {
+      "id": "S11",
+      "title": "Cui et al.: AI and software developer productivity",
+      "url": "https://doi.org/10.2139/ssrn.4945566",
+      "date": "August 20, 2025 version",
+      "method": "Three randomized company field experiments",
+      "limits": "4,867 developers. Pooled effect of adoption estimated using randomized access; 26.08%, standard error 10.3 percentage points. Company-level estimates are noisy; Microsoft-affiliated coauthors."
+    },
+    {
+      "id": "S12",
+      "title": "Dillon et al.: Shifting Work Patterns with Generative AI",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aeri.20250275",
+      "date": "AER: Insights, forthcoming; abstract accessed September 20, 2026",
+      "method": "Randomized field experiment; accepted article abstract",
+      "limits": "66 firms, 7,137 workers, six months. Two-hour estimate concerns users in the second half, not all assigned workers. Microsoft-affiliated coauthors."
+    },
+    {
+      "id": "S13",
+      "title": "Dell’Acqua et al.: The Cybernetic Teammate",
+      "url": "https://www.nber.org/papers/w33641",
+      "date": "April 2025 working-paper version",
+      "method": "Randomized innovation exercise; author abstract and HBS researcher account",
+      "limits": "776 P&G professionals in this version. Short product-development exercise; does not measure enduring team replacement. P&G supported the research.",
+      "supporting_url": "https://www.library.hbs.edu/working-knowledge/when-ai-joins-the-team-better-ideas-surface"
+    },
+    {
+      "id": "S14",
+      "title": "METR: early-2025 developer experiment",
+      "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+      "date": "July 10, 2025; early-2025 tools",
+      "method": "Randomized task-level experiment",
+      "limits": "16 experienced open-source developers, 246 tasks in familiar repositories. Time increase 19%, 95% interval 2%–39%. Narrow and dated setting."
+    },
+    {
+      "id": "S15",
+      "title": "METR: developer-productivity follow-up",
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "date": "February 24, 2026; experiment begun August 2025",
+      "method": "Experimental follow-up with selection problems",
+      "limits": "57 developers, 800+ tasks. Participation and task selection changed; both reported subgroup intervals cross zero. Not a clean estimate of current average gains."
+    },
+    {
+      "id": "S16",
+      "title": "METR: AI usage survey",
+      "url": "https://metr.org/blog/2026-05-11-ai-usage-survey/",
+      "date": "May 11, 2026; February–April observations",
+      "method": "Self-report survey of technical workers",
+      "limits": "349 respondents; selected sample. Perceived counterfactual speed and value are not experimentally measured output."
+    },
+    {
+      "id": "S17",
+      "title": "Humlum & Vestergaard: Still Waters, Rapid Currents",
+      "url": "https://www.rfberlin.com/wp-content/uploads/2026/03/26078.pdf",
+      "date": "March 13, 2026 version; two years after ChatGPT launch",
+      "method": "Working paper; surveys linked to administrative records",
+      "limits": "Danish difference-in-differences estimates. Null average earnings/hours effects do not rule out task change, later effects or different outcomes elsewhere."
+    },
+    {
+      "id": "S18",
+      "title": "Yotzov et al.: Firm Data on AI",
+      "url": "https://www.atlantafed.org/research-and-data/publications/working-papers/2026/03/24/03-firm-data-on-ai",
+      "date": "March 24, 2026",
+      "method": "Working paper; stratified executive surveys",
+      "limits": "Nearly 6,000 executives across US, UK, Germany and Australia. Retrospective impact is self-reported. Future expectations are not observed results."
+    },
+    {
+      "id": "S19",
+      "title": "Atlanta Fed, Richmond Fed & Duke: CFO evidence",
+      "url": "https://www.richmondfed.org/research/national_economy/cfo_survey/research_and_commentary/2026/20260325_research_commentary",
+      "date": "March 25, 2026; November 2025–January 2026 fieldwork",
+      "method": "Primary survey analysis; 748 responses",
+      "limits": "Reported output-per-worker gains exceed gains implied by reported revenue and headcount. Neither measure is an audited causal estimate."
+    },
+    {
+      "id": "S20",
+      "title": "McKinsey: The State of AI in 2026",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "date": "August 25, 2026; May 4–June 8 fieldwork",
+      "method": "Consultancy survey; 1,719 respondents in 97 nations",
+      "limits": "36% work at firms with over $1bn revenue; country-GDP weighting. Self-reported use and impact, not representative of all firms by count. Publisher sells AI consulting."
+    },
+    {
+      "id": "S21",
+      "title": "OECD: Generative AI and the SME Workforce",
+      "url": "https://www.oecd.org/en/publications/generative-ai-and-the-sme-workforce_2d08b99d-en.html",
+      "date": "November 5, 2025; October–December 2024 fieldwork",
+      "method": "Representative telephone survey; 5,232 SMEs in seven countries",
+      "limits": "Includes one-person businesses through 249 employees. Barrier percentages refer to non-adopters; multiple answers allowed. Older adoption snapshot, not September 2026 prevalence."
+    },
+    {
+      "id": "S22",
+      "title": "DBS: agentic credit-assessment rollout",
+      "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
+      "date": "August 19, 2026",
+      "method": "Company deployment announcement",
+      "limits": "150-person pilot followed by rollout to about 1,500 staff. The 30% time reduction is a goal, not a measured result. No controlled outcomes disclosed."
+    },
+    {
+      "id": "S23",
+      "title": "IBM CHRO: redesigning HR service delivery",
+      "url": "https://www.ibm.com/think/insights/embracing-future-of-hr-ai-first-enterprise",
+      "date": "2025 account; describes 2017–2024 changes",
+      "method": "First-person management account",
+      "limits": "Channel closures, policy simplification and automation changed together. Reported containment and budget changes do not isolate generative AI. IBM also sells these systems."
+    },
+    {
+      "id": "S24",
+      "title": "Jabarian & Henkel: Voice AI in Firms",
+      "url": "https://arxiv.org/html/2607.28222v2",
+      "date": "September 11, 2026 revision; March–June 2025 experiment",
+      "method": "Randomized field experiment; full methods reviewed",
+      "limits": "Philippine entry-level service recruitment; human hiring authority retained. Google Cloud support. One author later accepted an unpaid role at the partner firm."
+    },
+    {
+      "id": "S25",
+      "title": "He et al.: AI Writes Faster Than Humans Can Review",
+      "url": "https://arxiv.org/html/2607.01904v1",
+      "date": "July 2, 2026; January 2024–April 2026 observations",
+      "method": "Longitudinal single-company study; preprint",
+      "limits": "Nonrandom adoption. The 2.09× statistic counts authored pull requests per active developer, distinct from the mandate’s merged-output target. Quality proxies miss latent defects."
+    },
+    {
+      "id": "S26",
+      "title": "DBS: platforms, processes and people",
+      "url": "https://www.dbs.com/artificial-intelligence-machine-learning/artificial-intelligence/responsible-ai-in-banking-gaining-a-competitive-edge.html",
+      "date": "June 11, 2025",
+      "method": "Company account of deployment infrastructure",
+      "limits": "Reported delivery-time reduction accompanies shared data and model infrastructure. No counterfactual or cost breakdown; large-bank infrastructure may not transfer economically to an SME."
+    },
+    {
+      "id": "S27",
+      "title": "Klarna: 2025 Form 20-F",
+      "url": "https://s205.q4cdn.com/644747736/files/doc_financials/2025/q4/Klarna-Group-plc-20-F-2025.pdf",
+      "date": "2026 filing; year ended December 31, 2025",
+      "method": "Company regulatory filing; narrative disclosures, PDF page 188",
+      "limits": "80% chat share and approximately $59m savings are company-reported measures. A filing is not independent causal validation of AI savings; customers retained human support."
+    },
+    {
+      "id": "S28",
+      "title": "Google Cloud: 2025 DORA findings",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report",
+      "date": "September 23, 2025",
+      "method": "Primary research summary; survey of nearly 5,000 technology professionals",
+      "limits": "Reported associations, not random assignment. More AI use correlated with both throughput and instability. Google Cloud sells AI and development products."
+    },
+    {
+      "id": "S29",
+      "title": "DBS: customer assistants and agentic rollout",
+      "url": "https://www.dbs.com/NewsPrinter.page?locale=en&newsId=mqdetosw",
+      "date": "July 28, 2026; first-half 2026 outcomes",
+      "method": "Company deployment and operating-metrics announcement",
+      "limits": "Joy outcomes precede its July agentic upgrade. Eligible users are not active users. Satisfaction baseline and causal contribution are undisclosed."
+    },
+    {
+      "id": "S30",
+      "title": "DBS: 2025 CEO reflections",
+      "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html",
+      "date": "2025 annual report; published 2026",
+      "method": "Management account of bank-wide transformation",
+      "limits": "Economic value covers data analytics and all AI/ML, not just generative AI. Program counts and management estimates are not controlled returns."
+    },
+    {
+      "id": "S31",
+      "title": "Permanente: ambient AI scribe deployment",
+      "url": "https://permanente.org/analysis-ai-scribes-save-physicians-time-improve-patient-interactions-and-work-satisfaction/",
+      "date": "April 7, 2025; 63-week evaluation",
+      "method": "Deploying institution’s account of its NEJM Catalyst study",
+      "limits": "Observational adoption and patient surveys. Primary institutional summary reviewed; journal full text was inaccessible. No demonstrated increase in patient capacity or profit.",
+      "supporting_url": "https://permanente.org/lessons-learned-from-the-kaiser-permanente-rollout-of-ambient-ai-scribes/",
+      "supporting_date": "March 20, 2025",
+      "study_url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0040"
+    },
+    {
+      "id": "S32",
+      "title": "DBS: 2024 CIO statement",
+      "url": "https://www.dbs.com/annualreports/2024/cio-statement.html",
+      "date": "2024 annual report; published 2025",
+      "method": "Management account of process and control changes",
+      "limits": "Manual hours are cumulative; incident reductions have different definitions. Digitalization and conventional ML are included. These are not isolated generative-AI effects."
+    }
+  ],
+  "report_version": 3,
+  "revision_scope": "Deepened operational cases and measured outcomes; added DBS customer service, bank-wide implementation evidence and Permanente clinical documentation."
+}
