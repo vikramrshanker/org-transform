@@ -8,10 +8,10 @@ This document organizes the ideas rather than screening them for viability. Obje
 
 **Sources and reading notes**
 
-- [A — September 19 brainstorm](brainstorm-sep19.txt): workflow intelligence, simulation, PE diligence, seller preparation, marketplaces, distribution, and founder fit.
-- [B — September 19, part 2](brainstorm-sep19-part-2.txt): aging-related opportunities, alternative business models, acquisition strategies, and agent discoverability. Its ending overlaps with the opening of A, so the filenames do not establish conversation order.
-- [C — Product stickiness and moats](brainstorm-sep20.txt): retention, product feasibility, data requirements, and next steps. The filename says September 20, while its internal date says September 19.
-- [D — AI and the Transformation of Ordinary Companies](research/reports/AI_Transformation_Report.html): research memo dated September 20, 2026, with Vikram Shanker in the byline. Covers business succession, mid-market PE, agent distribution, and enterprise compute. A copy of the supplied HTML is retained in the repository with its original citations and diagrams. Section references below refer to that report.
+- [A — September 19 brainstorm](../transcripts/brainstorm-sep19.txt): workflow intelligence, simulation, PE diligence, seller preparation, marketplaces, distribution, and founder fit.
+- [B — September 19, part 2](../transcripts/brainstorm-sep19-part-2.txt): aging-related opportunities, alternative business models, acquisition strategies, and agent discoverability. Its ending overlaps with the opening of A, so the filenames do not establish conversation order.
+- [C — Product stickiness and moats](../transcripts/brainstorm-sep20.txt): retention, product feasibility, data requirements, and next steps. The filename says September 20, while its internal date says September 19.
+- [D — AI and the Transformation of Ordinary Companies](../reports/AI_Transformation_Report.html): research memo dated September 20, 2026, with Vikram Shanker in the byline. Covers business succession, mid-market PE, agent distribution, and enterprise compute. A copy of the supplied HTML is retained in the repository with its original citations and diagrams. Section references below refer to that report.
 
 The transcripts contain transcription errors and inconsistent speaker labels. Ideas are attributed to the discussions rather than assigned to individual people where attribution is uncertain. D is an additional supplied source; it has not been established as the exact version of the report referenced in the calls. Demonstrations mentioned in the calls are not separate source materials. The report's statements about changes to earlier versions describe its own history, not instructions for this synthesis; aging-related ideas from B remain included.
 

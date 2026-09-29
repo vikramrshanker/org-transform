@@ -5,7 +5,7 @@ from pathlib import Path
 from html import escape
 import json, re, runpy
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[2]
 BASE = Path(__file__).resolve().parent
 pilot = (ROOT / 'trends/03-ai-capability-and-adoption.html').read_text()
 STYLE = re.search(r'<style>(.*?)</style>', pilot, re.S).group(1)
@@ -58,7 +58,7 @@ class Report:
         folder=ROOT/'research/data'/self.slug[3:];folder.mkdir(exist_ok=True)
         (folder/'sources.json').write_text(json.dumps(self.sources,indent=2,ensure_ascii=False)+'\n')
         (folder/'evidence.json').write_text(json.dumps(dict(research_date='2026-09-21',charts=self.evidence),indent=2,ensure_ascii=False)+'\n')
-        (folder/'README.md').write_text(f'# {self.title}: evidence\n\nResearch checked September 21, 2026. Supports the [executive report](../../../trends/{self.slug}.html).\n\n- [Source register](sources.json): publication/version dates, methods, limitations and direct links. Numbering is local to this report.\n- [Chart values](evidence.json): transcribed values, units, denominators and illustration assumptions. Illustrations are calculations, not market estimates.\n- [Maintained report content](../trend-reports/{self.slug[:2]}.py): the full text, tables and case evidence.\n\nThis is a selected evidence review, not a systematic review. Sources were checked on the research date; observations retain their own dates. No interviews or proprietary datasets were obtained. Company disclosures do not establish causal effects. Older cases describe mechanisms, not current market prevalence. Sources are linked, not reproduced in full.\n\nWhen updating, preserve dated observations, verify the denominator and methodology, update the content and source records together, and regenerate using the shared builder. Recheck mobile and print layouts after changes.\n')
+        (folder/'README.md').write_text(f'# {self.title}: evidence\n\nResearch checked September 21, 2026. Supports the [executive report](../../../trends/{self.slug}.html).\n\n- [Source register](sources.json): publication/version dates, methods, limitations and direct links. Numbering is local to this report.\n- [Chart values](evidence.json): transcribed values, units, denominators and illustration assumptions. Illustrations are calculations, not market estimates.\n- [Maintained report content](../../../scripts/trend-reports/{self.slug[:2]}.py): the full text, tables and case evidence.\n\nThis is a selected evidence review, not a systematic review. Sources were checked on the research date; observations retain their own dates. No interviews or proprietary datasets were obtained. Company disclosures do not establish causal effects. Older cases describe mechanisms, not current market prevalence. Sources are linked, not reproduced in full.\n\nWhen updating, preserve dated observations, verify the denominator and methodology, update the content and source records together, and regenerate using the shared builder. Recheck mobile and print layouts after changes.\n')
         links=''.join(f'<a href="#{id}"><span class="nav-index" aria-hidden="true">{i:02}</span><span>{label}</span></a>' for i,(id,label,_,_) in enumerate(self.sections))+'<a href="#sources"><span class="nav-index" aria-hidden="true">—</span><span>Sources</span></a>'
         nav=f'<nav aria-label="Report sections">{links}</nav>'
         body=''.join(f'<section id="{id}"><div class="eyebrow">{i:02} / {label}</div><h2>{title}</h2>{content}</section>' for i,(id,label,title,content) in enumerate(self.sections))

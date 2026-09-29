@@ -13,8 +13,7 @@ Trace each proposed solution back to an opportunity and the trends behind it. Se
 ## Start here
 
 - [1. Market trends](trends/index.html)
-- [2. Implications and opportunities](opportunities/README.md)
-- [3. Solutions and company concepts](solutions/README.md)
+- [2. PE opportunity map](research/reports/pe-opportunity-map.html)
 
 ## Reading the reports
 
@@ -23,29 +22,36 @@ Download the repository using GitHub’s **Code → Download ZIP**, extract it, 
 ## Supporting material
 
 - [Research library](research/README.md) and [source register](research/sources.md)
-- [Working notes](notes/README.md): meeting preparation, discussion records, decisions, and research follow-up.
+
+## Repository structure
+
+```text
+trends/                  Published market-trend reports and reading index
+research/
+  reports/               Contributed research reports and sector maps
+  transcripts/           Original brainstorm transcripts
+  analyses/              Synthesis and interpretation of source material
+  data/                  Supporting evidence, source records, and chart inputs
+  sources.md             Register of contributed sources
+scripts/trend-reports/    Maintained report content and the HTML generator
+```
+
+See the [report maintenance guide](scripts/trend-reports/README.md) before editing generated trend reports or their evidence records.
 
 ## Existing material
 
-- [Combined synthesis — brainstorms and research](brainstorm-synthesis.md)
-- [September 19 transcript](brainstorm-sep19.txt)
-- [September 19, part 2 transcript](brainstorm-sep19-part-2.txt)
-- [Product stickiness and moats transcript](brainstorm-sep20.txt)
+- [Combined synthesis — brainstorms and research](research/analyses/brainstorm-synthesis.md)
+- [September 19 transcript](research/transcripts/brainstorm-sep19.txt)
+- [September 19, part 2 transcript](research/transcripts/brainstorm-sep19-part-2.txt)
+- [Product stickiness and moats transcript](research/transcripts/brainstorm-sep20.txt)
 - [AI and the Transformation of Ordinary Companies — research report](research/reports/AI_Transformation_Report.html)
+- [PE opportunity map — 70 lower middle market sectors](research/reports/pe-opportunity-map.html)
 
 ## Adding material
 
 1. Save new sources in the research library and record their origin and date.
 2. Add evidence and counterevidence to the relevant trend, opportunity, or solution document. Distinguish hypotheses, reported observations, supported findings, and decisions.
 3. Link the reasoning across layers; record open questions and what evidence would change the conclusion.
-4. Keep meeting preparation, discussion records, decisions, and research follow-up in [notes](notes/README.md).
+4. Record decisions and research follow-up alongside the relevant trend, opportunity, or solution.
 
-## Templates
-
-- [Market trend](templates/trend-brief.md)
-- [Opportunity / unmet need](templates/opportunity-brief.md)
-- [Solution / company concept](templates/solution-brief.md)
-- [Research note](templates/research-note.md)
-- [Discussion notes](templates/discussion-notes.md)
-
-Completed trend reports live in HTML, with one report library tracking their status. Opportunity and solution documents remain Markdown shells for future work. Supporting evidence and report-maintenance files live under research. Topic names and candidate solutions do not imply validation, prioritization, or agreement.
+Completed trend reports live in HTML, with one report library tracking their status. Supporting evidence and analysis live under research, and report-maintenance code lives under scripts. Topic names and candidate solutions do not imply validation, prioritization, or agreement.
