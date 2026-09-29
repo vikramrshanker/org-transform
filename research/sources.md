@@ -1,6 +1,6 @@
 # Source register
 
-Source IDs match the [combined synthesis](../brainstorm-synthesis.md). Recording a source does not independently validate its claims.
+Source IDs A–D match the [combined synthesis](../brainstorm-synthesis.md); additional sources are registered below. Recording a source does not independently validate its claims.
 
 The independently researched [AI capability, adoption and organizational transformation report](../trends/03-ai-capability-and-adoption.html) has its own numbered source appendix and [structured register of 32 sources](data/ai-capability-adoption/sources.json). Those numbers do not replace the A–D identifiers below. Research date: September 20, 2026. Version 3 deepens the workflow and organizational evidence. Methods, observation periods and limitations are recorded per source.
 
@@ -12,3 +12,4 @@ The [six companion reports](data/trend-reports/README.md), researched September 
 | B | [September 19, part 2](../brainstorm-sep19-part-2.txt) | User-provided transcript | Sep 19; year not specified in transcript | Initial materials | Acquisition models, services, agent discovery, aging-related ideas | Ending overlaps A; filename does not establish sequence; outside-company claims not verified. |
 | C | [Product stickiness and moats](../brainstorm-sep20.txt) | User-provided transcript | Filename Sep 20; internal date Sep 19 | Initial materials | Diligence retention, operating visibility, product feasibility | Inconsistent date; brainstorming does not establish a product specification or decision. |
 | D | [AI and the Transformation of Ordinary Companies: Succession, Private Equity, Agents and Compute](reports/AI_Transformation_Report.html) | Byline: Vikram Shanker; supplied by user | 2026-09-20 | 2026-09-20 | Succession, PE execution, agent distribution, private AI and compute | Research memo mixing linked sources, secondary/vendor claims, author estimates, forecasts and rankings. Section 6 lists verification gaps. Underlying links were not independently checked during incorporation. |
+| E | [PE opportunity map — AI Services Sector Map: 70 Lower Middle Market Sectors](reports/pe-opportunity-map.html) | Lisa, co-founder from PE; supplied by user as `ai-services-sector-map v05.html` | September 2026 (document) | 2026-09-29 | PE sector opportunities, AI upside, partner fit, disintermediation risk and acquisition strategies | Contributed sector analysis and ratings; claims and sponsor attributions were not independently verified during incorporation. Original HTML preserved. |
