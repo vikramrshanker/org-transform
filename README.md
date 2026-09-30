@@ -14,6 +14,7 @@ Trace each proposed solution back to an opportunity and the trends behind it. Se
 
 - [1. Market trends](trends/index.html)
 - [2. PE opportunity map](research/reports/pe-opportunity-map.html)
+- [3. Technical opportunity underwriting](research/analyses/consumer-agent-uplift.html): six reusable technology areas ranked by potential EBITA return, speed to value and feasibility.
 
 ## Reading the reports
 
@@ -34,6 +35,7 @@ research/
   data/                  Supporting evidence, source records, and chart inputs
   sources.md             Register of contributed sources
 scripts/trend-reports/    Maintained report content and the HTML generator
+scripts/consumer-agent-map/  Builder for the technical underwriting document
 ```
 
 See the [report maintenance guide](scripts/trend-reports/README.md) before editing generated trend reports or their evidence records.

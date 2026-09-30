@@ -2,6 +2,7 @@
 
 Store new interview notes, reports, analyses, and datasets here. Add subfolders when needed.
 
+- [Technical opportunity underwriting](analyses/consumer-agent-uplift.html): broad technology areas assessed by EBITA return, speed and feasibility, with sector examples.
 - [Source register](sources.md): where evidence came from.
 - [Brainstorm synthesis](analyses/brainstorm-synthesis.md): interpretation of the original brainstorms and supplied research report.
 - Original transcripts: [September 19](transcripts/brainstorm-sep19.txt), [September 19, part 2](transcripts/brainstorm-sep19-part-2.txt), and [product stickiness and moats](transcripts/brainstorm-sep20.txt).

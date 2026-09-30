@@ -1,0 +1,905 @@
+{
+  "version": 3,
+  "title": "Technical opportunity underwriting",
+  "updated": "2026-09-29",
+  "objective": "Identify broad technical areas with meaningful potential EBITA improvement, a fast path to economic value and manageable technical risk.",
+  "scope": "Six cross-business technology areas, illustrated across the 15 low-disintermediation-risk consumer sectors in the PE opportunity map.",
+  "provenance": {
+    "sectors": "PE opportunity map by Lisa: research/reports/pe-opportunity-map.html. Sector metadata is reproduced; applicability is analysis.",
+    "technical_evidence": "Primary platform and vendor documentation establishes capabilities and constraints, not measured return.",
+    "assessment": "Scores, build ranges, economic mechanisms and area conclusions are internal underwriting hypotheses; no company operating baseline or measured EBITA uplift is supplied."
+  },
+  "rubric": [
+    {
+      "id": "return",
+      "name": "Potential net EBITA return",
+      "weight": 40,
+      "question": "How much recurring economic value could this area address after incremental delivery and technology costs?",
+      "anchors": [
+        "Limited or indirect economic leverage; narrow cost pool or uncertain path from activity to profit.",
+        "A bounded saving or contribution opportunity; scale or labor conversion is needed for material impact.",
+        "Recurring recoverable contribution or operating cost, but meaningful benefit depends on throughput or paid-cost realization.",
+        "Direct access to a recurring revenue or cost driver across several service models; meaningful benefit is plausible after costs.",
+        "Potentially affects a major recurring operating-cost or contribution pool; large leverage if implementation changes actual economics."
+      ],
+      "notes": "Potential, not measured size or an ROI forecast. No company baseline or uplift percentage is assumed."
+    },
+    {
+      "id": "speed",
+      "name": "Speed to value",
+      "weight": 30,
+      "question": "How quickly can a useful connected product reach a financially observable result, and then repeat elsewhere?",
+      "anchors": [
+        "Long build or economic feedback cycle; extended integration or specialized validation dominates.",
+        "Several dependencies and multi-cycle outcomes are likely to make financial proof slow.",
+        "Moderate implementation effort and at least one fulfillment, renewal or close cycle before economic results are interpretable.",
+        "Bounded integration work and a relatively short path from use to paid output or actual cost change.",
+        "Small connected implementation with standard inputs and frequent outcomes; minimal adaptation is expected across deployments."
+      ],
+      "notes": "Includes build effort, typical integration and economic observation latency. Reuse improves subsequent deployment speed; it is not a separate reward."
+    },
+    {
+      "id": "feasibility",
+      "name": "Technical feasibility",
+      "weight": 30,
+      "question": "Can established technology execute the representative scope reliably with ordinarily accessible data?",
+      "anchors": [
+        "Depends on unproven capabilities, scarce specialized data or difficult-to-contain failures.",
+        "Heavy operational coupling, complex constraints or hard-to-access data create substantial implementation risk.",
+        "Proven components exist, but multiple integrations, domain rules or consequential exceptions require substantial engineering.",
+        "Mature components, a bounded workflow and manageable data access; remaining work is integration, evaluation and exception handling.",
+        "Mostly deterministic work on standardized inputs with limited integrations and straightforward recovery."
+      ],
+      "notes": "Covers component maturity, workflow independence, data access, integration complexity and failure handling. It does not score willingness of a particular business to participate."
+    }
+  ],
+  "calibration": {
+    "scale": "1–5; higher is better on every dimension. Weighted total = Σ(weight × score / 5), out of 100.",
+    "comparison_unit": "A representative bounded implementation within a broad area, with ordinary integration and human exception handling. Neither its easiest feature nor its most advanced variant defines the entire score.",
+    "confidence": "Return confidence is Low without operating baselines; delivery and feasibility confidence is Medium where components are established but integration is untested. Unknown evidence is not silently scored as 3.",
+    "close_scores": "Differences smaller than 5 points should be treated as the same decision band. Scores guide investigation, not a statistically precise ranking.",
+    "assumptions": "Build estimates assume two full-time experienced engineers, part-time operating expertise, authorized access to documented APIs or usable exports, and no foundation-model training. Estimates cover a bounded connected product, not an entire enterprise platform.",
+    "timing": "Build ranges start after access is available. Economic observation is additional and depends on fulfillment, staffing or renewal cycles. Access delays can dominate elapsed time. Ranges are engineering planning assumptions, not sourced delivery benchmarks.",
+    "reuse": "Reuse is reflected in speed to repeat deployment and discussed explicitly. It is not an extra score that can outweigh economic value.",
+    "scope": "Company qualification, outreach scripts, partner selection and pilot execution are outside this assessment."
+  },
+  "areas": [
+    {
+      "id": "acquisition",
+      "name": "Customer acquisition and conversion",
+      "function": "GTM",
+      "thesis": "Recover value between a qualified inquiry and a fulfilled sale through consistent, context-aware communication and handoffs.",
+      "scores": {
+        "return": 4,
+        "speed": 4,
+        "feasibility": 4
+      },
+      "rationale": {
+        "return": "Touches revenue across many service models; upside depends on useful demand and delivery capacity rather than message volume.",
+        "speed": "Standard communication tools make bounded implementations relatively fast; financial outcomes still wait for the service to be delivered.",
+        "feasibility": "Mail, CRM and conversational components are established. Reliable status synchronization and action boundaries remain real work."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Lead intake, qualification against approved rules, email or message follow-up, estimate communication, and handoff to a salesperson or scheduler. Assessment covers a connected conversion process across these functions.",
+      "scope_variation": {
+        "simpler": "Approved lead/status exports, fixed offers and asynchronous follow-up with staff handling unusual replies.",
+        "harder": "Cold-list acquisition, multilingual real-time voice, complex quoting, credit decisions or dynamic pricing; these lower feasibility and slow value."
+      },
+      "economics": {
+        "mechanism": "Incremental fulfilled sales × contribution per sale, less incremental acquisition spend, offers and technology/oversight expense.",
+        "conversion": "A response or appointment is an intermediate event. More sales create EBITA only when fulfillment capacity exists and the contribution exceeds added cost."
+      },
+      "delivery": {
+        "first_build": "3–6 weeks",
+        "economic_observation": "Typically 1–2 fulfillment cycles after release; longer for project-based sales."
+      },
+      "technology": [
+        "Mail/messaging connectors and CRM events",
+        "Intent extraction and approved-content retrieval",
+        "State machine for follow-up, reply handling and handoff",
+        "Event-level tracing from inquiry to fulfilled sale"
+      ],
+      "data": [
+        "Approved contacts, inquiry/status history and communication permissions",
+        "Offer or service catalog, ownership rules and basic completion outcomes"
+      ],
+      "technical_risks": [
+        "Duplicate or stale outreach when CRM updates lag",
+        "Unapproved price or service claims",
+        "Voice reliability and telephony integration can expand the scope substantially"
+      ],
+      "reusable": "Conversation state, reply classification, stop rules, templates, handoffs and outcome identifiers.",
+      "adaptation": "CRM adapters, offer semantics, consent/status handling, language and sales-cycle length.",
+      "existing_alternatives": "CRM sequences and native reception products may cover much of the need. Custom work must add useful cross-system coordination or resolve exceptions.",
+      "open_questions": [
+        "How much apparent lead loss reflects follow-up rather than poor demand or unavailable capacity?",
+        "Can one state model handle inquiry, quote and trial conversion across several service models?",
+        "Does reliable coordination improve economics beyond a well-configured CRM?"
+      ],
+      "examples": [
+        {
+          "sector": 1,
+          "application": "Inquiry and estimate communication"
+        },
+        {
+          "sector": 4,
+          "application": "Project-estimate follow-through"
+        },
+        {
+          "sector": 5,
+          "application": "Trial and membership conversion"
+        },
+        {
+          "sector": 13,
+          "application": "Program inquiries and enrollment handoffs"
+        },
+        {
+          "sector": 14,
+          "application": "Service inquiry conversion"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E6"
+      ],
+      "overlap": "A sale may also pass through scheduling. Attribute its incremental contribution once, even when several modules participate."
+    },
+    {
+      "id": "administration",
+      "name": "Administrative coordination",
+      "function": "Operations / back office",
+      "thesis": "Reduce repetitive handling and delay across document, intake and task processes without replacing professional judgment.",
+      "scores": {
+        "return": 3,
+        "speed": 4,
+        "feasibility": 4
+      },
+      "rationale": {
+        "return": "A recurring labor and rework pool is plausible, but time saved may not reduce payroll and back-office spend can be small.",
+        "speed": "Checklists, inboxes and folders support a short build, but economic value still waits for reduced paid effort or additional profitable throughput. Fast task completion alone does not earn the highest speed score.",
+        "feasibility": "Extraction and workflow tools are mature. Document diversity, missing context and review cost constrain reliability."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Non-sensitive intake, routine document collection, completeness checking, data entry assistance, task routing and deadline follow-through.",
+      "scope_variation": {
+        "simpler": "Known document types, fixed checklists and human approval of uncertain fields.",
+        "harder": "Clinical records, insurance-claim interpretation, legal validation, highly variable handwriting or automated judgments of document validity."
+      },
+      "economics": {
+        "mechanism": "Actual avoided paid processing/rework cost + contribution from additional completed work, less extraction, review and ongoing software costs.",
+        "conversion": "Minutes freed become EBITA only through reduced paid cost, credible avoided hiring or additional profitable throughput. Collection speed alone is not an earnings improvement."
+      },
+      "delivery": {
+        "first_build": "2–4 weeks",
+        "economic_observation": "Task-level effects can appear in days; EBITA evidence depends on a staffing-cost or additional-throughput cycle."
+      },
+      "technology": [
+        "Inbox/folder connectors and document extraction",
+        "Schema and checklist validation",
+        "Work queue, reminders and exception routing",
+        "Source-linked fields and human review"
+      ],
+      "data": [
+        "Routine administrative documents and approved templates",
+        "Task status, routing owners and completeness rules"
+      ],
+      "technical_risks": [
+        "A confidence score is not proof that a document is correct",
+        "A large tail of unusual forms can consume the saved review effort",
+        "Sensitive document access can change the feasibility class entirely"
+      ],
+      "reusable": "Document intake, field lineage, checklist engine, reminders and exception queues.",
+      "adaptation": "Forms, terminology, folder permissions, field mappings and domain-specific approval boundaries.",
+      "existing_alternatives": "Form builders, document-management systems and vertical admissions tools already provide core functions. The opportunity may be configuration or integration rather than a standalone product.",
+      "open_questions": [
+        "How much labor is avoidable rather than merely redistributed?",
+        "How stable are document schemas across businesses?",
+        "Does handling the exception tail erase the processing saving?"
+      ],
+      "examples": [
+        {
+          "sector": 1,
+          "application": "Service intake and job packet completeness"
+        },
+        {
+          "sector": 4,
+          "application": "Project document coordination"
+        },
+        {
+          "sector": 9,
+          "application": "Supplier and location administration"
+        },
+        {
+          "sector": 12,
+          "application": "Staff and location onboarding"
+        },
+        {
+          "sector": 13,
+          "application": "Non-sensitive enrollment administration"
+        }
+      ],
+      "evidence": [
+        "E3",
+        "E7"
+      ],
+      "overlap": "When document completion unlocks a sale or invoice, do not count the same benefit again in acquisition or finance."
+    },
+    {
+      "id": "retention",
+      "name": "Customer retention and service",
+      "function": "Customer success",
+      "thesis": "Preserve recurring contribution and reduce routine service cost by coordinating customer requests, renewal communication and resolution.",
+      "scores": {
+        "return": 4,
+        "speed": 3,
+        "feasibility": 4
+      },
+      "rationale": {
+        "return": "Recurring relationships make small improvements potentially persistent, but offer costs and organic returns can absorb apparent lift.",
+        "speed": "A service assistant can be built quickly, but retention economics require renewal or repeat-purchase observation.",
+        "feasibility": "Routine support and lifecycle communication use proven tools. Keeping account status correct is more demanding than answering an FAQ."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Routine service inquiries, routing, renewal reminders, reactivation, approved service recovery and staff-reviewed account actions.",
+      "scope_variation": {
+        "simpler": "Policy-grounded replies and outreach using clean customer/status exports.",
+        "harder": "Autonomous credits, payment changes, contractual cancellation decisions, clinical advice or predictive retention built on fragmented usage histories."
+      },
+      "economics": {
+        "mechanism": "Incremental retained paid periods or repeat purchases × contribution per period/purchase + actual service-cost reduction, less offers and running cost.",
+        "conversion": "Retained revenue is not retained EBITA. Deduct delivery cost, concessions and additional support; separate organic renewal from incremental retention."
+      },
+      "delivery": {
+        "first_build": "3–6 weeks",
+        "economic_observation": "Usually at least one renewal or repeat-purchase cycle; durable retention takes longer than a resolved inquiry."
+      },
+      "technology": [
+        "Customer-service and mailbox connectors",
+        "Approved-policy retrieval and intent classification",
+        "Customer identity/status matching",
+        "Lifecycle rules and escalated action workflows"
+      ],
+      "data": [
+        "Customer status, approved policies and support history",
+        "Renewal or visit events; payment status only for payment-related scope"
+      ],
+      "technical_risks": [
+        "Outdated policies or identity mismatches cause incorrect replies",
+        "Unwanted outreach or cancellation friction damages the customer relationship",
+        "Financial account actions require tighter controls than communications"
+      ],
+      "reusable": "Service taxonomy, policy retrieval, lifecycle communication, routing and resolution tracking.",
+      "adaptation": "Membership terms, visit cadence, brand voice, policy boundaries and customer-system adapters.",
+      "existing_alternatives": "Helpdesks, lifecycle marketing and membership tools already serve this area. Cross-system context and resolution may matter more than generating replies.",
+      "open_questions": [
+        "What portion of churn is operationally addressable?",
+        "How much history is needed before targeted actions outperform simple rules?",
+        "Can the same policy/action model work across appointment and membership businesses?"
+      ],
+      "examples": [
+        {
+          "sector": 5,
+          "application": "Membership service and renewals"
+        },
+        {
+          "sector": 6,
+          "application": "Recurring-service renewal and complaint resolution"
+        },
+        {
+          "sector": 11,
+          "application": "Membership communication and recovery"
+        },
+        {
+          "sector": 12,
+          "application": "Rebooking and routine support"
+        },
+        {
+          "sector": 14,
+          "application": "Repeat-care communication"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E6"
+      ],
+      "overlap": "Classify reacquisition or retention once. Track staffing savings separately from contribution generated by the same freed hours."
+    },
+    {
+      "id": "scheduling",
+      "name": "Scheduling and capacity utilization",
+      "function": "Operations",
+      "thesis": "Turn available time, facilities and service capacity into fulfilled work while reducing coordination overhead.",
+      "scores": {
+        "return": 4,
+        "speed": 3,
+        "feasibility": 3
+      },
+      "rationale": {
+        "return": "Unused capacity can translate directly to contribution, but only where there is eligible demand and no hidden staffing bottleneck.",
+        "speed": "Basic calendar interactions are quick; usable cross-resource capacity, rescheduling and financial outcomes add integration and observation time.",
+        "feasibility": "Availability APIs are mature. Real operating schedules also require duration, eligibility, qualifications and consistent reservations."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Appointment coordination, rescheduling, waitlist handling and capacity matching across approved services and resources. The score includes more than simple meeting booking.",
+      "scope_variation": {
+        "simpler": "One calendar, fixed durations and pre-approved slots; use for tours, consultations or standard appointments.",
+        "harder": "Multi-resource appointments, service dependencies, age/room/staff constraints or travel-aware technician scheduling."
+      },
+      "economics": {
+        "mechanism": "Incremental fulfilled slots × contribution per slot + actual coordination-cost reduction, less extra staffing, offers and software cost.",
+        "conversion": "A booked slot is not a fulfilled sale. Include no-shows, displacement of full-price demand and step-up staffing costs before recognizing uplift."
+      },
+      "delivery": {
+        "first_build": "4–8 weeks",
+        "economic_observation": "Typically 1–2 appointment/service cycles once utilization changes; longer where enrollment or staffing resets are seasonal."
+      },
+      "technology": [
+        "Calendar/booking APIs and event subscriptions",
+        "Deterministic availability and eligibility rules",
+        "Reservation, cancellation and retry logic",
+        "Agent-assisted coordination; solver for complex constraints"
+      ],
+      "data": [
+        "Current availability, services, duration and resource identities",
+        "Eligibility rules and attendance/completion outcomes"
+      ],
+      "technical_risks": [
+        "Free/busy does not establish that a service can actually be delivered",
+        "Concurrent reservations can double-book capacity",
+        "Resource and staffing rules vary materially between sectors"
+      ],
+      "reusable": "Availability adapters, reservation lifecycle, reminders, waitlist communication and event tracking.",
+      "adaptation": "Duration, qualified-resource rules, capacity definitions, cancellation terms and the booking system.",
+      "existing_alternatives": "Calendar tools and vertical booking/waitlist software already perform basic scheduling. Useful gaps may be coordination between systems or unresolved exceptions.",
+      "open_questions": [
+        "Where does a shared capacity model stop being practical?",
+        "Can availability stay correct without deep integration into the operating system?",
+        "How often is scheduling, rather than demand or staffing, the true constraint?"
+      ],
+      "examples": [
+        {
+          "sector": 5,
+          "application": "Tours, classes and member appointments"
+        },
+        {
+          "sector": 12,
+          "application": "Provider appointment utilization"
+        },
+        {
+          "sector": 13,
+          "application": "Class/session occupancy"
+        },
+        {
+          "sector": 14,
+          "application": "Grooming and boarding capacity"
+        },
+        {
+          "sector": 15,
+          "application": "Staffed enrollment capacity; higher-complexity variant"
+        }
+      ],
+      "evidence": [
+        "E2",
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "overlap": "Customer conversion and capacity fill can describe the same incremental sale. Do not add both contribution claims."
+    },
+    {
+      "id": "workforce",
+      "name": "Workforce and operational efficiency",
+      "function": "People / field and site operations",
+      "thesis": "Improve the deployment of labor, field resources and service assets against recurring demand.",
+      "scores": {
+        "return": 5,
+        "speed": 2,
+        "feasibility": 2
+      },
+      "rationale": {
+        "return": "Labor and service capacity can be major economic drivers; changes can affect many transactions or shifts.",
+        "speed": "Historical data, operating constraints and several work cycles generally precede interpretable savings.",
+        "feasibility": "Forecasting and solvers exist, but accurate inputs, local constraints and operational coupling dominate delivery risk."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Demand-to-labor planning, schedule exceptions, route/dispatch coordination, workload balancing and routine equipment-service coordination.",
+      "scope_variation": {
+        "simpler": "Exception summaries and manager-reviewed recommendations from established operational records.",
+        "harder": "Live fleet optimization, autonomous staffing changes, safety-critical allocation or sensor-based predictive maintenance."
+      },
+      "economics": {
+        "mechanism": "Actual paid labor/overtime avoided + contribution from extra fulfilled output + recoverable downtime contribution, less rework, service degradation and technology cost.",
+        "conversion": "Do not count theoretical utilization gains as earnings. Preserve service quality and distinguish lower payroll from more output using the same paid hours."
+      },
+      "delivery": {
+        "first_build": "6–12 weeks",
+        "economic_observation": "Several staffing or route cycles; demand and seasonality can make economic attribution substantially longer."
+      },
+      "technology": [
+        "Forecasting and constraint-optimization components",
+        "Workforce/field-service system connectors",
+        "Exception detection and manager recommendation queues",
+        "Execution feedback and constraint validation"
+      ],
+      "data": [
+        "Timekeeping, roster, skills, demand and actual job durations",
+        "Locations, service windows or asset history for the relevant variant"
+      ],
+      "technical_risks": [
+        "Incomplete skills and duration data make mathematically valid plans operationally invalid",
+        "Recommendations can increase churn, delays or rework",
+        "Specialized sensors and safety-critical scope materially increase cost and risk"
+      ],
+      "reusable": "Forecasting interfaces, constraint engine, exception patterns and execution feedback.",
+      "adaptation": "Labor policies, service commitments, geography, skills, assets and each operating system.",
+      "existing_alternatives": "Workforce-management and field-service vendors supply core optimization capabilities. Integration and operational adoption can be more difficult than the model itself.",
+      "open_questions": [
+        "How much headroom remains after incumbent tools and experienced managers?",
+        "Which constraints generalize without rebuilding each model?",
+        "Can recommendations reliably lead to actual cost or throughput changes?"
+      ],
+      "examples": [
+        {
+          "sector": 1,
+          "application": "Dispatch and paid field productivity"
+        },
+        {
+          "sector": 6,
+          "application": "Recurring-route efficiency"
+        },
+        {
+          "sector": 7,
+          "application": "Weather and route recovery"
+        },
+        {
+          "sector": 9,
+          "application": "Site staffing against demand"
+        },
+        {
+          "sector": 11,
+          "application": "Site labor and equipment-service coordination"
+        }
+      ],
+      "evidence": [
+        "E4",
+        "E5"
+      ],
+      "overlap": "Additional labor capacity must be counted as either avoided cost or the contribution of extra work, without counting the same hour twice."
+    },
+    {
+      "id": "finance",
+      "name": "Financial operations and spend control",
+      "function": "Finance / procurement",
+      "thesis": "Reduce recurring leakage, transaction-processing cost and purchasing variance through traceable exception resolution.",
+      "scores": {
+        "return": 4,
+        "speed": 2,
+        "feasibility": 3
+      },
+      "rationale": {
+        "return": "Fees, purchasing leakage, write-offs and processing expense can be meaningful; accelerated cash alone is not EBITA.",
+        "speed": "Account/item mapping and reconciliation precede useful action; financial closes and recovery cycles delay confirmed value.",
+        "feasibility": "Rules, extraction and matching are established, but cross-system financial integrity and approval boundaries raise implementation demands."
+      },
+      "confidence": {
+        "return": "Low",
+        "speed": "Medium",
+        "feasibility": "Medium"
+      },
+      "scope": "Billing exceptions, transaction reconciliation, supplier-invoice checks, purchasing variance and collection coordination. No autonomous payments or accounting judgments are assumed.",
+      "scope_variation": {
+        "simpler": "Read-only comparisons of standardized exports and staff-reviewed exception packets.",
+        "harder": "Multiple ledgers, complex payer arrangements, tax/accounting interpretation, bank writes or regulated trust/claims activity."
+      },
+      "economics": {
+        "mechanism": "Verified recurring cost/leakage reduction + reduced write-offs + actual processing expense avoided, less review and system cost.",
+        "conversion": "Faster collections release working capital. Invoice corrections are not new revenue unless they change recognized earnings; distinguish one-time recoveries from recurring improvement."
+      },
+      "delivery": {
+        "first_build": "5–10 weeks",
+        "economic_observation": "At least one close, supplier-credit or recovery cycle; recurring improvement requires more than a one-off correction."
+      },
+      "technology": [
+        "Deterministic ledger/item matching and reconciliation",
+        "Invoice/document extraction with source lineage",
+        "Variance detection and exception investigation",
+        "Approval queue and auditable resolution record"
+      ],
+      "data": [
+        "Authorized invoice, transaction, supplier and ledger exports",
+        "Stable account/item identifiers and known reconciliation rules"
+      ],
+      "technical_risks": [
+        "False matches or incomplete coverage can create misleading savings",
+        "Bespoke charts of accounts and item names reduce reuse",
+        "Financial access is generally harder than a mailbox or calendar connector"
+      ],
+      "reusable": "Matching rules, extraction, exception queues, approval logging and lineage.",
+      "adaptation": "Account/item mappings, settlement terms, financial systems and purchasing controls.",
+      "existing_alternatives": "Accounting, AP and spend systems already provide matching and approval workflows. The unresolved exception layer may be the useful integration surface.",
+      "open_questions": [
+        "Are standard exports sufficient for useful resolution, or are deep financial integrations unavoidable?",
+        "What proportion of identified variance is recoverable and recurring?",
+        "How much mapping work repeats for each business?"
+      ],
+      "examples": [
+        {
+          "sector": 9,
+          "application": "Supplier costs and settlement reconciliation"
+        },
+        {
+          "sector": 4,
+          "application": "Material invoice/credit matching"
+        },
+        {
+          "sector": 10,
+          "application": "Parts purchasing exceptions"
+        },
+        {
+          "sector": 15,
+          "application": "Billing discrepancies; sensitive-data variant"
+        },
+        {
+          "sector": 11,
+          "application": "Site-level fee and vendor exceptions"
+        }
+      ],
+      "evidence": [
+        "E3"
+      ],
+      "overlap": "A recovered invoice, reduced write-off and faster collection may refer to one event. Separate profit, cash timing and one-time corrections."
+    }
+  ],
+  "sectors": [
+    {
+      "id": "residential-hvac-plumbing-and-electrical-services",
+      "name": "Residential HVAC, plumbing and electrical services",
+      "short": "Home trades",
+      "source_rank": 1,
+      "lisa_experience": true,
+      "source_ai": 4,
+      "source_partner_fit": 5,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Selective",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Physical field capacity makes sales, scheduling and labor effects interdependent."
+    },
+    {
+      "id": "restoration-and-remediation-water-fire-mold",
+      "name": "Restoration and remediation (water, fire, mold)",
+      "short": "Restoration",
+      "source_rank": 2,
+      "lisa_experience": false,
+      "source_ai": 4,
+      "source_partner_fit": 5,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Selective",
+        "administration": "Selective",
+        "retention": "Selective",
+        "scheduling": "Selective",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Emergency response and insurer/case records can increase integration and data requirements."
+    },
+    {
+      "id": "veterinary-services",
+      "name": "Veterinary services",
+      "short": "Veterinary",
+      "source_rank": 3,
+      "lisa_experience": true,
+      "source_ai": 4,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Selective",
+        "administration": "Selective",
+        "retention": "Selective",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Administrative components can transfer; clinical records and clinical judgments sit outside the low-risk core."
+    },
+    {
+      "id": "roofing-and-exterior-services",
+      "name": "Roofing and exterior services",
+      "short": "Roofing and exteriors",
+      "source_rank": 4,
+      "lisa_experience": true,
+      "source_ai": 4,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Direct",
+        "retention": "Selective",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Long project fulfillment means commercial activity can precede earnings by a material interval."
+    },
+    {
+      "id": "gyms-and-fitness-franchisees",
+      "name": "Gyms and fitness franchisees",
+      "short": "Gyms and fitness",
+      "source_rank": 5,
+      "lisa_experience": true,
+      "source_ai": 4,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Direct",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Selective",
+        "finance": "Selective"
+      },
+      "boundary": "Membership and class models emphasize different economic mechanisms."
+    },
+    {
+      "id": "pest-control",
+      "name": "Pest control",
+      "short": "Pest control",
+      "source_rank": 6,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 5,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Selective",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Recurring routes link renewal quality, scheduling and field productivity."
+    },
+    {
+      "id": "residential-lawn-tree-and-pool-care",
+      "name": "Residential lawn, tree and pool care",
+      "short": "Lawn, tree and pool",
+      "source_rank": 7,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 5,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Selective",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Project work and recurring routes need different service and seasonality models."
+    },
+    {
+      "id": "restaurant-franchisees-and-multi-unit-operators",
+      "name": "Restaurant franchisees and multi-unit operators",
+      "short": "Restaurant franchisees",
+      "source_rank": 9,
+      "lisa_experience": true,
+      "source_ai": 4,
+      "source_partner_fit": 3,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Selective",
+        "administration": "Direct",
+        "retention": "Direct",
+        "scheduling": "Selective",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Franchise systems constrain access; labor and purchasing may matter more than appointment-style workflows."
+    },
+    {
+      "id": "auto-services-collision-tire-and-repair",
+      "name": "Auto services (collision, tire and repair)",
+      "short": "Auto repair and collision",
+      "source_rank": 10,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Direct",
+        "retention": "Selective",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Collision work adds payer and parts dependencies beyond routine service appointments."
+    },
+    {
+      "id": "express-car-wash",
+      "name": "Express car wash",
+      "short": "Express car wash",
+      "source_rank": 11,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Selective",
+        "administration": "Direct",
+        "retention": "Direct",
+        "scheduling": "Selective",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Membership service, site throughput and equipment availability have different dependencies."
+    },
+    {
+      "id": "salons-spas-and-personal-care-franchises",
+      "name": "Salons, spas and personal care franchises",
+      "short": "Salons and personal care",
+      "source_rank": 12,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Direct",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Selective",
+        "finance": "Selective"
+      },
+      "boundary": "Appointment businesses differ from suite-rental economics."
+    },
+    {
+      "id": "youth-enrichment-and-activities",
+      "name": "Youth enrichment and activities",
+      "short": "Youth activities",
+      "source_rank": 13,
+      "lisa_experience": false,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Direct",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Session eligibility and staffing constrain usable capacity."
+    },
+    {
+      "id": "pet-care-services-daycare-boarding-grooming",
+      "name": "Pet care services (daycare, boarding, grooming)",
+      "short": "Pet daycare and grooming",
+      "source_rank": 14,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Selective",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Selective"
+      },
+      "boundary": "Separate routine communication from health records and staff-reviewed pet eligibility."
+    },
+    {
+      "id": "early-childhood-education-and-training-providers",
+      "name": "Early childhood education and training providers",
+      "short": "Early childhood education",
+      "source_rank": 15,
+      "lisa_experience": true,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Direct",
+        "administration": "Selective",
+        "retention": "Direct",
+        "scheduling": "Direct",
+        "workforce": "Direct",
+        "finance": "Direct"
+      },
+      "boundary": "Licensed staffing and age-specific room capacity make a generic calendar an incomplete model."
+    },
+    {
+      "id": "funeral-homes-and-death-care",
+      "name": "Funeral homes and death care",
+      "short": "Funeral and death care",
+      "source_rank": 16,
+      "lisa_experience": false,
+      "source_ai": 3,
+      "source_partner_fit": 4,
+      "risk": "Low",
+      "applicability": {
+        "acquisition": "Selective",
+        "administration": "Selective",
+        "retention": "Selective",
+        "scheduling": "Selective",
+        "workforce": "Selective",
+        "finance": "Selective"
+      },
+      "boundary": "Sensitive family communication and professional/financial obligations limit unattended scope."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "title": "Microsoft Graph: sendMail",
+      "url": "https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0",
+      "finding": "A supported mail API can send messages with permissioned access. Acceptance is not proof of delivery. This supports connector feasibility, not response rates or economics."
+    },
+    {
+      "id": "E2",
+      "title": "Google Calendar: free/busy queries and event creation",
+      "url": "https://developers.google.com/workspace/calendar/api/v3/reference/freebusy/query",
+      "related_url": "https://developers.google.com/workspace/calendar/api/v3/reference/events/insert",
+      "finding": "Authorized APIs expose calendar availability and event creation. They do not supply business eligibility, staffing or resource-allocation rules."
+    },
+    {
+      "id": "E3",
+      "title": "Microsoft Document Intelligence: accuracy and confidence",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/accuracy-confidence?view=doc-intel-4.0.0",
+      "finding": "Extraction can include confidence estimates; quality depends on the documents and model. Exception review remains part of the design. Documentation excerpt reviewed; no accuracy claim is assumed."
+    },
+    {
+      "id": "E4",
+      "title": "Google OR-Tools: constraint optimization",
+      "url": "https://developers.google.com/optimization/cp",
+      "finding": "Established solvers address constraint problems, including employee scheduling. Domain modeling and reliable operational inputs remain implementation work."
+    },
+    {
+      "id": "E5",
+      "title": "7shifts: actual sales and forecasting",
+      "url": "https://kb.7shifts.com/hc/en-us/articles/48486771183123-Actual-Sales-and-Forecasting",
+      "finding": "POS-fed sales forecasts support labor planning. This is evidence of an existing solution category and integration dependencies, not proof of labor-cost reduction."
+    },
+    {
+      "id": "E6",
+      "title": "Zenoti: AI Receptionist",
+      "url": "https://www.zenoti.com/ai-workforce/ai-receptionist",
+      "finding": "The vendor describes booking, rescheduling and confirmation capabilities. Native functionality can reduce implementation effort and the opportunity for a separate custom product."
+    },
+    {
+      "id": "E7",
+      "title": "Brightwheel: admissions overview",
+      "url": "https://help.mybrightwheel.com/en/articles/6143589-overview-of-brightwheel-admissions-features",
+      "finding": "Admissions, waitlists and document collection exist in vertical software. Cross-system coordination may still differ from feature availability."
+    }
+  ]
+}
